@@ -1,53 +1,9 @@
-
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-
-Loading script...
-
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
-camelCase - ' toggleCase' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-camelCase - 'null' OK
-camelCase - 'Object' OK
-
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
 	expected : "toggle_case_is_the_coolest" - got "Toggle_Case_Is_The_Coolest"
 snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"
+	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"Loading script...
+
 snake_case - 'ToggleCase is the 3oolest' KO
 	expected : "togglecase_is_the_3oolest" - got "Togglecase_Is_The_3oolest"
 snake_case - 'ToggleCaseIsTheCool3st' KO
@@ -57,6 +13,125 @@ snake_case - 'ToggleCase is_the coolest' KO
 snake_case - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 snake_case - 'null' OK
+snake_case - 'Object' OK
+
+
+Starting tests...
+Checking leetChecking ucfirst
+leet - 'anaconda' OK
+ucfirst - 'test' OK
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "4n4c0nd4"
+leet - 'leet' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+leet - 'yoda' OK
+ucfirst - 'TEST' OK
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
+ucfirst - 'null' OK
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "m0n tr4v4il"
+ucfirst - 'Object' OK
+leet - ' ' OK
+
+
+leet - 'null' OK
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - str.toLowerCase is not a functionChecking capitalize
+
+Checking verlan
+capitalize - 'test' OK
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+capitalize - 'ipsum DOLOR' OK
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+capitalize - 'sit 8met consectetur' OK
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+capitalize - '_dipiscing elit' OK
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking yoda
+capitalize - 'null' OK
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+capitalize - 'Object' OK
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+
+
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implementedChecking camelCase
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - 'toggle case is the coolest' OK
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - 'toggleCase is the coolest' OK
+
+
+camelCase - 'ToggleCase is the 3oolest' OKChecking vig
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'ToggleCaseIsTheCoolest' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - ' toggleCase' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'null' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'Object' OK
+
+Checking prop_access
+
+
+prop_access - 'path exist - value string' OKChecking snake_case
+prop_access - 'path exist - value object' OK
+snake_case - 'toggle case is the coolest' KO
+	expected : "toggle_case_is_the_coolest" - got "Toggle_Case_Is_The_Coolest"
+prop_access - 'path exist - value array' OK
+snake_case - 'toggleCase is the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"
+snake_case - 'ToggleCase is the 3oolest' KO
+	expected : "togglecase_is_the_3oolest" - got "Togglecase_Is_The_3oolest"
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
+snake_case - 'ToggleCaseIsTheCool3st' KO
+	expected : "togglecaseisthecool3st" - got "Togglecaseisthecool3st"
+prop_access - 'path empty' OK
+snake_case - 'ToggleCase is_the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_the_Coolest"
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+snake_case - ' toggleCase' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+snake_case - 'null' OK
+
+
 snake_case - 'Object' OK
 
 Checking leet
