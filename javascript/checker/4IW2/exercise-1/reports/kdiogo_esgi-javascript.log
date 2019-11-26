@@ -23,24 +23,25 @@ camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
+camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'toggle case is the coolest' KO
+	expected : "toggle_case_is_the_coolest" - got "togglecaseisthecoolest"
+snake_case - 'toggleCase is the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "togglecaseisthecoolest"
+snake_case - 'ToggleCase is the 3oolest' KO
+	expected : "togglecase_is_the_3oolest" - got "togglecaseisthe3oolest"
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "togglecase_isthe_coolest"
-snake_case - ' toggleCase' OK
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+	expected : "togglecase_is_the_coolest" - got "togglecaseisthecoolest"
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' OK
+snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO

@@ -11,8 +11,7 @@ ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' OK
-capitalize - ' test' KO
-	expected : " Test" - got "Test"
+capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
@@ -21,16 +20,12 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "ToggleCase"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
+camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
@@ -39,26 +34,33 @@ snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
-snake_case - 'null' OK
-snake_case - 'Object' OK
+snake_case - 'ToggleCase is_the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "togglecase_isthe_coolest"
+snake_case - ' toggleCase' OK
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - str.replace is not a function
 
 Checking leet
-leet - 'anaconda' OK
+leet - 'anaconda' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
-leet - 'leet' OK
-leet - 'yoda' OK
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'leet' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'yoda' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
-leet - ' ' OK
-leet - 'null' OK
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - ' ' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'null' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+	Unexpected behaviour : TypeError - "leet" not implemented
 
 Checking verlan
 verlan - 'anaconda' KO
@@ -105,13 +107,18 @@ vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 
 Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
+prop_access - 'path exist - value string' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' OK
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path empty' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 
