@@ -1,0 +1,124 @@
+Loading script...
+
+Starting tests...
+Checking ucfirst
+ucfirst - 'test' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+ucfirst - ' test' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+ucfirst - 'Test' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+ucfirst - 'TEST' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+ucfirst - 'null' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+ucfirst - 'Object' KO
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' KO
+	expected : "" - got undefined
+capitalize - 'Object' KO
+	expected : "" - got undefined
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+camelCase - ' toggleCase' OK
+camelCase - 'null' KO
+	expected : "" - got undefined
+camelCase - 'Object' KO
+	expected : "" - got undefined
+
+Checking snake_case
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "toggleCase_is_the_coolest"
+snake_case - 'ToggleCase is the 3oolest' KO
+	expected : "togglecase_is_the_3oolest" - got "ToggleCase_is_the_3oolest"
+snake_case - 'ToggleCaseIsTheCool3st' KO
+	expected : "togglecaseisthecool3st" - got "ToggleCaseIsTheCool3st"
+snake_case - 'ToggleCase is_the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "ToggleCase_is_the_coolest"
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "_toggleCase"
+snake_case - 'null' KO
+	expected : "" - got undefined
+snake_case - 'Object' KO
+	expected : "" - got undefined
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' KO
+	expected : "" - got undefined
+leet - 'Object' KO
+	expected : "" - got undefined
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' KO
+	expected : "adoy m ekuL" - got "ekuL m adoy"
+verlan - '70da m L(_)k3' KO
+	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - ' ' OK
+verlan - 'null' KO
+	expected : "" - got undefined
+verlan - 'Object' KO
+	expected : "" - got undefined
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' KO
+	expected : "" - got undefined
+yoda - 'Object' KO
+	expected : "" - got undefined
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got undefined
+vig - ' - test' KO
+	expected : " " - got undefined
+vig - 'null - test' KO
+	expected : "" - got undefined
+vig - 'Object - test' KO
+	expected : "" - got undefined
+
+Checking prop_access
+prop_access - 'path exist - value string' KO
+	expected : "dog" - got undefined
+prop_access - 'path exist - value object' KO
+	expected : {"name":"dog"} - got undefined
+prop_access - 'path exist - value array' KO
+	expected : {"name":"cat"} - got undefined
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
+prop_access - 'path empty' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+prop_access - 'object null' KO
+	expected : test not exist - got null
+prop_access - 'path null' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+
