@@ -40,20 +40,23 @@ snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "anaconda"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "anacoNDa"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'leet' KO
-	expected : "l33t" - got "leet"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'yoda' KO
-	expected : "70d4" - got "yoda"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "evaluation"
+	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon travail"
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - ' ' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'null' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 
 Checking verlan
 verlan - 'anaconda' KO
