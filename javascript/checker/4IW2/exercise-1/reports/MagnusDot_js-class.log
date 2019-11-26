@@ -1,91 +1,23 @@
+Loading script...
 
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"Loading script...
-
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
-
-Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 Starting tests...
-
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedChecking ucfirst
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+Checking ucfirst
 ucfirst - 'test' OK
-
-Checking yoda
 ucfirst - ' test' OK
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 ucfirst - 'Test' OK
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 ucfirst - 'TEST' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 ucfirst - 'null' OK
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 ucfirst - 'Object' OK
 
-Checking vig
-
-
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implementedChecking capitalize
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+Checking capitalize
 capitalize - 'test' OK
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-Checking prop_access
 capitalize - 'ipsum DOLOR' OK
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
 capitalize - 'sit 8met consectetur' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
 capitalize - '_dipiscing elit' OK
-prop_access - 'path empty' OK
 capitalize - 'null' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 capitalize - 'Object' OK
-
-
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
