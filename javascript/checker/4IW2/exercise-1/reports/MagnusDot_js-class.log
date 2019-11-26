@@ -1,22 +1,3 @@
-
-
-Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedLoading script...
-
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
 Checking yoda
 yoda - 'anaconda' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
@@ -28,54 +9,55 @@ yoda - ' ' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-Starting tests...
-
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 
-Checking ucfirstChecking vig
+Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-ucfirst - 'test' OK
+	Unexpected behaviour : TypeError - "vig" not implementedLoading script...
+
 vig - 'antiConstiTutioNnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-ucfirst - ' test' OK
 vig - ' - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-ucfirst - 'Test' OK
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-ucfirst - 'TEST' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-ucfirst - 'null' OK
 
-
-ucfirst - 'Object' OK
-
-Checking prop_accessChecking capitalize
-capitalize - 'test' OK
+Checking prop_access
 prop_access - 'path exist - value string' OK
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
+Starting tests...
+
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-capitalize - '_dipiscing elit' OK
+	expected : animal.gender not exist - got nullChecking ucfirst
 prop_access - 'path empty' OK
-capitalize - 'null' OK
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-capitalize - 'Object' OK
 prop_access - 'path null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+ucfirst - 'test' OK
 
 
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
