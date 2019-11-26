@@ -39,18 +39,12 @@ snake_case - 'null' OK
 snake_case - 'Object' OK
 
 Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "anaconda"
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "anacoNDa"
-leet - 'leet' KO
-	expected : "l33t" - got "leet"
-leet - 'yoda' KO
-	expected : "70d4" - got "yoda"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "evaluation"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon travail"
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
@@ -101,17 +95,17 @@ vig - 'Object - test' KO
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : "dog" - got ""
 prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"name":"dog"} - got ""
 prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"name":"cat"} - got ""
 prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : animal.gender not exist - got null
 prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : test not exist - got null
 prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 

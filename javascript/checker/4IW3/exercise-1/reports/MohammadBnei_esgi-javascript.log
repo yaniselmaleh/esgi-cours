@@ -41,23 +41,23 @@ snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'map' of null
 leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - str.map is not a function
 
 Checking verlan
 verlan - 'anaconda' KO
