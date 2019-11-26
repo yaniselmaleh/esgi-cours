@@ -1,132 +1,39 @@
+Loading script...
 
-camelCase - ' toggleCase' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-camelCase - 'null' OK
-camelCase - 'Object' OK
-
-Checking snake_caseLoading script...
-
-snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got "Toggle_Case_Is_The_Coolest"
-snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"
-snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got "Togglecase_Is_The_3oolest"
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	expected : "togglecaseisthecool3st" - got "Togglecaseisthecool3st"
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_the_Coolest"
-snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-snake_case - 'null' OK
-snake_case - 'Object' OK
 Starting tests...
-
-
-Checking ucfirstChecking leet
-leet - 'anaconda' OK
+Checking ucfirst
 ucfirst - 'test' OK
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
-leet - 'leet' OK
 ucfirst - ' test' OK
-leet - 'yoda' OK
 ucfirst - 'Test' OK
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
 ucfirst - 'TEST' OK
-leet - ' ' OK
 ucfirst - 'null' OK
-leet - 'null' OK
 ucfirst - 'Object' OK
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
-
-
-Checking capitalizeChecking verlan
+Checking capitalize
 capitalize - 'test' OK
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - 'ipsum DOLOR' OK
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - 'sit 8met consectetur' OK
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - '_dipiscing elit' OK
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-
-capitalize - 'null' OKChecking yoda
+capitalize - 'null' OK
 capitalize - 'Object' OK
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 
-
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implementedChecking camelCase
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 camelCase - 'toggleCase is the coolest' OK
-
-
-camelCase - 'ToggleCase is the 3oolest' OKChecking vig
+camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'null' OK
-
-Checking prop_access
 camelCase - 'Object' OK
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
 
-
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got nullChecking snake_case
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+Checking snake_case
 snake_case - 'toggle case is the coolest' KO
 	expected : "toggle_case_is_the_coolest" - got "Toggle_Case_Is_The_Coolest"
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-
-
 snake_case - 'toggleCase is the coolest' KO
 	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"
 snake_case - 'ToggleCase is the 3oolest' KO
