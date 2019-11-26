@@ -1,0 +1,7 @@
+checker.js
+executor.js
+**/datasets
+**/config
+**/exercise-*/scripts/*
+javascript/examples/
+node/**/node_modules
