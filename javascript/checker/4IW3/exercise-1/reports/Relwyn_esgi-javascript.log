@@ -1,61 +1,70 @@
 Loading script...
 
-Wed Nov 27 2019 15:05:41 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 15:05:42 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+ucfirst - 'null' KO
+	expected : "" - got {}
+ucfirst - 'Object' KO
+	expected : "" - got {}
 
 Checking capitalize
 capitalize - 'test' OK
-capitalize - ' test' OK
+capitalize - ' test' KO
+	expected : " Test" - got "Test"
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' KO
-	expected : "_dipiscing Elit" - got " Dipiscing Elit"
-capitalize - 'null' OK
-capitalize - 'Object' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' KO
+	expected : "" - got {}
+capitalize - 'Object' KO
+	expected : "" - got {}
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
 camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
+camelCase - 'null' KO
+	expected : "" - got {}
+camelCase - 'Object' KO
+	expected : "" - got {}
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
-snake_case - 'null' OK
-snake_case - 'Object' OK
+snake_case - 'toggle case is the coolest' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'toggleCase is the coolest' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'ToggleCase is the 3oolest' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'ToggleCaseIsTheCool3st' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'ToggleCase is_the coolest' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - ' toggleCase' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
 
 Checking leet
-leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - 'leet' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - 'yoda' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - str.map is not a function
-leet - ' ' KO
-	Unexpected behaviour : TypeError - str.map is not a function
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
 leet - 'null' OK
-leet - 'Object' OK
+leet - 'Object' KO
+	expected : "" - got "data"
 
 Checking verlan
 verlan - 'anaconda' KO
@@ -102,18 +111,14 @@ vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 
 Checking prop_access
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : animal.gender not exist - got null
+prop_access - 'path empty' OK
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : test not exist - got null
 prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"animal":{"type":{"name":"dog"}}} - got {}
 
