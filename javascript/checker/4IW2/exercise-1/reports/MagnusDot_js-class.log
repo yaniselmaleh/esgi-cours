@@ -1,81 +1,92 @@
 
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leetLoading script...
+
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+Wed Nov 27 2019 12:58:27 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+leet - 'mon travail' OKChecking ucfirst
+leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
+ucfirst - 'test' OK
 
-Checking verlan
-verlan - 'anaconda' OKLoading script...
 
+ucfirst - ' test' OKChecking verlan
+ucfirst - 'Test' OK
+verlan - 'anaconda' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
 verlan - 'kayak' OK
+ucfirst - 'Object' OK
 verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
+
+
+verlan - '70da m L(_)k3' OKChecking capitalize
 verlan - ' ' OK
 verlan - 'null' OK
-Wed Nov 27 2019 12:57:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
+capitalize - 'test' OK
+verlan - 'Object' OK
+capitalize - ' test' OK
 
-verlan - 'Object' OKChecking ucfirst
 
-Checking yoda
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OKChecking yoda
+capitalize - '_dipiscing elit' OK
 yoda - 'anaconda' OK
+capitalize - 'null' OK
 yoda - 'yoda m Luke' OK
+capitalize - 'Object' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
+
+
 yoda - ' ' OK
-yoda - 'null' OK
-ucfirst - 'test' OK
+yoda - 'null' OKChecking camelCase
 yoda - 'Object' OK
+camelCase - 'toggle case is the coolest' OK
 
 Checking vig
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
+camelCase - 'toggleCase is the coolest' OK
 vig - 'anticonstitutionnellement - foo' OK
-ucfirst - 'TEST' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 vig - 'antiConstiTutioNnellement - foo' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-
-Checking capitalize
+camelCase - 'ToggleCase is_the coolest' OK
 vig - ' - test' OK
+camelCase - ' toggleCase' OK
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+camelCase - 'null' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
-Checking prop_access
-capitalize - 'test' OK
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-prop_access - 'path exist - value array' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-prop_access - 'path not exist' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-prop_access - 'path empty' OK
 
-Checking camelCase
+camelCase - 'Object' OKChecking prop_access
+
+
+prop_access - 'path exist - value string' OKChecking snake_case
+prop_access - 'path exist - value object' OK
+snake_case - 'toggle case is the coolest' OK
+prop_access - 'path exist - value array' OK
+snake_case - 'toggleCase is the coolest' OK
+prop_access - 'path not exist' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+prop_access - 'path empty' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+snake_case - 'ToggleCase is_the coolest' OK
 prop_access - 'path null' OK
 
 
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
-
-Checking snake_case
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
