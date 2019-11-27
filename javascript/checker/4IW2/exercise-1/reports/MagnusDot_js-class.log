@@ -1,16 +1,12 @@
-Loading script...
 
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
-capitalize - 'test' OK
+capitalize - 'test' OKLoading script...
+
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
@@ -21,39 +17,127 @@ capitalize - 'Object' OK
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
+Starting tests...
+
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
+camelCase - ' toggleCase' OKChecking ucfirst
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
+ucfirst - 'test' OK
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
+ucfirst - ' test' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+ucfirst - 'Test' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+ucfirst - 'TEST' OK
+snake_case - 'ToggleCase is_the coolest' OK
+ucfirst - 'null' OK
+snake_case - ' toggleCase' OK
+ucfirst - 'Object' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+
+
+Checking leetChecking capitalize
+leet - 'anaconda' OK
+capitalize - 'test' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+capitalize - ' test' OK
+leet - 'evaluation' OK
+capitalize - 'ipsum DOLOR' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+capitalize - 'sit 8met consectetur' OK
+leet - 'null' OK
+capitalize - '_dipiscing elit' OK
+leet - 'Object' OK
+
+Checking verlan
+capitalize - 'null' OK
+verlan - 'anaconda' OK
+capitalize - 'Object' OK
+verlan - 'kayak' OK
+
+
+verlan - 'yoda m Luke' OKChecking camelCase
+camelCase - 'toggle case is the coolest' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+camelCase - 'toggleCase is the coolest' OK
+verlan - 'null' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+verlan - 'Object' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+
+
+camelCase - 'ToggleCase is_the coolest' OKChecking yoda
+camelCase - ' toggleCase' OK
+yoda - 'anaconda' OK
+camelCase - 'null' OK
+yoda - 'yoda m Luke' OK
+camelCase - 'Object' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+
+
+yoda - ' ' OKChecking snake_case
+yoda - 'null' OK
+snake_case - 'toggle case is the coolest' OK
+yoda - 'Object' OK
+snake_case - 'toggleCase is the coolest' OK
+
+
+snake_case - 'ToggleCase is the 3oolest' OKChecking vig
+snake_case - 'ToggleCaseIsTheCool3st' OK
+vig - 'anticonstitutionnellement - foo' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 
 Checking leet
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 leet - 'leet' OK
+vig - 'Object - test' OK
 leet - 'yoda' OK
 leet - 'evaluation' OK
-leet - 'mon travail' OK
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
 
-Checking verlan
+
+leet - 'mon travail' OK
+leet - ' ' OKChecking prop_access
+leet - 'null' OK
+prop_access - 'path exist - value string' OK
+leet - 'Object' OK
+prop_access - 'path exist - value object' OK
+
+
+prop_access - 'path exist - value array' OKChecking verlan
+prop_access - 'path not exist' OK
 verlan - 'anaconda' OK
+prop_access - 'path empty' OK
 verlan - 'kayak' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 verlan - 'yoda m Luke' OK
+prop_access - 'path null' OK
 verlan - '70da m L(_)k3' OK
+
+
 verlan - ' ' OK
 verlan - 'null' OK
 verlan - 'Object' OK
