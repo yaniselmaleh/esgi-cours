@@ -1,61 +1,137 @@
-Loading script...
 
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
-capitalize - 'Object' OK
+capitalize - 'Object' OKLoading script...
+
 
 Checking camelCase
+Starting tests...
+Checking ucfirst
 camelCase - 'toggle case is the coolest' OK
+ucfirst - 'test' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
+ucfirst - ' test' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+ucfirst - 'Test' OK
 camelCase - 'ToggleCase is_the coolest' OK
+ucfirst - 'TEST' OK
 camelCase - ' toggleCase' OK
+ucfirst - 'null' OK
 camelCase - 'null' OK
+ucfirst - 'Object' OK
 camelCase - 'Object' OK
 
-Checking snake_case
+
+
+Checking capitalizeChecking snake_case
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+capitalize - 'test' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
+capitalize - ' test' OK
 
 Checking leet
+capitalize - 'ipsum DOLOR' OK
 leet - 'anaconda' OK
+capitalize - 'sit 8met consectetur' OK
 leet - 'anacoNDa' OK
+capitalize - '_dipiscing elit' OK
 leet - 'leet' OK
+capitalize - 'null' OK
 leet - 'yoda' OK
+capitalize - 'Object' OK
 leet - 'evaluation' OK
+
+Checking camelCase
 leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' OK
+camelCase - 'toggle case is the coolest' OK
 leet - 'Object' OK
+camelCase - 'toggleCase is the coolest' OK
 
 Checking verlan
+camelCase - 'ToggleCase is the 3oolest' OK
 verlan - 'anaconda' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'ToggleCase is_the coolest' OK
 verlan - 'kayak' OK
+camelCase - ' toggleCase' OK
 verlan - 'yoda m Luke' OK
+camelCase - 'null' OK
 verlan - '70da m L(_)k3' OK
+camelCase - 'Object' OK
 verlan - ' ' OK
+
+
 verlan - 'null' OK
+verlan - 'Object' OKChecking snake_case
+
+
+snake_case - 'toggle case is the coolest' OKChecking yoda
+snake_case - 'toggleCase is the coolest' OK
+yoda - 'anaconda' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+yoda - 'yoda m Luke' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+yoda - ' ' OK
+snake_case - 'null' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+snake_case - 'Object' OK
+
+
+
+Checking vigChecking leet
+leet - 'anaconda' OK
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnqCsGHnHIywCsBsqzsrsBy"
+leet - 'anacoNDa' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnQCsGHn7IywCSBsqzsrsBy"
+leet - 'leet' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "HnA zkvcziyGrAsjGrAsjospnyDmmwiCmqQijqibCiTG wbCBlQmoqxbymDA ziBr yaBcgblwSmjQsDr QnjwiuA"
+leet - 'yoda' OK
+vig - ' - test' KO
+	expected : " " - got "s"
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+leet - ' ' OK
+vig - 'Object - test' OK
+leet - 'null' OK
+
+
+leet - 'Object' OKChecking prop_access
+
+Checking verlan
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+verlan - 'anaconda' OK
+prop_access - 'path exist - value array' OK
+verlan - 'kayak' OK
+prop_access - 'path not exist' OK
+verlan - 'yoda m Luke' OK
+prop_access - 'path empty' OK
+verlan - '70da m L(_)k3' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+verlan - ' ' OK
+prop_access - 'path null' OK
+verlan - 'null' OK
+
+
 verlan - 'Object' OK
 
 Checking yoda
