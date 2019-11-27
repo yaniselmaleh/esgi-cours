@@ -1,27 +1,8 @@
+Loading script...
 
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "HnA zkvcziyGrAsjGrAsjospnyDmmwiCmqQijqibCiTG wbCBlQmoqxbymDA ziBr yaBcgblwSmjQsDr QnjwiuA"
-vig - ' - test' KO
-	expected : " " - got "s"
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-vig - 'Object - test' OKLoading script...
-
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
 Starting tests...
-
-prop_access - 'path empty' OKChecking ucfirst
+Checking ucfirst
 ucfirst - 'test' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
-
-
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
