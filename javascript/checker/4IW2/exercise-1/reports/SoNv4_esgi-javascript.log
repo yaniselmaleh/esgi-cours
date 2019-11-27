@@ -121,11 +121,11 @@ prop_access - 'path exist - value object' KO
 prop_access - 'path exist - value array' KO
 	expected : {"name":"cat"} - got undefined
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got **
+	expected : animal.gender not exist - got null
 prop_access - 'path empty' KO
 	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 prop_access - 'object null' KO
-	expected : test not exist - got **
+	expected : test not exist - got null
 prop_access - 'path null' KO
 	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 
