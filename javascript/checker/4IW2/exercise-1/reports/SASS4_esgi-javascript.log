@@ -19,53 +19,51 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got ["toggle case is the coolest"]
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got ["toggleCase is the coolest"]
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got ["ToggleCase is the 3oolest"]
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got ["ToggleCaseIsTheCoolest"]
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
-camelCase - ' toggleCase' OK
+	expected : "TogglecaseIsTheCoolest" - got ["ToggleCase is_the coolest"]
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got [" toggleCase"]
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got undefined
+	expected : "toggle_case_is_the_coolest" - got "togglecaseisthecoolest"
 snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got undefined
+	expected : "togglecase_is_the_coolest" - got "togglecaseisthecoolest"
 snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got undefined
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	expected : "togglecaseisthecool3st" - got undefined
+	expected : "togglecase_is_the_3oolest" - got "togglecaseisthe3oolest"
+snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got undefined
+	expected : "togglecase_is_the_coolest" - got "togglecaseis_thecoolest"
 snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got undefined
-snake_case - 'null' KO
-	expected : "" - got undefined
-snake_case - 'Object' KO
-	expected : "" - got undefined
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' OK
+snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "4n4c0nd4" - got "4nac0nda"
 leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "4n4c0ND4" - got "4nac0NDa"
 leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "l33t" - got "l3et"
+leet - 'yoda' OK
 leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "3v4l(_)4t10n" - got "3v4l_at10n"
 leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "m0n tr4v41l" - got "m0n tr4va1l"
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO

@@ -1,7 +1,22 @@
-Loading script...
 
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' OKLoading script...
+
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "4n4c0nd4"
+leet - 'leet' OK
+leet - 'yoda' OK
 Starting tests...
-Checking ucfirst
+
+leet - 'evaluation' OKChecking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
@@ -11,56 +26,95 @@ ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' OK
+leet - 'mon travail' OK
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+leet - ' ' OK
+leet - 'null' OK
 capitalize - 'ipsum DOLOR' OK
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 capitalize - 'sit 8met consectetur' OK
+
+
 capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
+capitalize - 'null' OKChecking verlan
 capitalize - 'Object' OK
 
-Checking camelCase
+
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implementedChecking camelCase
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'toggle case is the coolest' OK
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'toggleCase is the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'ToggleCase is the 3oolest' KO
 	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ToggleCase"
 camelCase - 'null' OK
-camelCase - 'Object' OK
 
-Checking snake_case
+
+camelCase - 'Object' OKChecking yoda
+
+
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implementedChecking snake_case
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "togglecase"
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 snake_case - 'null' OK
 snake_case - 'Object' OK
 
-Checking leet
+
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implementedChecking leet
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 leet - 'anaconda' OK
+
+
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
+	expected : "4n4c0ND4" - got "4n4c0nd4"Checking vig
 leet - 'leet' OK
 leet - 'yoda' OK
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
+leet - 'evaluation' OK
+leet - 'mon travail' OK
 leet - ' ' OK
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 leet - 'null' OK
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
-Checking verlan
+
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implementedChecking verlan
 verlan - 'anaconda' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'kayak' KO
@@ -71,34 +125,55 @@ verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 
-Checking yoda
+
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implementedChecking yoda
 yoda - 'anaconda' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 yoda - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+
+Checking prop_access
 yoda - 'Inverser la position des mots d’une phrase' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - ' ' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+prop_access - 'path exist - value string' OK
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+prop_access - 'path exist - value object' OK
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+prop_access - 'path exist - value array' OK
 
-Checking vig
+
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got nullChecking vig
 vig - 'anticonstitutionnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+prop_access - 'path empty' OK
 vig - 'antiConstiTutioNnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+prop_access - 'object null' KO
+	expected : test not exist - got null
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+prop_access - 'path null' OK
 vig - ' - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+
+
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'Object - test' KO
@@ -112,6 +187,6 @@ prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+	expected : test not exist - got null
 prop_access - 'path null' OK
 
