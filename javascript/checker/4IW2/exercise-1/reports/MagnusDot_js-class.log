@@ -1,30 +1,4 @@
-Loading script...
 
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
@@ -32,7 +6,8 @@ Checking snake_case
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCaseIsTheCool3st' OKLoading script...
+
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
@@ -40,42 +15,130 @@ snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' OK
+Starting tests...
+
 leet - 'anacoNDa' OK
+leet - 'leet' OKChecking ucfirst
+leet - 'yoda' OK
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+leet - 'evaluation' OK
+ucfirst - 'Test' OK
+leet - 'mon travail' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+
+leet - ' ' OKChecking capitalize
+capitalize - 'test' OK
+leet - 'null' OK
+capitalize - ' test' OK
+leet - 'Object' OK
+capitalize - 'ipsum DOLOR' OK
+
+
+capitalize - 'sit 8met consectetur' OKChecking verlan
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+verlan - 'anaconda' OK
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' OK
+verlan - 'kayak' OK
+camelCase - 'toggleCase is the coolest' OK
+verlan - 'yoda m Luke' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+verlan - '70da m L(_)k3' OK
+camelCase - 'ToggleCase is_the coolest' OK
+camelCase - ' toggleCase' OK
+verlan - ' ' OK
+camelCase - 'null' OK
+verlan - 'null' OK
+camelCase - 'Object' OK
+
+
+verlan - 'Object' OKChecking snake_case
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+
+
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OKChecking yoda
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+yoda - 'anaconda' OK
+snake_case - 'Object' OK
+
+
+yoda - 'yoda m Luke' OKChecking leet
+yoda - 'Inverser la position des mots d’une phrase' OK
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+yoda - ' ' OK
 leet - 'leet' OK
+yoda - 'null' OK
 leet - 'yoda' OK
 leet - 'evaluation' OK
+yoda - 'Object' OK
 leet - 'mon travail' OK
+
+
 leet - ' ' OK
-leet - 'null' OK
+leet - 'null' OKChecking vig
 leet - 'Object' OK
+vig - 'anticonstitutionnellement - foo' OK
 
 Checking verlan
 verlan - 'anaconda' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 verlan - 'kayak' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
+vig - ' - test' OK
 verlan - ' ' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 verlan - 'null' OK
+vig - 'Object - test' OK
 verlan - 'Object' OK
 
-Checking yoda
+
+
+Checking yodaChecking prop_access
 yoda - 'anaconda' OK
 yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
+prop_access - 'path exist - value string' OK
 yoda - ' ' OK
+prop_access - 'path exist - value object' OK
 yoda - 'null' OK
 yoda - 'Object' OK
+prop_access - 'path exist - value array' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' OK
+prop_access - 'path not exist' OK
 vig - 'antiConstiTutioNnellement - foo' KO
 	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
+prop_access - 'path empty' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 vig - ' - test' OK
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+prop_access - 'path null' OK
 vig - 'Object - test' OK
+
+
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
