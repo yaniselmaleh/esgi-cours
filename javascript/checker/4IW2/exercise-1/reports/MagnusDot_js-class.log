@@ -1,12 +1,23 @@
-Loading script...
 
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OKLoading script...
+
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
 Starting tests...
 Checking ucfirst
+capitalize - 'test' OK
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 ucfirst - 'Object' OK
 
 Checking capitalize
@@ -15,53 +26,107 @@ capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
+capitalize - 'ipsum DOLOR' OK
 capitalize - '_dipiscing elit' OK
+capitalize - 'sit 8met consectetur' OK
 capitalize - 'null' OK
+capitalize - '_dipiscing elit' OK
 capitalize - 'Object' OK
+capitalize - 'null' OK
 
 Checking camelCase
+capitalize - 'Object' OK
+camelCase - 'toggle case is the coolest' OK
+
+
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"Checking camelCase
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ToggleCase"
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
 camelCase - 'null' OK
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got "ToggleCase"
 camelCase - 'Object' OK
+camelCase - 'null' OK
 
-Checking snake_case
-snake_case - 'toggle case is the coolest' OK
+
+camelCase - 'Object' OKChecking snake_case
+
+
+snake_case - 'toggle case is the coolest' OKChecking snake_case
 snake_case - 'toggleCase is the coolest' OK
+snake_case - 'toggle case is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCase is_the coolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "togglecase"
+snake_case - 'ToggleCase is_the coolest' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+
+
+snake_case - 'null' OKChecking leet
+snake_case - 'Object' OK
+leet - 'anaconda' OK
 
 Checking leet
-leet - 'anaconda' OK
 leet - 'anacoNDa' KO
 	expected : "4n4c0ND4" - got "4n4c0nd4"
+leet - 'anaconda' OK
 leet - 'leet' OK
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "4n4c0nd4"
 leet - 'yoda' OK
+leet - 'leet' OK
 leet - 'evaluation' OK
+leet - 'yoda' OK
 leet - 'mon travail' OK
+leet - 'evaluation' OK
 leet - ' ' OK
+leet - 'mon travail' OK
 leet - 'null' OK
+leet - ' ' OK
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+leet - 'null' OK
 
-Checking verlan
+
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - str.toLowerCase is not a functionChecking verlan
+
+
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implementedChecking verlan
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'anaconda' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
@@ -69,13 +134,25 @@ verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 
-Checking yoda
+
+
+Checking yodaChecking yoda
 yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
@@ -83,31 +160,66 @@ yoda - 'Inverser la position des mots d’une phrase' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - ' ' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - ' ' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 
-Checking vig
+
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implementedChecking vig
+
+
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - "vig" not implementedChecking vig
 vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'anticonstitutionnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 
-Checking prop_access
-prop_access - 'path exist - value string' OK
+
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implementedChecking prop_access
+
+
+prop_access - 'path exist - value string' OKChecking prop_access
 prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
+prop_access - 'path exist - value string' OK
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
+prop_access - 'path empty' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
+prop_access - 'path exist - value array' OK
+prop_access - 'path null' OK
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
+
+
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
 	expected : test not exist - got null
