@@ -69,13 +69,13 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : ReferenceError - string is not defined
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : ReferenceError - string is not defined
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : ReferenceError - string is not defined
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got undefined
 vig - ' - test' KO
-	Unexpected behaviour : ReferenceError - string is not defined
+	expected : " " - got undefined
 vig - 'null - test' OK
 vig - 'Object - test' OK
 
