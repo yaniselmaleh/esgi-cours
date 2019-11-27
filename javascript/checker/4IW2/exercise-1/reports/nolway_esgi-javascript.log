@@ -20,17 +20,16 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
+	expected : "ToggleCaseIsTheCoolest" - got "toggleCaseIsTheCoolest"
 camelCase - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
+	expected : "TogglecaseIsTheCoolest" - got "togglecaseIsTheCoolest"
 camelCase - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
+	expected : "TogglecaseIsThe3oolest" - got "togglecaseIsThe3oolest"
 camelCase - 'ToggleCaseIsTheCoolest' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
+	expected : "Togglecaseisthecoolest" - got "togglecaseisthecoolest"
 camelCase - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
-camelCase - ' toggleCase' KO
-	Unexpected behaviour : TypeError - capitalize(...).join is not a function
+	expected : "TogglecaseIsTheCoolest" - got "togglecaseIstheCoolest"
+camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
@@ -39,8 +38,7 @@ snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "togglecase_isthe_coolest"
+snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
