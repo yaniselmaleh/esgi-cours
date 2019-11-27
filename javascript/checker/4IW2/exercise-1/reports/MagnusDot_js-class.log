@@ -1,17 +1,65 @@
-Loading script...
 
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking yodaLoading script...
+
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+
+Checking vig
 Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
-Checking capitalize
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implementedChecking ucfirst
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+ucfirst - 'test' OK
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+ucfirst - ' test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+ucfirst - 'Test' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+
+ucfirst - 'TEST' OKChecking prop_access
+ucfirst - 'null' OK
+prop_access - 'path exist - value string' OK
+ucfirst - 'Object' OK
+prop_access - 'path exist - value object' OK
+
+
+prop_access - 'path exist - value array' OKChecking capitalize
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
 capitalize - 'test' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
+prop_access - 'path null' OK
 capitalize - ' test' OK
+
+
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
