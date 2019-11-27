@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 14:45:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 14:45:42 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -41,12 +41,11 @@ snake_case - 'Object' OK
 Checking leet
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
-leet - 'leet' KO
-	expected : "l33t" - got "leet"
+leet - 'leet' OK
 leet - 'yoda' KO
 	expected : "70d4" - got "y0d4"
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "ev4lu4ti0n"
+	expected : "3v4l(_)4t10n" - got "3v4lu4ti0n"
 leet - 'mon travail' KO
 	expected : "m0n tr4v41l" - got "m0n tr4v4il"
 leet - ' ' OK
