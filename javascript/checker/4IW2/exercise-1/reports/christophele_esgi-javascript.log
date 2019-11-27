@@ -19,29 +19,30 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got undefined
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got undefined
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got undefined
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got undefined
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
+	expected : "TogglecaseIsTheCoolest" - got undefined
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got undefined
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - string.replace is not a function
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got "toggle_ case_ is_ the_ coolest"
-snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "toggle_case_ is_ the_ coolest"
-snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got "toggle_case_ is_ the_ 3oolest"
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	expected : "togglecaseisthecool3st" - got "toggle_case_is_the_cool3st"
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "toggle_case_ is_the_ coolest"
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got " toggle_case"
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
 
@@ -51,53 +52,46 @@ leet - 'anacoNDa' OK
 leet - 'leet' OK
 leet - 'yoda' OK
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l_4t10n"
-leet - 'mon travail' OK
+	expected : "3v4l(_)4t10n" - got "3v4l_4tundefined0n"
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "m0n tr4v4undefinedl"
 leet - ' ' OK
-leet - 'null' KO
-	Unexpected behaviour : TypeError - string is not iterable
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - string is not iterable
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' OK
 verlan - 'kayak' OK
-verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got "ekuL m adoy"
-verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+verlan - 'null' OK
 verlan - 'Object' OK
 
 Checking yoda
 yoda - 'anaconda' KO
-	expected : "anaconda" - got ["anaconda"]
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
 yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got ["Luke","m","yoda"]
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
 yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got ["phrase","d’une","mots","des","position","la","Inverser"]
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
 yoda - ' ' KO
-	expected : " " - got ["",""]
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - string.split is not a function
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
+yoda - 'null' OK
+yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "n{ zkvczi r{s r{s ospny~ mwi} qi qi }i wb}|lmoqx ym~{ zi|r ya| g lw js~r n wiu{"
+vig - ' - test' OK
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
