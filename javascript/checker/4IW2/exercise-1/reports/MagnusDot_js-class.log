@@ -1,21 +1,69 @@
-Loading script...
 
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlanLoading script...
+
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
 Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
-Checking capitalize
+
+Checking vigChecking ucfirst
+vig - 'anticonstitutionnellement - foo' OK
+ucfirst - 'test' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
+ucfirst - ' test' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hnazkvcziygrasjgrasjospnydmmwicmqqijqibcitgwbcblqmoqxbymdazibryabcgblwsmjqsdrqnjwiua"
+vig - ' - test' KO
+	expected : " " - got "s"
+ucfirst - 'Test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+ucfirst - 'TEST' OK
+vig - 'Object - test' OK
+ucfirst - 'null' OK
+
+
+ucfirst - 'Object' OKChecking prop_access
+
+
+prop_access - 'path exist - value string' OKChecking capitalize
+prop_access - 'path exist - value object' OK
 capitalize - 'test' OK
+prop_access - 'path exist - value array' OK
 capitalize - ' test' OK
+prop_access - 'path not exist' OK
 capitalize - 'ipsum DOLOR' OK
+prop_access - 'path empty' OK
 capitalize - 'sit 8met consectetur' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 capitalize - '_dipiscing elit' OK
+prop_access - 'path null' OK
 capitalize - 'null' OK
+
+
 capitalize - 'Object' OK
 
 Checking camelCase
