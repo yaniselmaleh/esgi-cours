@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 15:35:46 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 15:36:18 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -42,22 +42,21 @@ snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "anaconda"
+	expected : "4n4c0nd4" - got ""
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "anacoNDa"
+	expected : "4n4c0ND4" - got ""
 leet - 'leet' KO
-	expected : "l33t" - got "leet"
+	expected : "l33t" - got ""
 leet - 'yoda' KO
-	expected : "70d4" - got "yoda"
+	expected : "70d4" - got ""
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "evaluation"
+	expected : "3v4l(_)4t10n" - got ""
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon travail"
-leet - ' ' OK
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - chr.toLowerCase is not a function
+	expected : "m0n tr4v41l" - got ""
+leet - ' ' KO
+	expected : " " - got ""
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
