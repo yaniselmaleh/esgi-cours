@@ -1,208 +1,178 @@
-Checking ucfirstLoading script...
 
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+camelCase - 'Object' OK
 
-Checking capitalize
-Starting tests...
-
-capitalize - 'test' OK
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefinedChecking ucfirst
-capitalize - 'ipsum DOLOR' OK
-ucfirst - 'test' OK
-capitalize - 'sit 8met consectetur' OK
-ucfirst - ' test' OK
-capitalize - '_dipiscing elit' OK
-ucfirst - 'Test' OK
-capitalize - 'null' OK
-ucfirst - 'TEST' OK
-capitalize - 'Object' OK
-ucfirst - 'null' OK
-
-
-ucfirst - 'Object' OKChecking camelCase
-
-
-camelCase - 'toggle case is the coolest' OKChecking capitalize
-camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-capitalize - 'test' OK
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
-capitalize - 'ipsum DOLOR' OK
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-capitalize - 'null' OK
-camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "ToggleCase"
-capitalize - 'Object' OK
-camelCase - 'null' OK
-
-
-camelCase - 'Object' OKChecking camelCase
-
-
-camelCase - 'toggle case is the coolest' OKChecking snake_case
+Checking snake_case
 snake_case - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 snake_case - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
 snake_case - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
 snake_case - 'ToggleCaseIsTheCool3st' OK
-camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "ToggleCase"
 snake_case - 'ToggleCase is_the coolest' OK
-camelCase - 'null' OK
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "togglecase"
-camelCase - 'Object' OK
 snake_case - 'null' OK
+snake_case - 'Object' OK
 
-
-snake_case - 'Object' OKChecking snake_case
-
-
-snake_case - 'toggle case is the coolest' OKChecking leet
-snake_case - 'toggleCase is the coolest' OK
+Checking leet
 leet - 'anaconda' OK
-snake_case - 'ToggleCase is the 3oolest' OK
 leet - 'anacoNDa' KO
 	expected : "4n4c0ND4" - got "4n4c0nd4"
-snake_case - 'ToggleCaseIsTheCool3st' OK
 leet - 'leet' OK
-snake_case - 'ToggleCase is_the coolest' OK
-leet - 'yoda' OK
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
+leet - 'yoda' OKLoading script...
+
 leet - 'evaluation' KO
 	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
-snake_case - 'null' OK
 leet - 'mon travail' KO
 	expected : "m0n tr4v41l" - got "m0n tr4v4il"
-snake_case - 'Object' OK
 leet - ' ' OK
 leet - 'null' OK
-
+Starting tests...
 
 leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a functionChecking leet
+	Unexpected behaviour : TypeError - str.toLowerCase is not a functionChecking ucfirst
 
 Checking verlan
-leet - 'anaconda' OK
 verlan - 'anaconda' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
+ucfirst - 'test' OK
 verlan - 'kayak' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - 'leet' OK
+ucfirst - ' test' OK
 verlan - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - 'yoda' OK
+ucfirst - 'Test' OK
 verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
+ucfirst - 'TEST' OK
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
+
+Checking capitalize
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-leet - ' ' OK
+capitalize - 'test' OK
 
-
-leet - 'null' OKChecking yoda
+Checking yoda
 yoda - 'anaconda' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 yoda - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-
-
+capitalize - 'ipsum DOLOR' OK
 yoda - 'Inverser la position des mots d’une phrase' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+capitalize - 'sit 8met consectetur' OK
 yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implementedChecking verlan
+	Unexpected behaviour : TypeError - "yoda" not implemented
+capitalize - '_dipiscing elit' OK
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+capitalize - 'null' OK
+capitalize - 'Object' OK
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking camelCase
 
 
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedChecking vig
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+camelCase - 'toggle case is the coolest' OKChecking vig
 vig - 'anticonstitutionnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
 vig - 'antiConstiTutioNnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 vig - ' - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
 
 
-
-Checking yodaChecking prop_access
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got "ToggleCase"Checking prop_access
+camelCase - 'null' OK
 prop_access - 'path exist - value string' OK
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - 'Object' OK
 prop_access - 'path exist - value object' OK
+
+Checking snake_case
 prop_access - 'path exist - value array' OK
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'toggle case is the coolest' OK
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'toggleCase is the coolest' OK
 prop_access - 'path empty' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+snake_case - 'ToggleCase is the 3oolest' OK
 prop_access - 'path null' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+
+
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "4n4c0nd4"
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "m0n tr4v4il"
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+
+Checking verlan
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking yoda
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-
-
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
