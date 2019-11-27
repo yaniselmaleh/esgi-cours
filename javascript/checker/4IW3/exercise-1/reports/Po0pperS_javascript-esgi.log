@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 19:11:04 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 19:11:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -20,11 +20,11 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got "ToggleCase Is The Coolest"
+	expected : "ToggleCaseIsTheCoolest" - got "ToggleCaseIs The Coolest"
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs The Coolest"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIsThe Coolest"
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "TogglecaseIs The 3oolest"
+	expected : "TogglecaseIsThe3oolest" - got "TogglecaseIsThe 3oolest"
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
