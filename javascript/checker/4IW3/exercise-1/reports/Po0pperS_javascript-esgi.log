@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 19:27:02 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 19:27:34 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -81,6 +81,6 @@ prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' OK
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
-	expected : test not exist - got null
+	Unexpected behaviour : TypeError - Cannot read property 'test' of null
 prop_access - 'path null' OK
 
