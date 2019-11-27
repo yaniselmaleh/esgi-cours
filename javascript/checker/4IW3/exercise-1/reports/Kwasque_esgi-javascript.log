@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 14:10:53 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 14:11:23 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -34,3 +34,8 @@ snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
