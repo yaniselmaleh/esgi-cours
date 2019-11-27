@@ -1,60 +1,149 @@
 Loading script...
+Loading script...
 
 Starting tests...
-Checking ucfirst
+
+Starting tests...
+Checking ucfirstChecking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
+ucfirst - 'test' OK
 ucfirst - 'Test' OK
+ucfirst - ' test' OK
 ucfirst - 'TEST' OK
+ucfirst - 'Test' OK
 ucfirst - 'null' OK
+ucfirst - 'TEST' OK
+ucfirst - 'Object' OK
+ucfirst - 'null' OK
+
+
 ucfirst - 'Object' OK
 
-Checking capitalize
+Checking capitalizeChecking capitalize
+capitalize - 'test' OK
 capitalize - 'test' OK
 capitalize - ' test' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
+
+
+camelCase - 'toggle case is the coolest' OKChecking camelCase
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'toggle case is the coolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
+camelCase - 'toggleCase is the coolest' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 
 Checking snake_case
+camelCase - 'ToggleCaseIsTheCoolest' OK
 snake_case - 'toggle case is the coolest' OK
+camelCase - 'ToggleCase is_the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
+camelCase - ' toggleCase' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+camelCase - 'null' OK
 snake_case - 'ToggleCase is_the coolest' OK
+camelCase - 'Object' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
+
+
 snake_case - 'Object' OK
 
-Checking leet
+Checking snake_caseChecking leet
 leet - 'anaconda' OK
+snake_case - 'toggle case is the coolest' OK
 leet - 'anacoNDa' OK
 leet - 'leet' OK
+snake_case - 'toggleCase is the coolest' OK
 leet - 'yoda' OK
 leet - 'evaluation' OK
+snake_case - 'ToggleCase is the 3oolest' OK
 leet - 'mon travail' OK
 leet - ' ' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
 leet - 'null' OK
 leet - 'Object' OK
+snake_case - 'ToggleCase is_the coolest' OK
 
 Checking verlan
+snake_case - ' toggleCase' OK
 verlan - 'anaconda' OK
+snake_case - 'null' OK
 verlan - 'kayak' OK
+snake_case - 'Object' OK
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
+
+
 verlan - ' ' OK
+verlan - 'null' OKChecking leet
+verlan - 'Object' OK
+
+
+leet - 'anaconda' OKChecking yoda
+yoda - 'anaconda' OK
+leet - 'anacoNDa' OK
+yoda - 'yoda m Luke' OK
+leet - 'leet' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+leet - 'yoda' OK
+yoda - ' ' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+
+
+leet - ' ' OKChecking vig
+vig - 'anticonstitutionnellement - foo' OK
+leet - 'null' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
+leet - 'Object' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
+
+
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' OKChecking verlan
+
+Checking prop_access
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+verlan - 'anaconda' OK
+prop_access - 'path not exist' OK
+verlan - 'kayak' OK
+prop_access - 'path empty' OK
+verlan - 'yoda m Luke' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+verlan - '70da m L(_)k3' OK
+prop_access - 'path null' OK
+verlan - ' ' OK
+
+
 verlan - 'null' OK
 verlan - 'Object' OK
 
