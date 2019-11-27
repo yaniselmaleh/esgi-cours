@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 14:16:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 14:17:19 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -75,22 +75,3 @@ vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c e
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got undefined
 vig - ' - test' KO
 	expected : " " - got undefined
-vig - 'null - test' OK
-vig - 'Object - test' OK
-
-Checking prop_access
-prop_access - 'path exist - value string' KO
-	expected : "dog" - got ""
-prop_access - 'path exist - value object' KO
-	expected : {"name":"dog"} - got ""
-prop_access - 'path exist - value array' KO
-	expected : {"name":"cat"} - got ""
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-prop_access - 'object null' KO
-	expected : test not exist - got null
-prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-
