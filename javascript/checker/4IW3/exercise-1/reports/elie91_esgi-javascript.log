@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 15:05:31 GMT+0100 (heure normale d’Europe centrale) - Starting tests...
+Wed Nov 27 2019 14:07:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	expected : "Test" - got "Erreur sur la string"
@@ -134,11 +134,3 @@ Checking prop_access
 prop_access - 'path exist - value string' OK
 prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'test' of null
-prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-
