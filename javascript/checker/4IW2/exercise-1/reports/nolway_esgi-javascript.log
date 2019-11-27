@@ -23,8 +23,7 @@ camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
+camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
@@ -93,7 +92,7 @@ prop_access - 'path not exist' KO
 prop_access - 'path empty' KO
 	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 prop_access - 'object null' KO
-	expected : test not exist - got null
+	Unexpected behaviour : TypeError - Cannot read property 'test' of null
 prop_access - 'path null' KO
 	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 
