@@ -1,153 +1,180 @@
 
+Starting tests...
+Checking ucfirst
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefinedLoading script...
+
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
+Starting tests...
+
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"Checking ucfirst
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+ucfirst - 'test' OK
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ToggleCase"
+ucfirst - ' test' OK
 camelCase - 'null' OK
+ucfirst - 'Test' OK
 camelCase - 'Object' OK
+ucfirst - 'TEST' OK
 
-Checking snake_case
-snake_case - 'toggle case is the coolest' OKLoading script...
 
+ucfirst - 'null' OKChecking snake_case
+ucfirst - 'Object' OK
+
+
+snake_case - 'toggle case is the coolest' OKChecking capitalize
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+capitalize - 'test' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
+capitalize - ' test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "togglecase"
 snake_case - 'null' OK
 snake_case - 'Object' OK
+capitalize - 'ipsum DOLOR' OK
 
-Checking leet
+
+capitalize - 'sit 8met consectetur' OKChecking leet
 leet - 'anaconda' OK
+capitalize - '_dipiscing elit' OK
 leet - 'anacoNDa' KO
 	expected : "4n4c0ND4" - got "4n4c0nd4"
+capitalize - 'null' OK
 leet - 'leet' OK
-Starting tests...
-
-leet - 'yoda' OKChecking ucfirst
+leet - 'yoda' OK
+capitalize - 'Object' OK
 leet - 'evaluation' OK
+
+
 leet - 'mon travail' OK
-leet - ' ' OK
+leet - ' ' OKChecking camelCase
 leet - 'null' OK
-ucfirst - 'test' OK
-ucfirst - ' test' OK
+camelCase - 'toggle case is the coolest' OK
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-
-
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalizeChecking verlan
-capitalize - 'test' OK
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-capitalize - 'Object' OK
-
-
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedChecking camelCase
-camelCase - 'toggle case is the coolest' OK
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-
 camelCase - 'toggleCase is the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+
+Checking verlan
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"Checking yoda
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ToggleCase"
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'null' OK
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 camelCase - 'Object' OK
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 
 Checking snake_case
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+
+snake_case - 'toggle case is the coolest' OKChecking yoda
+snake_case - 'toggleCase is the coolest' OK
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'ToggleCase is the 3oolest' OK
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'ToggleCaseIsTheCool3st' OK
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'ToggleCase is_the coolest' OK
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' OK
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'Object' OK
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 
+Checking leet
 
-snake_case - 'toggle case is the coolest' OKChecking vig
+
+leet - 'anaconda' OKChecking vig
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "4n4c0nd4"
 vig - 'anticonstitutionnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
+leet - 'leet' OK
+leet - 'yoda' OK
 vig - 'antiConstiTutioNnellement - foo' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-snake_case - 'ToggleCaseIsTheCool3st' OK
+leet - 'evaluation' OK
 vig - ' - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-snake_case - 'ToggleCase is_the coolest' OK
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
+leet - 'mon travail' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
-snake_case - 'null' OK
+leet - ' ' OK
 
-
-snake_case - 'Object' OKChecking prop_access
-
-Checking leet
+Checking prop_access
+leet - 'null' OK
 prop_access - 'path exist - value string' OK
 prop_access - 'path exist - value object' OK
-leet - 'anaconda' OK
-prop_access - 'path exist - value array' OK
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-leet - 'leet' OK
-prop_access - 'path empty' OK
-leet - 'yoda' OK
-prop_access - 'object null' KO
-	expected : test not exist - got null
-prop_access - 'path null' OK
-leet - 'evaluation' OK
-
-
-leet - 'mon travail' OK
-leet - ' ' OK
-leet - 'null' OK
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+prop_access - 'path exist - value array' OK
 
-Checking verlan
+
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got nullChecking verlan
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
 verlan - 'anaconda' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
+prop_access - 'path null' OK
+
+
 verlan - 'kayak' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'yoda m Luke' KO
