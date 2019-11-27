@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 11:43:16 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 11:43:54 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -67,32 +67,28 @@ yoda - 'null' OK
 yoda - 'Object' OK
 
 Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hnazkvcziygrasjgrasjospnydmmwicmqqijqibcitgwbcblqmoqxbymdazibryabcgblwsmjqsdrqnjwiua"
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : " " - got "s"
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "" - got undefined
 vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "" - got undefined
 
 Checking prop_access
-prop_access - 'path exist - value string' KO
-	expected : "dog" - got true
-prop_access - 'path exist - value object' KO
-	expected : {"name":"dog"} - got true
-prop_access - 'path exist - value array' KO
-	expected : {"name":"cat"} - got true
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got true
+	expected : {"animal":{"type":{"name":"dog"}}} - got " not exist"
 prop_access - 'object null' KO
-	expected : test not exist - got null
+	Unexpected behaviour : TypeError - Cannot read property 'test' of null
 prop_access - 'path null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 
