@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 11:38:00 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 11:38:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -19,11 +19,15 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "Togglecaseisthecoolest"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "Togglecaseisthecoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "Togglecaseistheoolest"
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "Togglecaseisthecoolest"
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
@@ -43,7 +47,8 @@ leet - 'anaconda' OK
 leet - 'anacoNDa' OK
 leet - 'leet' OK
 leet - 'yoda' OK
-leet - 'evaluation' OK
+leet - 'evaluation' KO
+	Unexpected behaviour : ReferenceError - _ is not defined
 leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' OK
@@ -67,18 +72,15 @@ yoda - 'null' OK
 yoda - 'Object' OK
 
 Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
-vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
+vig - 'anticonstitutionnellement - foo' OK
+vig - 'antiConstiTutioNnellement - foo' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got undefined
-vig - ' - test' KO
-	expected : " " - got undefined
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
 vig - 'null - test' KO
-	expected : "" - got undefined
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 vig - 'Object - test' KO
-	expected : "" - got undefined
+	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
