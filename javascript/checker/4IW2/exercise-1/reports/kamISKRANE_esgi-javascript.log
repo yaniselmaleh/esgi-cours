@@ -93,6 +93,6 @@ prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'test' of null
+	expected : test not exist - got null
 prop_access - 'path null' OK
 
