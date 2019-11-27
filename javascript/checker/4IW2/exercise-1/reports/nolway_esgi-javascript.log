@@ -20,17 +20,17 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - 'toggleCase is the coolest' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - 'ToggleCaseIsTheCoolest' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - ' toggleCase' KO
-	Unexpected behaviour : ReferenceError - captitalize is not defined
+	Unexpected behaviour : TypeError - capitalize(...).join is not a function
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
