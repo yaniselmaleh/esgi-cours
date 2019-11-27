@@ -68,20 +68,17 @@ leet - 'null' KO
 leet - 'Object' OK
 
 Checking verlan
-verlan - 'anaconda' KO
-	expected : "adnocana" - got undefined
-verlan - 'kayak' KO
-	expected : "kayak" - got undefined
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
 verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got undefined
+	expected : "adoy m ekuL" - got "ekuL m adoy"
 verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got undefined
-verlan - ' ' KO
-	expected : " " - got undefined
+	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - ' ' OK
 verlan - 'null' KO
-	expected : "" - got undefined
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 verlan - 'Object' KO
-	expected : "" - got undefined
+	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking yoda
 yoda - 'anaconda' KO
