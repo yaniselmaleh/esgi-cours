@@ -1,77 +1,34 @@
-Checking type_check_v1Loading script...
+Loading script...
 
+Wed Nov 27 2019 11:53:37 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' OK
 type_check_v1 - 'null' OK
-Wed Nov 27 2019 11:52:57 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
 type_check_v1 - 'nullNotObject' KO
-	expected : false - got trueChecking type_check_v1
+	expected : false - got true
 type_check_v1 - 'undefined' KO
 	expected : true - got false
 type_check_v1 - 'string' OK
-type_check_v1 - 'number' OK
 type_check_v1 - 'array' OK
-type_check_v1 - 'StringNotNumber' OK
-type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'function' KO
 	expected : true - got false
-type_check_v1 - 'object' OK
-type_check_v1 - 'null' OK
 type_check_v1 - 'arrayNotObject' KO
 	expected : false - got true
-type_check_v1 - 'nullNotObject' KO
-	expected : false - got true
-type_check_v1 - 'undefined' KO
-	expected : true - got false
 
-
-type_check_v1 - 'string' OKChecking type_check_v2
-type_check_v1 - 'array' OK
-type_check_v1 - 'function' KO
-	expected : true - got false
+Checking type_check_v2
 type_check_v2 - 'number' KO
 	expected : true - got false
-type_check_v1 - 'arrayNotObject' KO
-	expected : false - got true
 type_check_v2 - 'numberNotValue' OK
-
-
-type_check_v2 - 'numberNotObject' OKChecking type_check_v2
+type_check_v2 - 'numberNotObject' OK
 type_check_v2 - 'stringEnum' OK
-type_check_v2 - 'number' KO
-	expected : true - got false
-type_check_v2 - 'numberNotValue' OK
 type_check_v2 - 'objectMatch' KO
 	expected : true - got false
 type_check_v2 - 'objectNotMatch' OK
 
-
-type_check_v2 - 'numberNotObject' OKChecking type_check
-type_check - 'number' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'numberNotValue' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check_v2 - 'stringEnum' OK
-type_check - 'numberNotObject' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check_v2 - 'objectMatch' KO
-	expected : true - got false
-type_check_v2 - 'objectNotMatch' OK
-type_check - 'stringEnum' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-
-
-type_check - 'objectMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'objectNotMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'objectSuperMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implementedChecking type_check
-
-
+Checking type_check
 type_check - 'number' KO
 	Unexpected behaviour : TypeError - "type_check" not implemented
 type_check - 'numberNotValue' KO
