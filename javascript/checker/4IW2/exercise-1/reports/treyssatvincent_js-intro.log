@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 12:59:02 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 12:59:54 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -37,55 +37,3 @@ snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
-
-Checking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OK
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-yoda - 'Object' OK
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' OK
-prop_access - 'path null' OK
-
