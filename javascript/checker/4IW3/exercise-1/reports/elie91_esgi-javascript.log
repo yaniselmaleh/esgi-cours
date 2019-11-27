@@ -1,120 +1,89 @@
 Loading script...
 
-Wed Nov 27 2019 14:08:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 15:14:34 GMT+0100 (heure normale d’Europe centrale) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' KO
-	expected : "Test" - got "Erreur sur la string"
-ucfirst - ' test' KO
-	expected : " test" - got "Erreur sur la string"
-ucfirst - 'Test' KO
-	expected : "Test" - got "Erreur sur la string"
-ucfirst - 'TEST' KO
-	expected : "TEST" - got "Erreur sur la string"
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
 ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+	expected : "" - got "Erreur sur la string"
 
 Checking capitalize
-capitalize - 'test' KO
-	expected : "Test" - got "Erreur sur la string"
+capitalize - 'test' OK
 capitalize - ' test' KO
-	expected : " Test" - got "Erreur sur la string"
-capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got "Erreur sur la string"
-capitalize - 'sit 8met consectetur' KO
-	expected : "Sit 8met Consectetur" - got "Erreur sur la string"
+	expected : " Test" - got "Erreur sur la string Test"
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' KO
-	expected : "_dipiscing Elit" - got "Erreur sur la string"
+	expected : "_dipiscing Elit" - got "Erreur sur la string Dipiscing Elit"
 capitalize - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+	expected : "" - got "Erreur sur la string"
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got "Erreur sur la string"
-camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "Erreur sur la string"
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "Erreur sur la string"
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got "Erreur sur la string"
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "Erreur sur la string"
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "Erreur sur la string"
+	expected : "Togglecase" - got "ErreursurlastringTogglecase"
 camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+	expected : "" - got "Erreur sur la string"
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got "Erreur sur la string"
-snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "Erreur sur la string"
-snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got "Erreur sur la string"
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	expected : "togglecaseisthecool3st" - got "Erreur sur la string"
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "Erreur sur la string"
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "Erreur sur la string"
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
 snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a function
+	expected : "" - got "Erreur sur la string"
 
 Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "Erreur sur la string"
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "Erreur sur la string"
-leet - 'leet' KO
-	expected : "l33t" - got "Erreur sur la string"
-leet - 'yoda' KO
-	expected : "70d4" - got "Erreur sur la string"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "Erreur sur la string"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "Erreur sur la string"
-leet - ' ' KO
-	expected : " " - got "Erreur sur la string"
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
 leet - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-leet - 'Object' OK
+leet - 'Object' KO
+	expected : "" - got "Erreur sur la string"
 
 Checking verlan
-verlan - 'anaconda' KO
-	expected : "adnocana" - got "Erreur sur la string"
-verlan - 'kayak' KO
-	expected : "kayak" - got "Erreur sur la string"
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
 verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got "Erreur sur la string"
+	expected : "adoy m ekuL" - got "ekuL m adoy"
 verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got "Erreur sur la string"
-verlan - ' ' KO
-	expected : " " - got "Erreur sur la string"
+	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - ' ' OK
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 verlan - 'Object' KO
-	Unexpected behaviour : TypeError - str.split is not a function
+	expected : "" - got "Erreur sur la string"
 
 Checking yoda
-yoda - 'anaconda' KO
-	expected : "anaconda" - got "Erreur sur la string"
-yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got "Erreur sur la string"
-yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got "Erreur sur la string"
-yoda - ' ' KO
-	expected : " " - got "Erreur sur la string"
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
 yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 yoda - 'Object' KO
-	Unexpected behaviour : TypeError - str.split is not a function
+	expected : "" - got "Erreur sur la string"
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO

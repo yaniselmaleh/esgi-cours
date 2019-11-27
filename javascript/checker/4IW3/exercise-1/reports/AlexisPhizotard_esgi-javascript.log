@@ -1,13 +1,13 @@
 Loading script...
 Invalid script: ReferenceError: leet is not defined
 ReferenceError: leet is not defined
-    at Object.<anonymous> (/4IW3/exercise-1/scripts/AlexisPhizotard_esgi-javascript.js:47:9)
-    at Module._compile (internal/modules/cjs/loader.js:701:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
-    at Module.load (internal/modules/cjs/loader.js:600:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
-    at Module.require (internal/modules/cjs/loader.js:637:17)
-    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (/4IW3/exercise-1/scripts/AlexisPhizotard_esgi-javascript.js:70:23)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
     at startTest (/executor.js:41:21)
-    at process.on (/executor.js:118:9)
+    at process.<anonymous> (/executor.js:118:9)
+    at process.emit (events.js:203:13)
