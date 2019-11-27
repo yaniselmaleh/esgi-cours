@@ -1,7 +1,7 @@
 Loading script...
 Invalid script: ReferenceError: leet is not defined
 ReferenceError: leet is not defined
-    at Object.<anonymous> (/4IW3/exercise-1/scripts/AlexisPhizotard_esgi-javascript.js:70:23)
+    at Object.<anonymous> (/4IW3/exercise-1/scripts/AlexisPhizotard_esgi-javascript.js:48:9)
     at Module._compile (internal/modules/cjs/loader.js:701:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
     at Module.load (internal/modules/cjs/loader.js:600:32)
