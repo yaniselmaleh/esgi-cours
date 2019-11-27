@@ -1,8 +1,3 @@
-
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
-
 Loading script...
 
 Starting tests...
