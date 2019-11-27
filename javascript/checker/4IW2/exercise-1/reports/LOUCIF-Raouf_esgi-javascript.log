@@ -56,40 +56,32 @@ snake_case - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
 Checking leet
-leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
 leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adnocana" - got undefined
 verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "kayak" - got undefined
 verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adoy m ekuL" - got undefined
 verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "ad07 m 3k)_(L" - got undefined
 verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : " " - got undefined
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "" - got undefined
 verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "" - got undefined
 
 Checking yoda
 yoda - 'anaconda' KO

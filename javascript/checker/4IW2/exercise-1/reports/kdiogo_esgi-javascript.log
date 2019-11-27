@@ -39,20 +39,13 @@ snake_case - 'null' OK
 snake_case - 'Object' OK
 
 Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
-leet - 'leet' KO
-	expected : "l33t" - got "undefinedundefinedundefinedundefined"
-leet - 'yoda' KO
-	expected : "70d4" - got "undefinedundefinedundefinedundefined"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
-leet - ' ' KO
-	expected : " " - got "undefined"
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
 
