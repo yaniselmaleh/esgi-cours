@@ -1,13 +1,13 @@
 Loading script...
 
-Wed Nov 27 2019 15:18:15 GMT+0100 (heure normale d’Europe centrale) - Starting tests...
+Wed Nov 27 2019 14:19:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 ucfirst - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -20,7 +20,7 @@ capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' KO
 	expected : "_dipiscing Elit" - got "Erreur sur la string Dipiscing Elit"
 capitalize - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 capitalize - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -33,7 +33,7 @@ camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ErreursurlastringTogglecase"
 camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 camelCase - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -45,7 +45,7 @@ snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 snake_case - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -58,7 +58,7 @@ leet - 'evaluation' OK
 leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 leet - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -71,7 +71,7 @@ verlan - '70da m L(_)k3' KO
 	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
 verlan - ' ' OK
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 verlan - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
@@ -81,7 +81,7 @@ yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
 yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+	expected : "" - got "Erreur sur la string"
 yoda - 'Object' KO
 	expected : "" - got "Erreur sur la string"
 
