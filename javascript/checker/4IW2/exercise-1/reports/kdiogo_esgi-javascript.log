@@ -19,12 +19,18 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "toggleCaseIsTheCoolest"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "toggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got "ToggleCase"
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
@@ -45,19 +51,19 @@ snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got undefined
+	expected : "4n4c0nd4" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got undefined
+	expected : "4n4c0ND4" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
 leet - 'leet' KO
-	expected : "l33t" - got undefined
+	expected : "l33t" - got "undefinedundefinedundefinedundefined"
 leet - 'yoda' KO
-	expected : "70d4" - got undefined
+	expected : "70d4" - got "undefinedundefinedundefinedundefined"
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got undefined
+	expected : "3v4l(_)4t10n" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got undefined
+	expected : "m0n tr4v41l" - got "undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined"
 leet - ' ' KO
-	expected : " " - got undefined
+	expected : " " - got "undefined"
 leet - 'null' OK
 leet - 'Object' OK
 
