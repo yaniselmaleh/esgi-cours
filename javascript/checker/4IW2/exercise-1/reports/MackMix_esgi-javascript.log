@@ -19,12 +19,15 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "Togglecaseisthecoolest"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "Togglecaseisthecoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "Togglecaseistheoolest"
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+	expected : "TogglecaseIsTheCoolest" - got "Togglecaseisthecoolest"
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK

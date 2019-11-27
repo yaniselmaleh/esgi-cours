@@ -19,33 +19,23 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got ["toggle case is the coolest"]
-camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ["toggleCase is the coolest"]
-camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got ["ToggleCase is the 3oolest"]
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got ["ToggleCaseIsTheCoolest"]
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ["ToggleCase is_the coolest"]
-camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got [" toggleCase"]
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
+camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got "togglecaseisthecoolest"
-snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "togglecaseisthecoolest"
-snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got "togglecaseisthe3oolest"
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "togglecaseis_thecoolest"
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
 

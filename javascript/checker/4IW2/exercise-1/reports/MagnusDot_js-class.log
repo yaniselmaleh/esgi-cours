@@ -1,36 +1,99 @@
-Loading script...
 
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OKLoading script...
+
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+Starting tests...
+
+leet - 'Object' OK
+
+Checking verlanChecking ucfirst
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+ucfirst - 'test' OK
+verlan - ' ' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+verlan - 'null' OK
+ucfirst - 'TEST' OK
+verlan - 'Object' OK
+ucfirst - 'null' OK
+
+
+ucfirst - 'Object' OKChecking yoda
+
+Checking capitalize
+yoda - 'anaconda' OK
+capitalize - 'test' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
+yoda - 'Object' OK
+capitalize - 'sit 8met consectetur' OK
+
+
+capitalize - '_dipiscing elit' OKChecking vig
+capitalize - 'null' OK
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnqCsGHnHIywCsBsqzsrsBy"
+capitalize - 'Object' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnQCsGHn7IywCSBsqzsrsBy"
+
+Checking camelCase
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "HnA zkvcziyGrAsjGrAsjospnyDmmwiCmqQijqibCiTG wbCBlQmoqxbymDA ziBr yaBcgblwSmjQsDr QnjwiuA"
+vig - ' - test' KO
+	expected : " " - got "s"
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' OK
+camelCase - 'toggle case is the coolest' OK
+
+
+camelCase - 'toggleCase is the coolest' OKChecking prop_access
+camelCase - 'ToggleCase is the 3oolest' OK
+prop_access - 'path exist - value string' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+camelCase - 'ToggleCase is_the coolest' OK
+camelCase - ' toggleCase' OK
+prop_access - 'path not exist' OK
+camelCase - 'null' OK
+camelCase - 'Object' OK
+prop_access - 'path empty' OK
+
+Checking snake_case
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+snake_case - 'toggle case is the coolest' OK
+prop_access - 'path null' OK
+snake_case - 'toggleCase is the coolest' OK
+
+
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
@@ -68,17 +131,16 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnqCsGHnHIywCsBsqzsrsBy"
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fBHnQCsGHn7IywCSBsqzsrsBy"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "HnA zkvcziyGrAsjGrAsjospnyDmmwiCmqQijqibCiTG wbCBlQmoqxbymDA ziBr yaBcgblwSmjQsDr QnjwiuA"
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : " " - got "s"
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' OK
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
