@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 18:10:16 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 18:10:47 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -24,13 +24,18 @@ capitalize - 'Object' KO
 	expected : "" - got {}
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "togglecaseisthecoolest"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "togglecaseisthecoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "togglecaseisthe3oolest"
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "togglecaseisthecoolest"
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
-camelCase - ' toggleCase' OK
+	expected : "TogglecaseIsTheCoolest" - got "togglecaseis_thecoolest"
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got "togglecase"
 camelCase - 'null' KO
 	expected : "" - got {}
 camelCase - 'Object' KO
@@ -67,20 +72,16 @@ leet - 'Object' KO
 	expected : "" - got "data"
 
 Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
 verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : " " - got ""
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "" - got {}
 verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "" - got {}
 
 Checking yoda
 yoda - 'anaconda' KO
@@ -97,18 +98,16 @@ yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 
 Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnWcsghnNiywcYbsqzsrsby"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
@@ -116,7 +115,8 @@ prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
-prop_access - 'path empty' OK
+prop_access - 'path empty' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 prop_access - 'object null' KO
 	expected : test not exist - got null
 prop_access - 'path null' KO
