@@ -68,17 +68,15 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : ReferenceError - string is not defined
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : ReferenceError - string is not defined
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : ReferenceError - string is not defined
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : ReferenceError - string is not defined
+vig - 'null - test' OK
+vig - 'Object - test' OK
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
