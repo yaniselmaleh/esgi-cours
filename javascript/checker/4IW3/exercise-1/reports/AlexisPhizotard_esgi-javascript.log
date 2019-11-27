@@ -9,5 +9,5 @@ ReferenceError: leet is not defined
     at Module.require (internal/modules/cjs/loader.js:683:19)
     at require (internal/modules/cjs/helpers.js:16:16)
     at startTest (/executor.js:41:21)
-    at process.<anonymous> (/executor.js:118:9)
+    at process.<anonymous> (/executor.js:115:9)
     at process.emit (events.js:203:13)
