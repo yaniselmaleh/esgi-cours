@@ -31,15 +31,15 @@ camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
-	expected : "toggle_case_is_the_coolest" - got "toggle case is the coolest"
+	expected : "toggle_case_is_the_coolest" - got "toggle_ case_ is_ the_ coolest"
 snake_case - 'toggleCase is the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "toggle_case is the coolest"
+	expected : "togglecase_is_the_coolest" - got "toggle_case_ is_ the_ coolest"
 snake_case - 'ToggleCase is the 3oolest' KO
-	expected : "togglecase_is_the_3oolest" - got "toggle_case is the 3oolest"
+	expected : "togglecase_is_the_3oolest" - got "toggle_case_ is_ the_ 3oolest"
 snake_case - 'ToggleCaseIsTheCool3st' KO
 	expected : "togglecaseisthecool3st" - got "toggle_case_is_the_cool3st"
 snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "toggle_case is_the coolest"
+	expected : "togglecase_is_the_coolest" - got "toggle_case_ is_the_ coolest"
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got " toggle_case"
 snake_case - 'null' OK
