@@ -1,7 +1,7 @@
 Loading script...
 Invalid script: ReferenceError: prop_access is not defined
 ReferenceError: prop_access is not defined
-    at Object.<anonymous> (/4IW2/exercise-1/scripts/kaynye_esgi-javascript.js:84:30)
+    at Object.<anonymous> (/4IW2/exercise-1/scripts/kaynye_esgi-javascript.js:86:30)
     at Module._compile (internal/modules/cjs/loader.js:701:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
     at Module.load (internal/modules/cjs/loader.js:600:32)
