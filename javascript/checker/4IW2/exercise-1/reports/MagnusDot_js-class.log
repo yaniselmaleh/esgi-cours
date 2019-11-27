@@ -1,46 +1,47 @@
-Loading script...
 
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+Checking prop_accessLoading script...
+
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
 Starting tests...
 Checking ucfirst
+prop_access - 'object null' KO
+	expected : test not exist - got null
+prop_access - 'path null' OK
 ucfirst - 'test' OK
 ucfirst - ' test' OK
-ucfirst - 'Test' OK
-Starting tests...
-Checking ucfirst
-ucfirst - 'TEST' OK
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'null' OK
+
+
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-ucfirst - 'Object' OK
-
-
 
 Checking capitalize
-capitalize - 'test' OKChecking capitalize
+capitalize - 'test' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
-capitalize - 'test' OK
 capitalize - 'Object' OK
-capitalize - ' test' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-capitalize - 'ipsum DOLOR' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
-capitalize - 'sit 8met consectetur' OK
 camelCase - 'null' OK
-capitalize - '_dipiscing elit' OK
 camelCase - 'Object' OK
 
 Checking snake_case
@@ -48,116 +49,34 @@ snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-capitalize - 'null' OK
 snake_case - 'ToggleCase is_the coolest' OK
-capitalize - 'Object' OK
 snake_case - ' toggleCase' OK
-
-
-snake_case - 'null' OKChecking camelCase
+snake_case - 'null' OK
 snake_case - 'Object' OK
 
-
-camelCase - 'toggle case is the coolest' OKChecking leet
+Checking leet
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
-camelCase - 'toggleCase is the coolest' OK
 leet - 'leet' OK
-camelCase - 'ToggleCase is the 3oolest' OK
 leet - 'yoda' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
 leet - 'evaluation' OK
-camelCase - 'ToggleCase is_the coolest' OK
 leet - 'mon travail' OK
-camelCase - ' toggleCase' OK
 leet - ' ' OK
-camelCase - 'null' OK
 leet - 'null' OK
-camelCase - 'Object' OK
 leet - 'Object' OK
 
-
-
-Checking snake_caseChecking verlan
-snake_case - 'toggle case is the coolest' OK
+Checking verlan
 verlan - 'anaconda' OK
-snake_case - 'toggleCase is the coolest' OK
 verlan - 'kayak' OK
-snake_case - 'ToggleCase is the 3oolest' OK
 verlan - 'yoda m Luke' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
 verlan - 'null' OK
 verlan - 'Object' OK
-snake_case - 'null' OK
 
-
-snake_case - 'Object' OKChecking yoda
-
-
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implementedChecking leet
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-leet - 'anaconda' OK
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-leet - 'anacoNDa' OK
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-leet - 'leet' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-leet - 'yoda' OK
-
-
-leet - 'evaluation' OKChecking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'mon travail' OK
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - ' ' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'null' OK
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'Object' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implementedChecking verlan
-
-
-verlan - 'anaconda' OKChecking prop_access
-verlan - 'kayak' OK
-prop_access - 'path exist - value string' OK
-verlan - 'yoda m Luke' OK
-prop_access - 'path exist - value object' OK
-verlan - '70da m L(_)k3' OK
-prop_access - 'path exist - value array' OK
-verlan - ' ' OK
-verlan - 'null' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-verlan - 'Object' OK
-
-
-prop_access - 'object null' KO
-	expected : test not exist - got nullChecking yoda
-prop_access - 'path null' OK
+Checking yoda
 yoda - 'anaconda' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
-
-
 yoda - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'Inverser la position des mots d’une phrase' KO
