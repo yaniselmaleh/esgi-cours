@@ -12,7 +12,7 @@ ucfirst - 'Object' OK
 Checking capitalize
 capitalize - 'test' OK
 capitalize - ' test' KO
-	expected : " Test" - got "Test"
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK

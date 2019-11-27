@@ -40,21 +40,20 @@ camelCase - 'Object' KO
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "toggle_case_is_the_coolest" - got "toggle-case-is-the-coolest"
 snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "togglecase-is-the-coolest"
 snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_3oolest" - got "togglecase-is-the-3oolest"
+snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "togglecase-is_the-coolest"
 snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "_togglecase" - got "-togglecase"
 snake_case - 'null' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
 snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
 Checking leet
 leet - 'anaconda' KO
