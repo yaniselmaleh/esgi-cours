@@ -1,20 +1,9 @@
-Checking prop_accessLoading script...
+Loading script...
 
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
 Starting tests...
-
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' OKChecking ucfirst
-prop_access - 'object null' KO
-	expected : test not exist - got null
+Checking ucfirst
 ucfirst - 'test' OK
-prop_access - 'path null' OK
 ucfirst - ' test' OK
-
-
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
