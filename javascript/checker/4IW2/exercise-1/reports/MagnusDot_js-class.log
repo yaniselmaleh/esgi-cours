@@ -1,77 +1,20 @@
 
-
-Checking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OKLoading script...
-
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-verlan - 'null' OK
-Starting tests...
-
-verlan - 'Object' OKChecking ucfirst
-
-Checking yoda
-yoda - 'anaconda' OK
-ucfirst - 'test' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-yoda - 'Object' OK
-ucfirst - ' test' OK
-
-
-ucfirst - 'Test' OKChecking vig
-ucfirst - 'TEST' OK
-vig - 'anticonstitutionnellement - foo' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 
 Checking capitalize
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 capitalize - 'test' OK
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - ' test' OK
-vig - 'Object - test' OK
 capitalize - 'ipsum DOLOR' OK
-
-
-capitalize - 'sit 8met consectetur' OKChecking prop_access
+capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
-prop_access - 'path exist - value string' OK
 capitalize - 'Object' OK
-prop_access - 'path exist - value object' OK
 
+Checking camelCaseLoading script...
 
-prop_access - 'path exist - value array' OKChecking camelCase
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
 camelCase - 'toggle case is the coolest' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 camelCase - 'toggleCase is the coolest' OK
-prop_access - 'path null' OK
-
-
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
@@ -80,41 +23,129 @@ camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
+Starting tests...
+
 snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OKChecking ucfirst
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+ucfirst - 'test' OK
+snake_case - 'ToggleCase is_the coolest' OK
+ucfirst - ' test' OK
+snake_case - ' toggleCase' OK
+ucfirst - 'Test' OK
+snake_case - 'null' OK
+ucfirst - 'TEST' OK
+snake_case - 'Object' OK
+ucfirst - 'null' OK
+
+
+ucfirst - 'Object' OKChecking leet
+
+
+leet - 'anaconda' OKChecking capitalize
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+capitalize - 'test' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+capitalize - ' test' OK
+leet - ' ' OK
+capitalize - 'ipsum DOLOR' OK
+leet - 'null' OK
+leet - 'Object' OK
+capitalize - 'sit 8met consectetur' OK
+
+
+capitalize - '_dipiscing elit' OKChecking verlan
+verlan - 'anaconda' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+verlan - 'kayak' OK
+
+
+verlan - 'yoda m Luke' OKChecking camelCase
+verlan - '70da m L(_)k3' OK
+camelCase - 'toggle case is the coolest' OK
+verlan - ' ' OK
+verlan - 'null' OK
+camelCase - 'toggleCase is the coolest' OK
+verlan - 'Object' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+
+Checking yoda
+camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'ToggleCase is_the coolest' OK
+yoda - 'anaconda' OK
+camelCase - ' toggleCase' OK
+camelCase - 'null' OK
+yoda - 'yoda m Luke' OK
+camelCase - 'Object' OK
+
+
+yoda - 'Inverser la position des mots d’une phrase' OKChecking snake_case
+yoda - ' ' OK
+snake_case - 'toggle case is the coolest' OK
+yoda - 'null' OK
 snake_case - 'toggleCase is the coolest' OK
+yoda - 'Object' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
-snake_case - 'Object' OK
 
-Checking leet
+
+snake_case - 'Object' OKChecking vig
+
+
+vig - 'anticonstitutionnellement - foo' OKChecking leet
 leet - 'anaconda' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 leet - 'anacoNDa' OK
 leet - 'leet' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 leet - 'yoda' OK
+vig - ' - test' OK
 leet - 'evaluation' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 leet - 'mon travail' OK
+vig - 'Object - test' OK
 leet - ' ' OK
+
+
 leet - 'null' OK
 leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' OK
 verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
+verlan - 'yoda m Luke' OKChecking prop_access
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
 verlan - 'null' OK
 verlan - 'Object' OK
+prop_access - 'path exist - value string' OK
 
 Checking yoda
+prop_access - 'path exist - value object' OK
 yoda - 'anaconda' OK
+prop_access - 'path exist - value array' OK
 yoda - 'yoda m Luke' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 yoda - ' ' OK
+prop_access - 'path null' OK
 yoda - 'null' OK
+
+
 yoda - 'Object' OK
 
 Checking vig
