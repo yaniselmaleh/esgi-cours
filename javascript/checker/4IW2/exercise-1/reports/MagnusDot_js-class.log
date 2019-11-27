@@ -1,28 +1,102 @@
-Loading script...
 
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OKLoading script...
+
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
-Checking capitalize
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking ucfirstChecking yoda
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+ucfirst - 'test' OK
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+ucfirst - ' test' OK
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+ucfirst - 'Test' OK
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+ucfirst - 'TEST' OK
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+
+
+ucfirst - 'null' OKChecking vig
+ucfirst - 'Object' OK
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implementedChecking capitalize
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 capitalize - 'test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
+
+
+capitalize - '_dipiscing elit' OKChecking prop_access
 capitalize - 'null' OK
+prop_access - 'path exist - value string' OK
 capitalize - 'Object' OK
+prop_access - 'path exist - value object' OK
 
 Checking camelCase
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
 camelCase - 'toggle case is the coolest' OK
+prop_access - 'path empty' OK
 camelCase - 'toggleCase is the coolest' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
 camelCase - 'ToggleCase is the 3oolest' OK
+prop_access - 'path null' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+
+
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
