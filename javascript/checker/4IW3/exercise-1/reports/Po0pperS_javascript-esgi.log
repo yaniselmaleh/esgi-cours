@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Nov 27 2019 18:12:26 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Nov 27 2019 18:13:00 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -72,10 +72,11 @@ vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' KO
 	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnQcsghnbiywcSbsqzsrsby"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' OK
-vig - ' - test' KO
-	expected : " " - got ""
-vig - 'null - test' OK
-vig - 'Object - test' OK
+vig - ' - test' OK
+vig - 'null - test' KO
+	expected : "" - got " "
+vig - 'Object - test' KO
+	expected : "" - got " "
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
