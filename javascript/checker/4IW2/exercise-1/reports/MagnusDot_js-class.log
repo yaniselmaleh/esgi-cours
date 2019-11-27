@@ -1,17 +1,9 @@
-Loading script...
 
-Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' OK
-capitalize - ' test' OK
+capitalize - ' test' OKLoading script...
+
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
@@ -20,25 +12,44 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
+Starting tests...
+
+camelCase - 'toggleCase is the coolest' OKChecking ucfirst
 camelCase - 'ToggleCase is the 3oolest' OK
+ucfirst - 'test' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+ucfirst - ' test' OK
 camelCase - 'ToggleCase is_the coolest' OK
+ucfirst - 'Test' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
+ucfirst - 'TEST' OK
 camelCase - 'Object' OK
 
-Checking snake_case
-snake_case - 'toggle case is the coolest' OK
+
+ucfirst - 'null' OKChecking snake_case
+ucfirst - 'Object' OK
+
+
+snake_case - 'toggle case is the coolest' OKChecking capitalize
 snake_case - 'toggleCase is the coolest' OK
+capitalize - 'test' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+capitalize - ' test' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+capitalize - 'ipsum DOLOR' OK
 snake_case - 'ToggleCase is_the coolest' OK
+capitalize - 'sit 8met consectetur' OK
 snake_case - ' toggleCase' OK
+capitalize - '_dipiscing elit' OK
 snake_case - 'null' OK
+capitalize - 'null' OK
 snake_case - 'Object' OK
+capitalize - 'Object' OK
 
 Checking leet
+
+Checking camelCase
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
 leet - 'leet' OK
@@ -50,6 +61,84 @@ leet - 'null' OK
 leet - 'Object' OK
 
 Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+camelCase - 'toggle case is the coolest' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+verlan - 'null' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+verlan - 'Object' OK
+
+
+camelCase - 'ToggleCase is_the coolest' OKChecking yoda
+camelCase - ' toggleCase' OK
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - 'null' OK
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+camelCase - 'Object' OK
+
+
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implementedChecking snake_case
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+snake_case - 'toggle case is the coolest' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+snake_case - 'toggleCase is the coolest' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+snake_case - 'ToggleCase is the 3oolest' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+snake_case - 'ToggleCaseIsTheCool3st' OK
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+snake_case - 'null' OK
+
+
+snake_case - 'Object' OKChecking prop_access
+
+Checking leet
+prop_access - 'path exist - value string' OK
+leet - 'anaconda' OK
+prop_access - 'path exist - value object' OK
+leet - 'anacoNDa' OK
+prop_access - 'path exist - value array' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
+leet - 'Object' OK
+
+
+prop_access - 'path null' OKChecking verlan
+
+
 verlan - 'anaconda' OK
 verlan - 'kayak' OK
 verlan - 'yoda m Luke' OK
