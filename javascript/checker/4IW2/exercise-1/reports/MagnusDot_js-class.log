@@ -1,128 +1,44 @@
+Loading script...
 
-camelCase - 'Object' OK
-
-Checking snake_case
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
-snake_case - 'null' OK
-snake_case - 'Object' OK
-
-Checking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4c0nd4"
-leet - 'leet' OK
-leet - 'yoda' OKLoading script...
-
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4ti0n"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "m0n tr4v4il"
-leet - ' ' OK
-leet - 'null' OK
 Starting tests...
-
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - str.toLowerCase is not a functionChecking ucfirst
-
-Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+Checking ucfirst
 ucfirst - 'test' OK
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - ' test' OK
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'Test' OK
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'TEST' OK
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 
 Checking capitalize
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - 'test' OK
-
-Checking yoda
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'ipsum DOLOR' OK
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'sit 8met consectetur' OK
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - '_dipiscing elit' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'null' OK
 capitalize - 'Object' OK
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 
 Checking camelCase
-
-
-camelCase - 'toggle case is the coolest' OKChecking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is the 3oolest' KO
 	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
-
-
 camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "ToggleCase"Checking prop_access
+	expected : "Togglecase" - got "ToggleCase"
 camelCase - 'null' OK
-prop_access - 'path exist - value string' OK
 camelCase - 'Object' OK
-prop_access - 'path exist - value object' OK
 
 Checking snake_case
-prop_access - 'path exist - value array' OK
 snake_case - 'toggle case is the coolest' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
 snake_case - 'toggleCase is the coolest' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 snake_case - 'ToggleCase is the 3oolest' OK
-prop_access - 'path null' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-
-
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "togglecase"
