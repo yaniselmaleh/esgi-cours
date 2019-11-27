@@ -1,78 +1,23 @@
+Loading script...
 
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedLoading script...
-
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-Checking yoda
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 Starting tests...
-
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implementedChecking ucfirst
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+Checking ucfirst
 ucfirst - 'test' OK
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 ucfirst - ' test' OK
-
-Checking vig
 ucfirst - 'Test' OK
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 ucfirst - 'TEST' OK
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 ucfirst - 'null' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 ucfirst - 'Object' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 
-
-
-Checking capitalizeChecking prop_access
-prop_access - 'path exist - value string' OK
+Checking capitalize
 capitalize - 'test' OK
-prop_access - 'path exist - value object' OK
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-prop_access - 'path exist - value array' OK
 capitalize - 'ipsum DOLOR' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
 capitalize - 'sit 8met consectetur' OK
-prop_access - 'path empty' OK
 capitalize - '_dipiscing elit' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 capitalize - 'null' OK
-prop_access - 'path null' OK
 capitalize - 'Object' OK
-
-
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
