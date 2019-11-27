@@ -1,6 +1,6 @@
 Loading script...
 
-Starting tests...
+Wed Nov 27 2019 11:38:07 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -84,17 +84,17 @@ vig - 'Object - test' KO
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
-	expected : "dog" - got "animal.type.name"
+	expected : "dog" - got "OBJ ==> [object Object]  ATTRIBUT ==> animal.type.name"
 prop_access - 'path exist - value object' KO
-	expected : {"name":"dog"} - got "animal.type"
+	expected : {"name":"dog"} - got "OBJ ==> [object Object]  ATTRIBUT ==> animal.type"
 prop_access - 'path exist - value array' KO
-	expected : {"name":"cat"} - got "animals.1.type"
+	expected : {"name":"cat"} - got "OBJ ==> [object Object]  ATTRIBUT ==> animals.1.type"
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+	expected : {"animal":{"type":{"name":"dog"}}} - got "OBJ ==> [object Object]  ATTRIBUT ==> "
 prop_access - 'object null' KO
 	expected : test not exist - got null
 prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+	expected : {"animal":{"type":{"name":"dog"}}} - got "OBJ ==> [object Object]  ATTRIBUT ==> null"
 
