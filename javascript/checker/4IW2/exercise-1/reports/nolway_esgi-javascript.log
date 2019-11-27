@@ -56,19 +56,17 @@ leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - word.reverse is not a function
 verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - word.reverse is not a function
 verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - word.reverse is not a function
 verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - word.reverse is not a function
 verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - word.reverse is not a function
+verlan - 'null' OK
+verlan - 'Object' OK
 
 Checking yoda
 yoda - 'anaconda' KO
