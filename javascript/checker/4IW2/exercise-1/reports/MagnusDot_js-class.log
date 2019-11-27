@@ -1,4 +1,12 @@
-Loading script...
+
+prop_access - 'path exist - value array' OKLoading script...
+
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path null' OK
+
 
 Starting tests...
 Checking ucfirst
