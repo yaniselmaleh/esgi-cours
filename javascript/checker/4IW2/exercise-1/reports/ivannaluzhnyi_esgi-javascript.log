@@ -68,17 +68,17 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "gciordthioijzxdtctratstcz"
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "gciordthioijzxdtctratstcz"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "iobqsvfvmyrstqspgmloryjpinsevfopjfrulfxrtzmsoqstsoajcihdzhegugvdhfroeixw"
 vig - ' - test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	expected : " " - got ""
 vig - 'null - test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
 vig - 'Object - test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - txt.toLowerCase(...) is not a function or its return value is not iterable
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
