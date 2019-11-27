@@ -1,27 +1,69 @@
-Loading script...
 
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+verlan - 'anaconda' OKLoading script...
+
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
 Starting tests...
-Checking ucfirst
+
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OKChecking ucfirst
 ucfirst - 'test' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
+yoda - 'null' OK
 ucfirst - 'TEST' OK
+yoda - 'Object' OK
 ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
-Checking capitalize
+
+ucfirst - 'Object' OKChecking vig
+
+
+vig - 'anticonstitutionnellement - foo' OKChecking capitalize
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
 capitalize - 'test' OK
 capitalize - ' test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - 'ipsum DOLOR' OK
+vig - 'Object - test' OK
 capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
+
+
+capitalize - '_dipiscing elit' OKChecking prop_access
 capitalize - 'null' OK
 capitalize - 'Object' OK
+prop_access - 'path exist - value string' OK
 
-Checking camelCase
+
+prop_access - 'path exist - value object' OKChecking camelCase
+prop_access - 'path exist - value array' OK
 camelCase - 'toggle case is the coolest' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
 camelCase - 'toggleCase is the coolest' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path null' OK
 camelCase - 'ToggleCase is the 3oolest' OK
+
+
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
