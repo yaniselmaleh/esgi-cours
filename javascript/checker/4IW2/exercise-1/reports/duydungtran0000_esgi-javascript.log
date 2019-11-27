@@ -29,22 +29,14 @@ camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' OK
@@ -59,19 +51,19 @@ leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adnocana" - got "adnocana "
 verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "kayak" - got "kayak "
 verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adoy m ekuL" - got "adoy m ekuL "
 verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "ad07 m 3k)_(L" - got "ad07 m 3k)_(L "
 verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'match' of null
 verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - str.match is not a function
 
 Checking yoda
 yoda - 'anaconda' KO

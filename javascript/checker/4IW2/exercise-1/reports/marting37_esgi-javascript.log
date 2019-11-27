@@ -23,8 +23,7 @@ camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
+camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
@@ -34,26 +33,18 @@ snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' KO
-	expected : "togglecase_is_the_coolest" - got "togglecase_isthe_coolest"
+snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - str.replace is not a function
+snake_case - 'null' OK
+snake_case - 'Object' OK
 
 Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "4n4cond4"
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "4n4cond4"
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
 leet - 'leet' OK
-leet - 'yoda' KO
-	expected : "70d4" - got "7od4"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "3v4l(_)4t1on"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon tr4v41l"
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
