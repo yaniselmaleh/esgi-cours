@@ -1,13 +1,13 @@
 Loading script...
 
-Thu Nov 28 2019 10:14:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:16:40 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of null
+	expected : "" - got undefined
 ucfirst - 'Object' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 
@@ -19,7 +19,7 @@ capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
+	expected : "" - got undefined
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
@@ -33,7 +33,7 @@ camelCase - 'ToggleCase is_the coolest' KO
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
+	expected : "" - got undefined
 camelCase - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
@@ -64,7 +64,7 @@ leet - 'evaluation' OK
 leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
+	expected : "" - got undefined
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.replace is not a function
 
@@ -75,7 +75,7 @@ verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	expected : "" - got undefined
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
@@ -85,7 +85,7 @@ yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
 yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	expected : "" - got undefined
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
@@ -99,7 +99,7 @@ vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c e
 vig - ' - test' KO
 	expected : " " - got ""
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of null
+	expected : "" - got undefined
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.toUpperCase is not a function
 
@@ -111,6 +111,6 @@ prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'hasOwnProperty' of null
+	expected : test not exist - got null
 prop_access - 'path null' OK
 
