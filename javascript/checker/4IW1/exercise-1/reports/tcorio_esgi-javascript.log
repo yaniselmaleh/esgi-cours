@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:45:14 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:45:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -28,10 +28,8 @@ camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+camelCase - 'null' OK
+camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
