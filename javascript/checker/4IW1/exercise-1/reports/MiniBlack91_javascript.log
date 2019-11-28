@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:30:55 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:31:32 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -11,31 +11,31 @@ ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' KO
-	expected : "Test" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 capitalize - ' test' KO
-	expected : " Test" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 capitalize - 'sit 8met consectetur' KO
-	expected : "Sit 8met Consectetur" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 capitalize - '_dipiscing elit' KO
-	expected : "_dipiscing Elit" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got ""
+	Unexpected behaviour : ReferenceError - res is not defined
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
