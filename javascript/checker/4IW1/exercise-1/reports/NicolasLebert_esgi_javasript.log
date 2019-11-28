@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:57:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:58:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -28,21 +28,20 @@ capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "ToggleCase is the coolest"
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs the coolest"
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+	expected : "TogglecaseIsThe3oolest" - got "TogglecaseIs the 3oolest"
+camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIs_theCoolest"
-camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got "ToggleCase"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+camelCase - ' toggleCase' OK
 camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'indexOf' of null
+	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
 camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - string.indexOf is not a function
+	Unexpected behaviour : TypeError - string.toLowerCase is not a function
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
