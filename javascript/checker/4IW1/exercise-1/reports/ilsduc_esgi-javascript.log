@@ -1,10 +1,10 @@
 Loading script...
 
-Thu Nov 28 2019 10:54:41 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:55:21 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' KO
-	expected : " test" - got " Ttest"
+	expected : " test" - got " Test"
 ucfirst - 'Test' OK
 ucfirst - 'TEST' KO
 	expected : "TEST" - got "Test"
@@ -82,7 +82,7 @@ vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c e
 vig - ' - test' KO
 	expected : " " - got undefined
 vig - 'null - test' KO
-	expected : "" - got undefined
+	Unexpected behaviour : TypeError - Cannot read property '0' of null
 vig - 'Object - test' KO
 	expected : "" - got undefined
 
@@ -91,9 +91,9 @@ prop_access - 'path exist - value string' OK
 prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
+	expected : animal.gender not exist - got animal.gender not exists
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 prop_access - 'object null' KO
 	expected : test not exist - got null
 prop_access - 'path null' KO
