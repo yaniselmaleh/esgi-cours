@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:50:29 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:51:03 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -32,22 +32,19 @@ camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "toggleCase_is_the_coolest"
 snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_3oolest" - got "ToggleCase_is_the_3oolest"
 snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecaseisthecool3st" - got "ToggleCaseIsTheCool3st"
 snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "ToggleCase_is_the_coolest"
 snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "_togglecase" - got "_toggleCase"
+snake_case - 'null' OK
+snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' KO
@@ -64,10 +61,8 @@ leet - 'mon travail' KO
 	expected : "m0n tr4v41l" - got "m0n tr4v41l "
 leet - ' ' KO
 	expected : " " - got "  "
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
@@ -80,10 +75,8 @@ verlan - '70da m L(_)k3' KO
 	expected : "ad07 m 3k)_(L" - got "ad07 m 3k)_(L "
 verlan - ' ' KO
 	expected : " " - got "  "
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+verlan - 'null' OK
+verlan - 'Object' OK
 
 Checking yoda
 yoda - 'anaconda' KO
@@ -94,10 +87,8 @@ yoda - 'Inverser la position des mots d’une phrase' KO
 	expected : "phrase d’une mots des position la Inverser" - got "phrase d’une mots des position la Inverser "
 yoda - ' ' KO
 	expected : " " - got "  "
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+yoda - 'null' OK
+yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
