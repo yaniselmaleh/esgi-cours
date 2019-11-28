@@ -1,64 +1,87 @@
 Loading script...
 
-Thu Nov 28 2019 11:32:35 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 11:32:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
+ucfirst - 'test' KO
+	expected : "Test" - got undefined
+ucfirst - ' test' KO
+	expected : " test" - got undefined
+ucfirst - 'Test' KO
+	expected : "Test" - got undefined
 ucfirst - 'TEST' KO
-	expected : "TEST" - got "Test"
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+	expected : "TEST" - got undefined
+ucfirst - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'charAt' of null
+ucfirst - 'Object' KO
+	Unexpected behaviour : TypeError - mon_text.charAt is not a function
 
 Checking capitalize
-capitalize - 'test' OK
+capitalize - 'test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'charAt' of undefined
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
+capitalize - 'sit 8met consectetur' KO
+	expected : "Sit 8met Consectetur" - got "Sit 8met"
 capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
+capitalize - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+capitalize - 'Object' KO
+	Unexpected behaviour : TypeError - mon_text.split is not a function
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "ToggleCase"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "TogglecaseIs"
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	Unexpected behaviour : TypeError - Cannot read property 'charAt' of undefined
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_the"
 camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - mon_text.split is not a function
 
 Checking snake_case
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
+snake_case - 'toggle case is the coolest' KO
+	expected : "toggle_case_is_the_coolest" - got "toggle-case"
+snake_case - 'toggleCase is the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "togglecase-is"
+snake_case - 'ToggleCase is the 3oolest' KO
+	expected : "togglecase_is_the_3oolest" - got "togglecase-is"
+snake_case - 'ToggleCaseIsTheCool3st' KO
+	Unexpected behaviour : TypeError - Cannot read property 'substring' of undefined
+snake_case - 'ToggleCase is_the coolest' KO
+	expected : "togglecase_is_the_coolest" - got "togglecase-is_the"
 snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got "togglecase"
-snake_case - 'null' OK
-snake_case - 'Object' OK
+	expected : "_togglecase" - got "-togglecase"
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - mon_text.split is not a function
 
 Checking leet
 leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got "anaconda"
+	expected : "4n4c0nd4" - got undefined
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got "anacoNDa"
+	expected : "4n4c0ND4" - got undefined
 leet - 'leet' KO
-	expected : "l33t" - got "leet"
+	expected : "l33t" - got undefined
 leet - 'yoda' KO
-	expected : "70d4" - got "yoda"
+	expected : "70d4" - got undefined
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "evaluation"
+	expected : "3v4l(_)4t10n" - got undefined
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon travail"
-leet - ' ' OK
+	expected : "m0n tr4v41l" - got undefined
+leet - ' ' KO
+	expected : " " - got undefined
 leet - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 leet - 'Object' KO
-	expected : "" - got {"foo":"data"}
+	expected : "" - got undefined
 
 Checking verlan
 verlan - 'anaconda' KO
