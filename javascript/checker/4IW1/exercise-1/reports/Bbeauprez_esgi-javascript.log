@@ -1,13 +1,12 @@
 Loading script...
 
-Thu Nov 28 2019 10:20:08 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:20:40 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-ucfirst - 'null' KO
-	expected : "" - got undefined
+ucfirst - 'null' OK
 ucfirst - 'Object' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 
@@ -18,8 +17,7 @@ capitalize - ' test' KO
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
-capitalize - 'null' KO
-	expected : "" - got undefined
+capitalize - 'null' OK
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
@@ -32,8 +30,7 @@ camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-camelCase - 'null' KO
-	expected : "" - got undefined
+camelCase - 'null' OK
 camelCase - 'Object' KO
 	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
@@ -63,8 +60,7 @@ leet - 'yoda' OK
 leet - 'evaluation' OK
 leet - 'mon travail' OK
 leet - ' ' OK
-leet - 'null' KO
-	expected : "" - got undefined
+leet - 'null' OK
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - str.replace is not a function
 
@@ -74,8 +70,7 @@ verlan - 'kayak' OK
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
-verlan - 'null' KO
-	expected : "" - got undefined
+verlan - 'null' OK
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
@@ -84,8 +79,7 @@ yoda - 'anaconda' OK
 yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
-yoda - 'null' KO
-	expected : "" - got undefined
+yoda - 'null' OK
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
@@ -98,8 +92,7 @@ vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c e
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "HNAPRUEULXQRSPROFLKNQXIOHMRDUENOIEQTKEWQSYLRNPRSRNZIBHGCYGDFTFUCGEQNDHWV"
 vig - ' - test' KO
 	expected : " " - got ""
-vig - 'null - test' KO
-	expected : "" - got undefined
+vig - 'null - test' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.toUpperCase is not a function
 

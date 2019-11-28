@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 10:20:06 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:20:39 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -11,8 +11,7 @@ ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' OK
-capitalize - ' test' KO
-	expected : " Test" - got "Test"
+capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
@@ -71,9 +70,8 @@ Checking vig
 vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hnaundefinedzkvcziygrasjgrasjospnydmmwicmqqijqibcitgundefinedwbcblqmoqxbymdaundefinedzibrundefinedyabcgblwsmjqsdrundefinedqnjwiua"
-vig - ' - test' KO
-	expected : " " - got "s"
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna chnach gras gras yojgeh zaes due ae ieqt nboovxqgux eian qine pan p rsp wuoto hn geot"
+vig - ' - test' OK
 vig - 'null - test' OK
 vig - 'Object - test' OK
 
