@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:51:05 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:51:37 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -17,10 +17,8 @@ capitalize - 'ipsum DOLOR' KO
 	expected : "Ipsum Dolor" - got "Ipsum DOLOR"
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
-capitalize - 'null' KO
-	expected : "" - got undefined
-capitalize - 'Object' KO
-	expected : "" - got undefined
+capitalize - 'null' OK
+capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
@@ -35,10 +33,8 @@ camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIs_theCoolest"
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got "ToggleCase"
-camelCase - 'null' KO
-	expected : "" - got undefined
-camelCase - 'Object' KO
-	expected : "" - got undefined
+camelCase - 'null' OK
+camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
@@ -66,10 +62,8 @@ leet - 'yoda' OK
 leet - 'evaluation' OK
 leet - 'mon travail' OK
 leet - ' ' OK
-leet - 'null' KO
-	expected : "" - got undefined
-leet - 'Object' KO
-	expected : "" - got undefined
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
