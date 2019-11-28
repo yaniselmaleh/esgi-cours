@@ -1,47 +1,47 @@
 Loading script...
 
-Thu Nov 28 2019 09:59:13 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:59:14 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of null
-ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+ucfirst - 'test' KO
+	expected : "Test" - got undefined
+ucfirst - ' test' KO
+	expected : " test" - got undefined
+ucfirst - 'Test' KO
+	expected : "Test" - got undefined
+ucfirst - 'TEST' KO
+	expected : "TEST" - got undefined
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Test" - got undefined
 capitalize - ' test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : " Test" - got undefined
 capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Ipsum Dolor" - got undefined
 capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Sit 8met Consectetur" - got undefined
 capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
-capitalize - 'null' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
-capitalize - 'Object' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "_dipiscing Elit" - got undefined
+capitalize - 'null' OK
+capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got "ToggleCase is the coolest"
+	expected : "ToggleCaseIsTheCoolest" - got undefined
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs the coolest"
+	expected : "TogglecaseIsTheCoolest" - got undefined
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "TogglecaseIs the 3oolest"
-camelCase - 'ToggleCaseIsTheCoolest' OK
+	expected : "TogglecaseIsThe3oolest" - got undefined
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got undefined
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
-camelCase - ' toggleCase' OK
-camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
-camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - string.toLowerCase is not a function
+	expected : "TogglecaseIsTheCoolest" - got undefined
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got undefined
+camelCase - 'null' OK
+camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
@@ -127,17 +127,17 @@ vig - 'Object - test' KO
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
-	expected : "dog" - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path exist - value object' KO
-	expected : {"name":"dog"} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path exist - value array' KO
-	expected : {"name":"cat"} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'object null' KO
-	expected : test not exist - got null
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 
