@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 10:16:40 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:17:19 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -66,23 +66,34 @@ leet - 'null' OK
 leet - 'Object' OK
 
 Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got "ekuL m adoy"
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 
 Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-yoda - 'Object' OK
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
@@ -99,15 +110,18 @@ vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 
 Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
+prop_access - 'path exist - value string' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got animal.gender
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'test' of null
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 
