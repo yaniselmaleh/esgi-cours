@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 09:55:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:56:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -77,17 +77,15 @@ verlan - 'Object' OK
 
 Checking yoda
 yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "anaconda" - got undefined
 yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "Luke m yoda" - got undefined
 yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "phrase d’une mots des position la Inverser" - got undefined
 yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : " " - got undefined
+yoda - 'null' OK
+yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
@@ -105,17 +103,17 @@ vig - 'Object - test' KO
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : "dog" - got undefined
 prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"name":"dog"} - got undefined
 prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"name":"cat"} - got undefined
 prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : animal.gender not exist - got null
 prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : test not exist - got null
 prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 
