@@ -1,27 +1,24 @@
 Loading script...
 
-Thu Nov 28 2019 09:21:01 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:21:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of null
-ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 
 Checking capitalize
-capitalize - 'test' KO
-	Unexpected behaviour : ReferenceError - trim is not defined
+capitalize - 'test' OK
 capitalize - ' test' KO
-	Unexpected behaviour : ReferenceError - trim is not defined
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : ReferenceError - trim is not defined
+	expected : "Ipsum Dolor" - got "IpsumDOLOR"
 capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : ReferenceError - trim is not defined
+	expected : "Sit 8met Consectetur" - got "Sit8metConsectetur"
 capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : ReferenceError - trim is not defined
+	expected : "_dipiscing Elit" - got "_dipiscingElit"
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 capitalize - 'Object' KO
