@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 10:57:03 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:57:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -50,13 +50,20 @@ snake_case - 'Object' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 
 Checking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OK
-leet - ' ' OK
+leet - 'anaconda' KO
+	expected : "4n4c0nd4" - got ""
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got ""
+leet - 'leet' KO
+	expected : "l33t" - got ""
+leet - 'yoda' KO
+	expected : "70d4" - got ""
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got ""
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got ""
+leet - ' ' KO
+	expected : " " - got ""
 leet - 'null' OK
 leet - 'Object' OK
 
