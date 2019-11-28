@@ -1,32 +1,44 @@
 Loading script...
 
-Thu Nov 28 2019 10:46:07 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:46:06 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+ucfirst - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+ucfirst - 'Object' KO
+	expected : "" - got {"foo":"bar"}
 
 Checking capitalize
 capitalize - 'test' OK
 capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
+capitalize - 'ipsum DOLOR' KO
+	expected : "Ipsum Dolor" - got "Ipsum DOLOR"
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
+capitalize - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+capitalize - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIs_theCoolest"
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got "ToggleCase"
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
@@ -34,20 +46,31 @@ snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
-snake_case - 'null' OK
-snake_case - 'Object' OK
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got "togglecase"
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'trim' of null
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - string.trim is not a function
 
 Checking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OK
+leet - 'anaconda' KO
+	expected : "4n4c0nd4" - got "anaconda"
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "anacoNDa"
+leet - 'leet' KO
+	expected : "l33t" - got "leet"
+leet - 'yoda' KO
+	expected : "70d4" - got "yoda"
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "evaluation"
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "mon travail"
 leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
+leet - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+leet - 'Object' KO
+	expected : "" - got {"foo":"data"}
 
 Checking verlan
 verlan - 'anaconda' KO
