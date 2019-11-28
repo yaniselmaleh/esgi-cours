@@ -1,15 +1,11 @@
 Loading script...
 
-Thu Nov 28 2019 09:04:02 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 09:04:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' KO
-	expected : "Test" - got undefined
-ucfirst - ' test' KO
-	expected : " test" - got undefined
-ucfirst - 'Test' KO
-	expected : "Test" - got undefined
-ucfirst - 'TEST' KO
-	expected : "TEST" - got undefined
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
 ucfirst - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property '0' of null
 ucfirst - 'Object' KO
@@ -17,31 +13,30 @@ ucfirst - 'Object' KO
 
 Checking capitalize
 capitalize - 'test' KO
-	expected : "Test" - got undefined
+	expected : "Test" - got "Test "
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got undefined
+	expected : "Ipsum Dolor" - got "Ipsum DOLOR "
 capitalize - 'sit 8met consectetur' KO
-	expected : "Sit 8met Consectetur" - got undefined
+	expected : "Sit 8met Consectetur" - got "Sit 8met Consectetur "
 capitalize - '_dipiscing elit' KO
-	expected : "_dipiscing Elit" - got undefined
+	expected : "_dipiscing Elit" - got "_dipiscing Elit "
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - input.split is not a function
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got undefined
+camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got undefined
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got undefined
+	expected : "TogglecaseIsThe3oolest" - got "ToggleCaseIsThe3oolest"
 camelCase - 'ToggleCaseIsTheCoolest' KO
-	expected : "Togglecaseisthecoolest" - got undefined
+	expected : "Togglecaseisthecoolest" - got "ToggleCaseIsTheCoolest"
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got undefined
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIs_theCoolest"
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 camelCase - 'null' KO
@@ -69,19 +64,19 @@ snake_case - 'Object' KO
 
 Checking leet
 leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got undefined
+	expected : "4n4c0nd4" - got "4n4c0nd4 "
 leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got undefined
+	expected : "4n4c0ND4" - got "4n4c0ND4 "
 leet - 'leet' KO
-	expected : "l33t" - got undefined
+	expected : "l33t" - got "l33t "
 leet - 'yoda' KO
-	expected : "70d4" - got undefined
+	expected : "70d4" - got "70d4 "
 leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got undefined
+	expected : "3v4l(_)4t10n" - got "3v4l_4t10n "
 leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got undefined
+	expected : "m0n tr4v41l" - got "m0n tr4v41l "
 leet - ' ' KO
-	expected : " " - got undefined
+	expected : " " - got "  "
 leet - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 leet - 'Object' KO
@@ -89,15 +84,15 @@ leet - 'Object' KO
 
 Checking verlan
 verlan - 'anaconda' KO
-	expected : "adnocana" - got ""
+	expected : "adnocana" - got "adnocana "
 verlan - 'kayak' KO
-	expected : "kayak" - got ""
+	expected : "kayak" - got "kayak "
 verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got ""
+	expected : "adoy m ekuL" - got "adoy m ekuL "
 verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got ""
+	expected : "ad07 m 3k)_(L" - got "ad07 m 3k)_(L "
 verlan - ' ' KO
-	expected : " " - got ""
+	expected : " " - got "  "
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 verlan - 'Object' KO
@@ -105,13 +100,13 @@ verlan - 'Object' KO
 
 Checking yoda
 yoda - 'anaconda' KO
-	expected : "anaconda" - got undefined
+	expected : "anaconda" - got "anaconda "
 yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got undefined
+	expected : "Luke m yoda" - got "Luke m yoda "
 yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got undefined
+	expected : "phrase d’une mots des position la Inverser" - got "phrase d’une mots des position la Inverser "
 yoda - ' ' KO
-	expected : " " - got undefined
+	expected : " " - got "  "
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'split' of null
 yoda - 'Object' KO
