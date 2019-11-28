@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 10:34:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:37:04 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -36,21 +36,20 @@ camelCase - 'Object' KO
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "toggle_case_is_the_coolest" - got "Toggle_Case_Is_The_Coolest"
 snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_The_Coolest"
 snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_3oolest" - got "Togglecase_Is_The_3oolest"
 snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecaseisthecool3st" - got "Togglecaseisthecool3st"
 snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got "Togglecase_Is_the_Coolest"
 snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+snake_case - 'null' OK
 snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	Unexpected behaviour : TypeError - str.toLowerCase is not a function
 
 Checking leet
 leet - 'anaconda' OK
