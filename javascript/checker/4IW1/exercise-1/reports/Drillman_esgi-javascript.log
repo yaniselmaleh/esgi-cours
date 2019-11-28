@@ -1,28 +1,28 @@
 Loading script...
 
-Thu Nov 28 2019 08:58:12 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 08:58:47 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
+ucfirst - 'TEST' KO
+	expected : "TEST" - got "Test"
 ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"bar"}
 
 Checking capitalize
 capitalize - 'test' OK
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got "Ipsum DOLOR"
+capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 capitalize - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
@@ -37,9 +37,9 @@ camelCase - 'ToggleCase is_the coolest' KO
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
@@ -54,9 +54,9 @@ snake_case - 'ToggleCase is_the coolest' KO
 snake_case - ' toggleCase' KO
 	expected : "_togglecase" - got "_toggleCase"
 snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking leet
 leet - 'anaconda' OK
@@ -69,9 +69,9 @@ leet - 'mon travail' KO
 leet - ' ' KO
 	expected : " " - got ""
 leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 leet - 'Object' KO
-	Unexpected behaviour : TypeError - input.replace is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking verlan
 verlan - 'anaconda' OK
@@ -80,9 +80,9 @@ verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 verlan - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking yoda
 yoda - 'anaconda' OK
@@ -90,23 +90,22 @@ yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
 yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 yoda - 'Object' KO
-	Unexpected behaviour : TypeError - input.split is not a function
+	expected : "" - got {"foo":"data"}
 
 Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnncsghnniywcebsqzsrsby"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hnaundefinedzkvcziygrasjgrasjospnydmmwicmqqijqibcitgundefinedwbcblqmoqxbymdaundefinedzibrundefinedyabcgblwsmjqsdrundefinedqnjwiua"
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : " " - got "s"
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "" - got {"foo":"data"}
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
