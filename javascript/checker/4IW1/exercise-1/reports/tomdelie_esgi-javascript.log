@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 10:57:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Thu Nov 28 2019 10:58:12 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -10,12 +10,16 @@ ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
-capitalize - 'test' OK
+capitalize - 'test' KO
+	expected : "Test" - got "Est"
 capitalize - ' test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
+	expected : " Test" - got "Test"
+capitalize - 'ipsum DOLOR' KO
+	expected : "Ipsum Dolor" - got "Psum Dolor"
+capitalize - 'sit 8met consectetur' KO
+	expected : "Sit 8met Consectetur" - got "It 8met Consectetur"
+capitalize - '_dipiscing elit' KO
+	expected : "_dipiscing Elit" - got "Dipiscing Elit"
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
