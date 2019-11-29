@@ -1,58 +1,25 @@
+Loading script...
 
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yodaLoading script...
-
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-Fri Nov 29 2019 15:37:51 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 15:38:28 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
-yoda - 'null' OK
 ucfirst - 'Test' OK
-yoda - 'Object' OK
 ucfirst - 'TEST' OK
-
-
-ucfirst - 'null' OKChecking vig
-vig - 'anticonstitutionnellement - foo' OK
+ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
-
-vig - 'antiConstiTutioNnellement - foo' OKChecking capitalize
+Checking capitalize
 capitalize - 'test' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-vig - ' - test' OK
 capitalize - ' test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - 'ipsum DOLOR' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
 capitalize - 'sit 8met consectetur' OK
-
-Checking prop_access
 capitalize - '_dipiscing elit' OK
-prop_access - 'path exist - value string' OK
 capitalize - 'null' OK
-prop_access - 'path exist - value object' OK
 capitalize - 'Object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
 
-
-prop_access - 'path empty' OKChecking camelCase
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
+Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-
-
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
