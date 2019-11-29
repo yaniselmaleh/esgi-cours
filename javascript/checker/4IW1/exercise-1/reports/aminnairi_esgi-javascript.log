@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 09:32:01 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 09:32:41 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -80,7 +80,6 @@ prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' OK
 prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot use 'in' operator to search for 'test' in null
+prop_access - 'object null' OK
 prop_access - 'path null' OK
 
