@@ -1,7 +1,6 @@
 Loading script...
-Loading script...
 
-Fri Nov 29 2019 15:55:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 15:56:28 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -14,64 +13,25 @@ Checking capitalize
 capitalize - 'test' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
-Fri Nov 29 2019 15:55:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-capitalize - 'sit 8met consectetur' OKChecking ucfirst
+capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
-
-ucfirst - 'test' OKChecking camelCase
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
+Checking camelCase
 camelCase - 'toggle case is the coolest' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
-capitalize - 'test' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
-capitalize - ' test' OK
-
-
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OKChecking snake_case
-capitalize - '_dipiscing elit' OK
-snake_case - 'toggle case is the coolest' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-snake_case - 'toggleCase is the coolest' OK
-
-
-snake_case - 'ToggleCase is the 3oolest' OKChecking camelCase
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-snake_case - 'null' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-snake_case - 'Object' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
-
-
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OKChecking leet
+snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
@@ -89,58 +49,9 @@ leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
 
-
-leet - 'anaconda' OKChecking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-leet - 'anacoNDa' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-leet - 'leet' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-leet - 'yoda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-leet - 'evaluation' OK
-yoda - 'Object' OK
-
-
-leet - 'mon travail' OKChecking vig
-vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' OK
-leet - ' ' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-leet - 'null' OK
-vig - ' - test' OK
-leet - 'Object' OK
-
 Checking verlan
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 verlan - 'anaconda' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
 verlan - 'kayak' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
-
-
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
