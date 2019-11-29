@@ -1,46 +1,13 @@
 Loading script...
-
-Fri Nov 29 2019 15:08:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking type_check_v1
-type_check_v1 - 'number' OK
-type_check_v1 - 'StringNotNumber' OK
-type_check_v1 - 'BooleanNotNumber' OK
-type_check_v1 - 'object' KO
-	expected : true - got false
-type_check_v1 - 'null' OK
-type_check_v1 - 'nullNotObject' OK
-type_check_v1 - 'undefined' KO
-	expected : true - got false
-type_check_v1 - 'string' OK
-type_check_v1 - 'array' OK
-type_check_v1 - 'function' KO
-	expected : true - got false
-type_check_v1 - 'arrayNotObject' OK
-
-Checking type_check_v2
-type_check_v2 - 'number' KO
-	expected : true - got false
-type_check_v2 - 'numberNotValue' OK
-type_check_v2 - 'numberNotObject' OK
-type_check_v2 - 'stringEnum' KO
-	Unexpected behaviour : ReferenceError - array is not defined
-type_check_v2 - 'objectMatch' KO
-	expected : true - got false
-type_check_v2 - 'objectNotMatch' OK
-
-Checking type_check
-type_check - 'number' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'numberNotValue' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'numberNotObject' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'stringEnum' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'objectMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'objectNotMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-type_check - 'objectSuperMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
-
+Invalid script: ReferenceError: array is not defined
+ReferenceError: array is not defined
+    at type_check_v2 (/4IW2/exercise-2/scripts/LOUCIF-Raouf_esgi-javascript.js:32:37)
+    at Object.<anonymous> (/4IW2/exercise-2/scripts/LOUCIF-Raouf_esgi-javascript.js:47:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at startTest (/executor.js:41:21)
