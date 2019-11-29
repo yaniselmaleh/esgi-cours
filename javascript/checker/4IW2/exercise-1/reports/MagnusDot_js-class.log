@@ -1,46 +1,15 @@
+Loading script...
 
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yodaLoading script...
-
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-yoda - 'Object' OK
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' OK
-Fri Nov 29 2019 15:31:56 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"Checking ucfirst
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
+Fri Nov 29 2019 15:32:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
-prop_access - 'path not exist' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
-prop_access - 'path empty' OK
 capitalize - 'test' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
@@ -50,14 +19,9 @@ capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 camelCase - 'toggle case is the coolest' OK
-prop_access - 'path null' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
-
-
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
