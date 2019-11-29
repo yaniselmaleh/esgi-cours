@@ -1,124 +1,175 @@
+Loading script...
+Loading script...
 
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OKLoading script...
+Fri Nov 29 2019 16:13:24 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
+Fri Nov 29 2019 16:13:24 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-Fri Nov 29 2019 16:12:45 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-yoda - 'Inverser la position des mots d’une phrase' OKChecking ucfirst
-yoda - ' ' OK
-ucfirst - 'test' OK
-yoda - 'null' OK
+ucfirst - 'test' OKChecking ucfirst
 ucfirst - ' test' OK
-yoda - 'Object' OK
 ucfirst - 'Test' OK
-
-
-ucfirst - 'TEST' OKChecking vig
+ucfirst - 'test' OK
+ucfirst - 'TEST' OK
+ucfirst - ' test' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-vig - 'anticonstitutionnellement - foo' OK
+
+
+ucfirst - 'Test' OKChecking capitalize
+ucfirst - 'TEST' OK
+capitalize - 'test' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 
 Checking capitalize
-vig - 'antiConstiTutioNnellement - foo' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-capitalize - 'test' OK
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - ' test' OK
+capitalize - 'test' OK
 capitalize - 'ipsum DOLOR' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
-
-
-capitalize - 'null' OKChecking prop_access
-prop_access - 'path exist - value string' OK
+capitalize - ' test' OK
+capitalize - 'null' OK
+capitalize - 'ipsum DOLOR' OK
 capitalize - 'Object' OK
-prop_access - 'path exist - value object' OK
+capitalize - 'sit 8met consectetur' OK
 
 
-prop_access - 'path exist - value array' OKChecking camelCase
+capitalize - '_dipiscing elit' OKChecking camelCase
+capitalize - 'null' OK
 camelCase - 'toggle case is the coolest' OK
-prop_access - 'path not exist' OK
 camelCase - 'toggleCase is the coolest' OK
-prop_access - 'path empty' OK
+capitalize - 'Object' OK
 camelCase - 'ToggleCase is the 3oolest' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+
+Checking camelCase
 camelCase - 'ToggleCaseIsTheCoolest' OK
-prop_access - 'path null' OK
 camelCase - 'ToggleCase is_the coolest' OK
-
-
+camelCase - 'toggle case is the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
+camelCase - 'toggleCase is the coolest' OK
 camelCase - 'Object' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 
-Checking snake_case
+
+camelCase - 'ToggleCaseIsTheCoolest' OKChecking snake_case
+camelCase - 'ToggleCase is_the coolest' OK
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
+camelCase - ' toggleCase' OK
+camelCase - 'null' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+camelCase - 'Object' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
-snake_case - 'null' OK
-snake_case - 'Object' OK
 
-Checking leet
+
+snake_case - 'ToggleCase is_the coolest' OKChecking snake_case
+snake_case - 'toggle case is the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'null' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'Object' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+
+
+snake_case - 'ToggleCase is_the coolest' OKChecking leet
+snake_case - ' toggleCase' OK
 leet - 'anaconda' OK
+snake_case - 'null' OK
 leet - 'anacoNDa' OK
+snake_case - 'Object' OK
 leet - 'leet' OK
-leet - 'yoda' OK
+
+
+leet - 'yoda' OKChecking leet
 leet - 'evaluation' OK
+leet - 'anaconda' OK
 leet - 'mon travail' OK
+leet - 'anacoNDa' OK
 leet - ' ' OK
+leet - 'leet' OK
 leet - 'null' OK
+leet - 'yoda' OK
+leet - 'Object' OK
+leet - 'evaluation' OK
+
+
+leet - 'mon travail' OKChecking verlan
+leet - ' ' OK
+verlan - 'anaconda' OK
+leet - 'null' OK
+verlan - 'kayak' OK
 leet - 'Object' OK
 
-Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
+
+verlan - 'yoda m Luke' OKChecking verlan
 verlan - '70da m L(_)k3' OK
+verlan - 'anaconda' OK
 verlan - ' ' OK
 verlan - 'null' OK
+verlan - 'kayak' OK
 verlan - 'Object' OK
 
-Checking yoda
+
+verlan - 'yoda m Luke' OKChecking yoda
+verlan - '70da m L(_)k3' OK
 yoda - 'anaconda' OK
+verlan - ' ' OK
 yoda - 'yoda m Luke' OK
+verlan - 'null' OK
+verlan - 'Object' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
+
+
+yoda - ' ' OKChecking yoda
 yoda - 'null' OK
+yoda - 'anaconda' OK
 yoda - 'Object' OK
+yoda - 'yoda m Luke' OK
 
 Checking vig
+yoda - 'Inverser la position des mots d’une phrase' OK
 vig - 'anticonstitutionnellement - foo' OK
+yoda - ' ' OK
 vig - 'antiConstiTutioNnellement - foo' OK
+yoda - 'null' OK
+yoda - 'Object' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-vig - ' - test' OK
+
+
+vig - ' - test' OKChecking vig
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.split is not a function
+vig - 'anticonstitutionnellement - foo' OK
 
-Checking prop_access
+
+vig - 'antiConstiTutioNnellement - foo' OKChecking prop_access
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 prop_access - 'path exist - value string' OK
+vig - ' - test' OK
 prop_access - 'path exist - value object' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 prop_access - 'path exist - value array' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+
+
+prop_access - 'path not exist' OKChecking prop_access
+prop_access - 'path empty' OK
+prop_access - 'path exist - value string' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path exist - value object' OK
+prop_access - 'path null' OK
+prop_access - 'path exist - value array' OK
+
+
 prop_access - 'path not exist' OK
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
