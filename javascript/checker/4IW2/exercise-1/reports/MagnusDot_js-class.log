@@ -1,68 +1,24 @@
-
-leet - 'mon travail' OK
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
 Loading script...
-Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
 
-Checking yoda
-Fri Nov 29 2019 16:06:51 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-yoda - 'anaconda' OKChecking ucfirst
-yoda - 'yoda m Luke' OK
+Fri Nov 29 2019 16:07:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
 ucfirst - ' test' OK
-yoda - 'null' OK
 ucfirst - 'Test' OK
-yoda - 'Object' OK
-
-
-ucfirst - 'TEST' OKChecking vig
+ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' OK
 
-
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"Checking capitalize
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+Checking capitalize
 capitalize - 'test' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking prop_access
 capitalize - ' test' OK
-prop_access - 'path exist - value string' OK
 capitalize - 'ipsum DOLOR' OK
-prop_access - 'path exist - value object' OK
 capitalize - 'sit 8met consectetur' OK
-prop_access - 'path exist - value array' OK
 capitalize - '_dipiscing elit' OK
-prop_access - 'path not exist' OK
 capitalize - 'null' OK
 capitalize - 'Object' OK
-prop_access - 'path empty' OK
 
-
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to objectChecking camelCase
-prop_access - 'path null' OK
-
-
+Checking camelCase
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
