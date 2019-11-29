@@ -1,22 +1,70 @@
-Loading script...
 
-Fri Nov 29 2019 13:58:53 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OKLoading script...
+
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+Fri Nov 29 2019 13:59:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OKChecking ucfirst
+
+Checking yoda
+yoda - 'anaconda' OK
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
+yoda - 'yoda m Luke' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
 ucfirst - 'Object' OK
+yoda - 'null' OK
 
-Checking capitalize
+
+yoda - 'Object' OKChecking capitalize
+
+Checking vig
 capitalize - 'test' OK
+vig - 'anticonstitutionnellement - foo' OK
+vig - 'antiConstiTutioNnellement - foo' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 capitalize - ' test' OK
+vig - ' - test' OK
 capitalize - 'ipsum DOLOR' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 capitalize - 'sit 8met consectetur' OK
+
+Checking prop_access
+prop_access - 'path exist - value string' OK
 capitalize - '_dipiscing elit' OK
+prop_access - 'path exist - value object' OK
 capitalize - 'null' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
 capitalize - 'Object' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+
+
+prop_access - 'path null' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
