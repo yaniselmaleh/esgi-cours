@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 15:16:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 15:17:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - "ucfirst" not implemented
@@ -108,3 +108,18 @@ vig - 'Object - test' KO
 	expected : "" - got undefined
 
 Checking prop_access
+prop_access - 'path exist - value string' KO
+	expected : "dog" - got undefined
+prop_access - 'path exist - value object' KO
+	expected : {"name":"dog"} - got undefined
+prop_access - 'path exist - value array' KO
+	expected : {"name":"cat"} - got undefined
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
+prop_access - 'path empty' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+prop_access - 'object null' KO
+	expected : test not exist - got null
+prop_access - 'path null' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+
