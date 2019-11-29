@@ -1,29 +1,45 @@
-Loading script...
 
-Fri Nov 29 2019 15:07:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
+snake_case - ' toggleCase' OK
+snake_case - 'null' OKLoading script...
+
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+Fri Nov 29 2019 15:08:25 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
 ucfirst - 'test' OK
+leet - 'evaluation' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
+leet - 'mon travail' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
+leet - ' ' OK
 capitalize - 'test' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
+leet - 'null' OK
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+leet - 'Object' OK
 capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
+
+
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
+camelCase - 'ToggleCase is_the coolest' OKChecking verlan
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
@@ -36,51 +52,89 @@ snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
+verlan - 'anaconda' OK
 snake_case - 'Object' OK
 
 Checking leet
 leet - 'anaconda' OK
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OK
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' OK
 verlan - 'kayak' OK
+leet - 'anacoNDa' OK
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
+leet - 'leet' OK
+leet - 'yoda' OK
 verlan - 'null' OK
 verlan - 'Object' OK
 
 Checking yoda
+leet - 'evaluation' OK
 yoda - 'anaconda' OK
 yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+leet - 'mon travail' OK
+yoda - 'null' OK
+leet - ' ' OK
+leet - 'null' OK
+yoda - 'Object' OK
+leet - 'Object' OK
+
+
+
+Checking verlanChecking vig
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+vig - 'anticonstitutionnellement - foo' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+vig - 'antiConstiTutioNnellement - foo' OK
+verlan - ' ' OK
+verlan - 'null' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
+verlan - 'Object' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+
+Checking yoda
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+yoda - 'anaconda' OK
+
+Checking prop_access
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+prop_access - 'path exist - value string' OK
 yoda - ' ' OK
 yoda - 'null' OK
 yoda - 'Object' OK
 
 Checking vig
+prop_access - 'path exist - value object' OK
 vig - 'anticonstitutionnellement - foo' OK
 vig - 'antiConstiTutioNnellement - foo' OK
+prop_access - 'path exist - value array' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+prop_access - 'path not exist' OK
 vig - ' - test' OK
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+prop_access - 'path empty' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 prop_access - 'path exist - value object' OK
+prop_access - 'path null' OK
 prop_access - 'path exist - value array' OK
+
+
 prop_access - 'path not exist' OK
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
