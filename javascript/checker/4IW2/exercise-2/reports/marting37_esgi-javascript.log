@@ -1,17 +1,20 @@
 Loading script...
 
-Fri Nov 29 2019 13:00:05 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 13:00:00 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' OK
-type_check_v1 - 'null' OK
-type_check_v1 - 'nullNotObject' OK
+type_check_v1 - 'null' KO
+	expected : true - got false
+type_check_v1 - 'nullNotObject' KO
+	expected : false - got true
 type_check_v1 - 'undefined' KO
 	expected : true - got false
 type_check_v1 - 'string' OK
-type_check_v1 - 'array' OK
+type_check_v1 - 'array' KO
+	expected : true - got false
 type_check_v1 - 'function' KO
 	expected : true - got false
 type_check_v1 - 'arrayNotObject' KO
@@ -28,17 +31,17 @@ type_check_v2 - 'objectNotMatch' OK
 
 Checking type_check
 type_check - 'number' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : true - got undefined
 type_check - 'numberNotValue' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : false - got undefined
 type_check - 'numberNotObject' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : false - got undefined
 type_check - 'stringEnum' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : false - got undefined
 type_check - 'objectMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : true - got undefined
 type_check - 'objectNotMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : false - got undefined
 type_check - 'objectSuperMatch' KO
-	Unexpected behaviour : TypeError - "type_check" not implemented
+	expected : true - got undefined
 
