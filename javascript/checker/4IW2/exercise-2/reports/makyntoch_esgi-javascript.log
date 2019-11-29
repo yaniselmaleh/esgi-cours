@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 16:08:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 16:08:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
@@ -17,15 +17,18 @@ type_check_v1 - 'function' KO
 type_check_v1 - 'arrayNotObject' OK
 
 Checking type_check_v2
-type_check_v2 - 'number' OK
+type_check_v2 - 'number' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
 type_check_v2 - 'numberNotValue' KO
-	expected : false - got true
-type_check_v2 - 'numberNotObject' OK
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
+type_check_v2 - 'numberNotObject' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
 type_check_v2 - 'stringEnum' KO
-	expected : false - got true
-type_check_v2 - 'objectMatch' OK
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
+type_check_v2 - 'objectMatch' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
 type_check_v2 - 'objectNotMatch' KO
-	expected : false - got true
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
 
 Checking type_check
 type_check - 'number' KO
