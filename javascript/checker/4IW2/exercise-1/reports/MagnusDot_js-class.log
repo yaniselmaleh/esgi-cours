@@ -1,67 +1,24 @@
+Loading script...
 
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' OKLoading script...
-
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-Fri Nov 29 2019 15:26:55 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-yoda - 'Inverser la position des mots d’une phrase' OKChecking ucfirst
-yoda - ' ' OK
-yoda - 'null' OK
+Fri Nov 29 2019 15:27:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' OK
-yoda - 'Object' OK
-
-
-ucfirst - ' test' OKChecking vig
+ucfirst - ' test' OK
 ucfirst - 'Test' OK
-vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
-
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"Checking capitalize
-vig - ' - test' OK
+Checking capitalize
 capitalize - 'test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking prop_access
 capitalize - ' test' OK
-prop_access - 'path exist - value string' OK
 capitalize - 'ipsum DOLOR' OK
-prop_access - 'path exist - value object' OK
 capitalize - 'sit 8met consectetur' OK
-prop_access - 'path exist - value array' OK
 capitalize - '_dipiscing elit' OK
-prop_access - 'path not exist' OK
 capitalize - 'null' OK
-prop_access - 'path empty' OK
 capitalize - 'Object' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 
 Checking camelCase
-prop_access - 'path null' OK
-
-
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
