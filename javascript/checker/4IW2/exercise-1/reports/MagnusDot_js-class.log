@@ -1,16 +1,54 @@
-Loading script...
 
-Fri Nov 29 2019 14:30:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OKLoading script...
+
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' OK
+Fri Nov 29 2019 14:31:14 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+vig - 'antiConstiTutioNnellement - foo' OKChecking ucfirst
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 ucfirst - 'test' OK
+vig - ' - test' OK
 ucfirst - ' test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 
-Checking capitalize
+
+ucfirst - 'TEST' OKChecking prop_access
+ucfirst - 'null' OK
+prop_access - 'path exist - value string' OK
+ucfirst - 'Object' OK
+prop_access - 'path exist - value object' OK
+
+
+prop_access - 'path exist - value array' OKChecking capitalize
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 capitalize - 'test' OK
+prop_access - 'path null' OK
+
+
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
