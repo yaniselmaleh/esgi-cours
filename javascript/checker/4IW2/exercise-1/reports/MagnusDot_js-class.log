@@ -1,175 +1,176 @@
+Loading script...
+Loading script...
 
-Fri Nov 29 2019 14:59:40 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 15:00:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
-ucfirst - ' test' OKLoading script...
-
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-Fri Nov 29 2019 14:59:40 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-ucfirst - 'test' OK
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
 ucfirst - ' test' OK
+Fri Nov 29 2019 15:00:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-Checking camelCase
 ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-camelCase - 'toggle case is the coolest' OK
+ucfirst - 'TEST' OKChecking ucfirst
 ucfirst - 'null' OK
-camelCase - 'toggleCase is the coolest' OK
 ucfirst - 'Object' OK
-camelCase - 'ToggleCase is the 3oolest' OK
+ucfirst - 'test' OK
 
 
-camelCase - 'ToggleCaseIsTheCoolest' OKChecking capitalize
-camelCase - 'ToggleCase is_the coolest' OK
+ucfirst - ' test' OKChecking capitalize
 capitalize - 'test' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
-
-Checking snake_case
+ucfirst - 'Test' OK
 capitalize - ' test' OK
+ucfirst - 'TEST' OK
 capitalize - 'ipsum DOLOR' OK
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 capitalize - 'sit 8met consectetur' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-capitalize - '_dipiscing elit' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
+
+
+capitalize - '_dipiscing elit' OKChecking capitalize
 capitalize - 'null' OK
-snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
+capitalize - 'test' OK
 capitalize - 'Object' OK
 
 
-snake_case - 'null' OKChecking camelCase
-snake_case - 'Object' OK
-
-
-camelCase - 'toggle case is the coolest' OKChecking leet
-leet - 'anaconda' OK
-leet - 'anacoNDa' OK
+capitalize - ' test' OKChecking camelCase
+capitalize - 'ipsum DOLOR' OK
+camelCase - 'toggle case is the coolest' OK
+capitalize - 'sit 8met consectetur' OK
 camelCase - 'toggleCase is the coolest' OK
-leet - 'leet' OK
+capitalize - '_dipiscing elit' OK
 camelCase - 'ToggleCase is the 3oolest' OK
-leet - 'yoda' OK
+capitalize - 'null' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-leet - 'evaluation' OK
-leet - 'mon travail' OK
+capitalize - 'Object' OK
 camelCase - 'ToggleCase is_the coolest' OK
-leet - ' ' OK
-camelCase - ' toggleCase' OK
-leet - 'null' OK
+
+
+camelCase - ' toggleCase' OKChecking camelCase
+camelCase - 'toggle case is the coolest' OK
 camelCase - 'null' OK
-leet - 'Object' OK
-
-
+camelCase - 'toggleCase is the coolest' OK
 camelCase - 'Object' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 
-Checking verlanChecking snake_case
+
+camelCase - 'ToggleCaseIsTheCoolest' OKChecking snake_case
+camelCase - 'ToggleCase is_the coolest' OK
 snake_case - 'toggle case is the coolest' OK
+camelCase - ' toggleCase' OK
 snake_case - 'toggleCase is the coolest' OK
+camelCase - 'null' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+camelCase - 'Object' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
+
+
+snake_case - 'ToggleCase is_the coolest' OKChecking snake_case
 snake_case - ' toggleCase' OK
-verlan - 'anaconda' OK
+snake_case - 'toggle case is the coolest' OK
 snake_case - 'null' OK
-verlan - 'kayak' OK
+snake_case - 'toggleCase is the coolest' OK
 snake_case - 'Object' OK
-verlan - 'yoda m Luke' OK
+snake_case - 'ToggleCase is the 3oolest' OK
 
 
-verlan - '70da m L(_)k3' OKChecking leet
+snake_case - 'ToggleCaseIsTheCool3st' OKChecking leet
+snake_case - 'ToggleCase is_the coolest' OK
 leet - 'anaconda' OK
-verlan - ' ' OK
+snake_case - ' toggleCase' OK
 leet - 'anacoNDa' OK
-verlan - 'null' OK
+snake_case - 'null' OK
 leet - 'leet' OK
-verlan - 'Object' OK
 leet - 'yoda' OK
+snake_case - 'Object' OK
 leet - 'evaluation' OK
 
 
-leet - 'mon travail' OKChecking yoda
+leet - 'mon travail' OKChecking leet
 leet - ' ' OK
-yoda - 'anaconda' OK
+leet - 'anaconda' OK
 leet - 'null' OK
+leet - 'anacoNDa' OK
 leet - 'Object' OK
+leet - 'leet' OK
 
 
-yoda - 'yoda m Luke' OKChecking verlan
+leet - 'yoda' OKChecking verlan
+leet - 'evaluation' OK
 verlan - 'anaconda' OK
+leet - 'mon travail' OK
 verlan - 'kayak' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
+leet - ' ' OK
 verlan - 'yoda m Luke' OK
+leet - 'null' OK
 verlan - '70da m L(_)k3' OK
+leet - 'Object' OK
 verlan - ' ' OK
-yoda - ' ' OK
-verlan - 'null' OK
+
+
+verlan - 'null' OKChecking verlan
 verlan - 'Object' OK
-yoda - 'null' OK
+verlan - 'anaconda' OK
 
 
-yoda - 'Object' OKChecking yoda
-
-
-yoda - 'anaconda' OKChecking vig
+verlan - 'kayak' OKChecking yoda
+verlan - 'yoda m Luke' OK
+yoda - 'anaconda' OK
+verlan - '70da m L(_)k3' OK
 yoda - 'yoda m Luke' OK
+verlan - ' ' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+verlan - 'null' OK
+yoda - ' ' OK
+verlan - 'Object' OK
+
+
+yoda - 'null' OKChecking yoda
+yoda - 'anaconda' OK
+yoda - 'Object' OK
+yoda - 'yoda m Luke' OK
+
+
+yoda - 'Inverser la position des mots d’une phrase' OKChecking vig
+yoda - ' ' OK
 vig - 'anticonstitutionnellement - foo' OK
+yoda - 'null' OK
 vig - 'antiConstiTutioNnellement - foo' OK
+yoda - 'Object' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-yoda - 'Inverser la position des mots d’une phrase' OK
-vig - ' - test' OK
-yoda - ' ' OK
+
+
+vig - ' - test' OKChecking vig
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-yoda - 'null' OK
+vig - 'anticonstitutionnellement - foo' OK
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.split is not a function
-yoda - 'Object' OK
-
-
-
-Checking vigChecking prop_access
-vig - 'anticonstitutionnellement - foo' OK
-prop_access - 'path exist - value string' OK
 vig - 'antiConstiTutioNnellement - foo' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
+
+
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-prop_access - 'path not exist' OK
-vig - ' - test' OK
-prop_access - 'path empty' OK
+vig - ' - test' OKChecking prop_access
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+prop_access - 'path exist - value string' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+prop_access - 'path exist - value object' OK
+
+
+prop_access - 'path exist - value array' OKChecking prop_access
+prop_access - 'path exist - value string' OK
+prop_access - 'path not exist' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path empty' OK
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-prop_access - 'path null' OK
-
-
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
+prop_access - 'path null' OK
 prop_access - 'path not exist' OK
+
+
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
