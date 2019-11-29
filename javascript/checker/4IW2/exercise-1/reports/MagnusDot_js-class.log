@@ -1,9 +1,15 @@
 
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 prop_access - 'path null' OK
 
 Loading script...
 
-Fri Nov 29 2019 16:26:31 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 23:25:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
