@@ -1,4 +1,8 @@
 
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
 yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
@@ -12,33 +16,33 @@ vig - 'antiConstiTutioNnellement - foo' OK
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
 	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 vig - ' - test' OK
-Fri Nov 29 2019 14:45:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of nullChecking ucfirst
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+Fri Nov 29 2019 14:46:06 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
 vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-ucfirst - 'test' OK
+	Unexpected behaviour : TypeError - str.split is not a functionChecking ucfirst
 
 Checking prop_access
-ucfirst - ' test' OK
 prop_access - 'path exist - value string' OK
-ucfirst - 'Test' OK
 prop_access - 'path exist - value object' OK
+ucfirst - 'test' OK
 prop_access - 'path exist - value array' OK
-ucfirst - 'TEST' OK
 prop_access - 'path not exist' OK
-ucfirst - 'null' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
 prop_access - 'path empty' OK
+ucfirst - 'null' OK
 ucfirst - 'Object' OK
+
+
 prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to objectChecking capitalize
 prop_access - 'path null' OK
-
-
-
-Checking capitalize
 capitalize - 'test' OK
+
+
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
 capitalize - 'sit 8met consectetur' OK
