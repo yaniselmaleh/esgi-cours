@@ -1,22 +1,65 @@
+
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
 Loading script...
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+Fri Nov 29 2019 16:21:04 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-Fri Nov 29 2019 16:20:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+
+Checking ucfirstChecking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
 ucfirst - 'test' OK
+vig - 'anticonstitutionnellement - foo' OK
 ucfirst - ' test' OK
+vig - 'antiConstiTutioNnellement - foo' OK
 ucfirst - 'Test' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 ucfirst - 'TEST' OK
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 ucfirst - 'null' OK
-ucfirst - 'Object' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 
-Checking capitalize
+Checking prop_access
+ucfirst - 'Object' OK
+prop_access - 'path exist - value string' OK
+
+
+prop_access - 'path exist - value object' OKChecking capitalize
+prop_access - 'path exist - value array' OK
 capitalize - 'test' OK
+prop_access - 'path not exist' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
+prop_access - 'path empty' OK
 capitalize - 'sit 8met consectetur' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+prop_access - 'path null' OK
 capitalize - 'Object' OK
+
+
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' OK
