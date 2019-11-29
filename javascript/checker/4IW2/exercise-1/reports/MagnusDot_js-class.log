@@ -1,47 +1,96 @@
-Loading script...
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' OKLoading script...
 
-Fri Nov 29 2019 13:10:59 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+Fri Nov 29 2019 13:11:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+verlan - 'yoda m Luke' OKChecking ucfirst
 ucfirst - 'test' OK
+verlan - '70da m L(_)k3' OK
 ucfirst - ' test' OK
+verlan - ' ' OK
 ucfirst - 'Test' OK
+verlan - 'null' OK
 ucfirst - 'TEST' OK
+verlan - 'Object' OK
 ucfirst - 'null' OK
+
+
 ucfirst - 'Object' OK
 
-Checking capitalize
+Checking yodaChecking capitalize
+yoda - 'anaconda' OK
 capitalize - 'test' OK
+yoda - 'yoda m Luke' OK
 capitalize - ' test' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
 capitalize - 'ipsum DOLOR' OK
+yoda - ' ' OK
 capitalize - 'sit 8met consectetur' OK
+yoda - 'null' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
 capitalize - 'Object' OK
 
 Checking camelCase
+vig - 'anticonstitutionnellement - foo' OK
+vig - 'antiConstiTutioNnellement - foo' OK
 camelCase - 'toggle case is the coolest' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 camelCase - 'toggleCase is the coolest' OK
+vig - ' - test' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 camelCase - 'ToggleCase is_the coolest' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 camelCase - ' toggleCase' OK
-camelCase - 'null' OK
+
+
+camelCase - 'null' OKChecking prop_access
 camelCase - 'Object' OK
 
-Checking snake_case
+
+prop_access - 'path exist - value string' OKChecking snake_case
 snake_case - 'toggle case is the coolest' OK
+prop_access - 'path exist - value object' OK
 snake_case - 'toggleCase is the coolest' OK
+prop_access - 'path exist - value array' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
+prop_access - 'path not exist' OK
 
 Checking leet
+prop_access - 'path empty' OK
 leet - 'anaconda' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 leet - 'anacoNDa' OK
+prop_access - 'path null' OK
 leet - 'leet' OK
+
+
 leet - 'yoda' OK
 leet - 'evaluation' OK
 leet - 'mon travail' OK
