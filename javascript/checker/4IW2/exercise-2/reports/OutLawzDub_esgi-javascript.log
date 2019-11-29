@@ -1,21 +1,23 @@
 Loading script...
 
-Fri Nov 29 2019 13:43:57 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 13:44:34 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' KO
-	expected : true - got false
+	expected : true - got undefined
 type_check_v1 - 'null' OK
-type_check_v1 - 'nullNotObject' OK
+type_check_v1 - 'nullNotObject' KO
+	expected : false - got undefined
 type_check_v1 - 'undefined' KO
-	expected : true - got false
+	expected : true - got undefined
 type_check_v1 - 'string' OK
 type_check_v1 - 'array' OK
 type_check_v1 - 'function' KO
-	expected : true - got false
-type_check_v1 - 'arrayNotObject' OK
+	expected : true - got undefined
+type_check_v1 - 'arrayNotObject' KO
+	expected : false - got undefined
 
 Checking type_check_v2
 type_check_v2 - 'number' KO
