@@ -1,11 +1,30 @@
+Loading script...
 
+Fri Nov 29 2019 14:28:32 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+
+Checking camelCase
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OKLoading script...
-
+camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
@@ -18,114 +37,26 @@ snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
 snake_case - 'null' OK
 snake_case - 'Object' OK
-Fri Nov 29 2019 14:27:42 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-
-Checking ucfirst
-ucfirst - 'test' OKChecking leet
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
+Checking leet
 leet - 'anaconda' OK
-ucfirst - 'null' OK
 leet - 'anacoNDa' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
 leet - 'leet' OK
-capitalize - 'test' OK
 leet - 'yoda' OK
-capitalize - ' test' OK
 leet - 'evaluation' OK
-capitalize - 'ipsum DOLOR' OK
 leet - 'mon travail' OK
-capitalize - 'sit 8met consectetur' OK
-leet - ' ' OK
-capitalize - '_dipiscing elit' OK
-leet - 'null' OK
-capitalize - 'null' OK
-leet - 'Object' OK
-capitalize - 'Object' OK
-
-
-
-Checking verlanChecking camelCase
-verlan - 'anaconda' OK
-camelCase - 'toggle case is the coolest' OK
-verlan - 'kayak' OK
-camelCase - 'toggleCase is the coolest' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-verlan - ' ' OK
-camelCase - 'ToggleCase is_the coolest' OK
-verlan - 'null' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-verlan - 'Object' OK
-camelCase - 'Object' OK
-
-Checking yoda
-
-
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OKChecking snake_case
-yoda - 'Inverser la position des mots d’une phrase' OK
-snake_case - 'toggle case is the coolest' OK
-yoda - ' ' OK
-yoda - 'null' OK
-snake_case - 'toggleCase is the coolest' OK
-yoda - 'Object' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-
-Checking vig
-snake_case - 'ToggleCaseIsTheCool3st' OK
-snake_case - 'ToggleCase is_the coolest' OK
-vig - 'anticonstitutionnellement - foo' OK
-snake_case - ' toggleCase' OK
-snake_case - 'null' OK
-snake_case - 'Object' OK
-vig - 'antiConstiTutioNnellement - foo' OK
-
-
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"Checking leet
-vig - ' - test' OK
-leet - 'anaconda' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-leet - 'anacoNDa' OK
-leet - 'leet' OK
-leet - 'yoda' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-leet - 'evaluation' OK
-
-
-leet - 'mon travail' OKChecking prop_access
 leet - ' ' OK
 leet - 'null' OK
-prop_access - 'path exist - value string' OK
 leet - 'Object' OK
 
-
-prop_access - 'path exist - value object' OKChecking verlan
-prop_access - 'path exist - value array' OK
+Checking verlan
 verlan - 'anaconda' OK
-prop_access - 'path not exist' OK
 verlan - 'kayak' OK
-prop_access - 'path empty' OK
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 verlan - ' ' OK
-prop_access - 'path null' OK
 verlan - 'null' OK
 verlan - 'Object' OK
-
-
 
 Checking yoda
 yoda - 'anaconda' OK
