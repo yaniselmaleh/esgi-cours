@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 13:21:04 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 13:21:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -69,12 +69,14 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "fbhnQcsghnHiywcSbsqzsrsby"
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' OK
+vig - 'antiConstiTutioNnellement - foo' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 vig - ' - test' OK
-vig - 'null - test' OK
-vig - 'Object - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
 prop_access - 'path exist - value string' OK
