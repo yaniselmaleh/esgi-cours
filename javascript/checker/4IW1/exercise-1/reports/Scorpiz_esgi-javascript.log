@@ -1,6 +1,6 @@
 Loading script...
 
-Thu Nov 28 2019 11:01:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 08:54:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -53,10 +53,8 @@ leet - 'Object' OK
 Checking verlan
 verlan - 'anaconda' OK
 verlan - 'kayak' OK
-verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got "ekuL m adoy"
-verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
 verlan - ' ' OK
 verlan - 'null' OK
 verlan - 'Object' OK
@@ -71,13 +69,13 @@ yoda - 'Object' OK
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
+	Unexpected behaviour : ReferenceError - code is not defined
 vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got undefined
+	Unexpected behaviour : ReferenceError - code is not defined
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got undefined
+	Unexpected behaviour : ReferenceError - code is not defined
 vig - ' - test' KO
-	expected : " " - got undefined
+	Unexpected behaviour : ReferenceError - code is not defined
 vig - 'null - test' OK
 vig - 'Object - test' OK
 
