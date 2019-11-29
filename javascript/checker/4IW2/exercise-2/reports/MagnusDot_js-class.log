@@ -1,11 +1,12 @@
+Loading script...
 
-Fri Nov 29 2019 15:27:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking type_check_v1Loading script...
-
+Fri Nov 29 2019 15:28:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
-type_check_v1 - 'object' OK
+type_check_v1 - 'object' OKLoading script...
+
 type_check_v1 - 'null' OK
 type_check_v1 - 'nullNotObject' OK
 type_check_v1 - 'undefined' KO
@@ -30,25 +31,25 @@ type_check_v2 - 'objectNotMatch' KO
 Checking type_check
 type_check - 'number' KO
 	expected : true - got undefined
-Fri Nov 29 2019 15:27:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
 type_check - 'numberNotValue' KO
 	expected : false - got undefined
 type_check - 'numberNotObject' KO
-	expected : false - got undefinedChecking type_check_v1
+	expected : false - got undefined
 type_check - 'stringEnum' KO
 	expected : false - got undefined
 type_check - 'objectMatch' KO
 	expected : true - got undefined
 type_check - 'objectNotMatch' KO
 	expected : false - got undefined
-type_check_v1 - 'number' OK
-type_check_v1 - 'StringNotNumber' OK
 type_check - 'objectSuperMatch' KO
 	expected : true - got undefined
+
+
+Fri Nov 29 2019 15:28:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking type_check_v1
+type_check_v1 - 'number' OK
+type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
-
-
 type_check_v1 - 'object' OK
 type_check_v1 - 'null' OK
 type_check_v1 - 'nullNotObject' OK
