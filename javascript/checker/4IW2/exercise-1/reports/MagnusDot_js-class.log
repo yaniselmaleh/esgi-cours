@@ -1,6 +1,7 @@
 Loading script...
+Loading script...
 
-Fri Nov 29 2019 14:57:03 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 14:57:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -9,54 +10,142 @@ ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
-Checking capitalize
+
+Fri Nov 29 2019 14:57:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking capitalizeChecking ucfirst
+ucfirst - 'test' OK
 capitalize - 'test' OK
+ucfirst - ' test' OK
 capitalize - ' test' OK
+ucfirst - 'Test' OK
 capitalize - 'ipsum DOLOR' OK
+ucfirst - 'TEST' OK
 capitalize - 'sit 8met consectetur' OK
+ucfirst - 'null' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+ucfirst - 'Object' OK
 capitalize - 'Object' OK
 
-Checking camelCase
+
+
+Checking capitalizeChecking camelCase
 camelCase - 'toggle case is the coolest' OK
+capitalize - 'test' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
+capitalize - ' test' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+capitalize - 'ipsum DOLOR' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
+capitalize - 'sit 8met consectetur' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
+capitalize - '_dipiscing elit' OK
 
-Checking snake_case
+
+capitalize - 'null' OKChecking snake_case
+capitalize - 'Object' OK
 snake_case - 'toggle case is the coolest' OK
+
+
 snake_case - 'toggleCase is the coolest' OK
-snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCase is the 3oolest' OKChecking camelCase
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
+camelCase - 'toggle case is the coolest' OK
 snake_case - ' toggleCase' OK
+camelCase - 'toggleCase is the coolest' OK
 snake_case - 'null' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 snake_case - 'Object' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
 
-Checking leet
+
+camelCase - 'ToggleCase is_the coolest' OKChecking leet
+camelCase - ' toggleCase' OK
+camelCase - 'null' OK
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
+camelCase - 'Object' OK
+leet - 'leet' OK
+
+
+leet - 'yoda' OKChecking snake_case
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+snake_case - 'toggle case is the coolest' OK
+leet - ' ' OK
+snake_case - 'toggleCase is the coolest' OK
+leet - 'null' OK
+leet - 'Object' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+
+
+snake_case - 'ToggleCaseIsTheCool3st' OKChecking verlan
+snake_case - 'ToggleCase is_the coolest' OK
+verlan - 'anaconda' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+verlan - 'kayak' OK
+snake_case - 'Object' OK
+verlan - 'yoda m Luke' OK
+
+
+verlan - '70da m L(_)k3' OKChecking leet
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+leet - 'anaconda' OK
+
+
+leet - 'anacoNDa' OKChecking yoda
 leet - 'leet' OK
 leet - 'yoda' OK
 leet - 'evaluation' OK
+yoda - 'anaconda' OK
 leet - 'mon travail' OK
 leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
+yoda - 'yoda m Luke' OK
 
 Checking verlan
+yoda - 'Inverser la position des mots d’une phrase' OK
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' OK
 verlan - 'anaconda' OK
+vig - 'antiConstiTutioNnellement - foo' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
 verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+
+
+verlan - 'yoda m Luke' OKChecking prop_access
+prop_access - 'path exist - value string' OK
 verlan - '70da m L(_)k3' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
 verlan - ' ' OK
+prop_access - 'path empty' OK
 verlan - 'null' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path null' OK
 verlan - 'Object' OK
+
+
 
 Checking yoda
 yoda - 'anaconda' OK
