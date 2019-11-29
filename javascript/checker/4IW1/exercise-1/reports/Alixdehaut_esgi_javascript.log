@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 09:42:19 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 09:42:58 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -25,7 +25,7 @@ camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIs_theCoolest"
+	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
@@ -55,10 +55,8 @@ leet - 'evaluation' KO
 leet - 'mon travail' KO
 	expected : "m0n tr4v41l" - got "mon travail"
 leet - ' ' OK
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-leet - 'Object' KO
-	expected : "" - got {"foo":"data"}
+leet - 'null' OK
+leet - 'Object' OK
 
 Checking verlan
 verlan - 'anaconda' KO
