@@ -1,8 +1,24 @@
-Loading script...
 
-Fri Nov 29 2019 13:43:23 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OKLoading script...
+
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
+Fri Nov 29 2019 13:43:58 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+yoda - 'Inverser la position des mots d’une phrase' OKChecking ucfirst
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+
+
+ucfirst - 'test' OKChecking vig
+vig - 'anticonstitutionnellement - foo' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
@@ -10,15 +26,26 @@ ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
+vig - 'antiConstiTutioNnellement - foo' OK
 capitalize - 'test' OK
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
 capitalize - 'sit 8met consectetur' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
 capitalize - '_dipiscing elit' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
 capitalize - 'null' OK
-capitalize - 'Object' OK
+
+
+capitalize - 'Object' OKChecking prop_access
 
 Checking camelCase
+prop_access - 'path exist - value string' OK
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
@@ -26,19 +53,28 @@ camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
+prop_access - 'path exist - value object' OK
 camelCase - 'Object' OK
 
 Checking snake_case
+prop_access - 'path exist - value array' OK
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
+prop_access - 'path not exist' OK
 snake_case - 'null' OK
+prop_access - 'path empty' OK
 snake_case - 'Object' OK
 
 Checking leet
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path null' OK
+
+
 leet - 'anaconda' OK
 leet - 'anacoNDa' OK
 leet - 'leet' OK
