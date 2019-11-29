@@ -1,54 +1,4 @@
 
-yoda - 'yoda m Luke' OKLoading script...
-
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OK
-yoda - 'Object' OK
-
-Checking vig
-Fri Nov 29 2019 13:38:59 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-vig - 'anticonstitutionnellement - foo' OKChecking ucfirst
-vig - 'antiConstiTutioNnellement - foo' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-vig - ' - test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking capitalize
-
-
-capitalize - 'test' OKChecking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-prop_access - 'path null' OK
-
-
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
-capitalize - '_dipiscing elit' OK
-capitalize - 'null' OK
-capitalize - 'Object' OK
-
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
@@ -56,10 +6,99 @@ camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
 
-Checking snake_case
+Checking snake_caseLoading script...
+
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+Fri Nov 29 2019 13:39:44 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+leet - 'yoda' OK
+leet - 'evaluation' OKChecking ucfirst
+leet - 'mon travail' OK
+leet - ' ' OK
+ucfirst - 'test' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+verlan - 'anaconda' OK
+ucfirst - 'TEST' OK
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+verlan - 'kayak' OK
+
+Checking capitalize
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+capitalize - 'test' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+capitalize - ' test' OK
+yoda - 'yoda m Luke' OK
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+capitalize - '_dipiscing elit' OK
+yoda - ' ' OK
+yoda - 'null' OK
+yoda - 'Object' OK
+capitalize - 'null' OK
+
+
+capitalize - 'Object' OKChecking vig
+
+
+vig - 'anticonstitutionnellement - foo' OKChecking camelCase
+vig - 'antiConstiTutioNnellement - foo' OK
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
+camelCase - 'ToggleCase is the 3oolest' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+camelCase - 'ToggleCaseIsTheCoolest' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+camelCase - 'ToggleCase is_the coolest' OK
+
+Checking prop_access
+camelCase - ' toggleCase' OK
+camelCase - 'null' OK
+prop_access - 'path exist - value string' OK
+camelCase - 'Object' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+
+Checking snake_case
+prop_access - 'path not exist' OK
+snake_case - 'toggle case is the coolest' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+snake_case - 'toggleCase is the coolest' OK
+prop_access - 'path null' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+
+
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK
