@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 09:23:42 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 09:24:22 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -10,16 +10,13 @@ ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
-capitalize - 'test' KO
-	expected : "Test" - got "Est"
+capitalize - 'test' OK
 capitalize - ' test' KO
-	expected : " Test" - got "Test"
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got "Psum Dolor"
-capitalize - 'sit 8met consectetur' KO
-	expected : "Sit 8met Consectetur" - got "It 8met Consectetur"
-capitalize - '_dipiscing elit' KO
-	expected : "_dipiscing Elit" - got "Dipiscing Elit"
+	expected : "Ipsum Dolor" - got "Ipsum DOLOR"
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
@@ -60,11 +57,16 @@ leet - 'null' OK
 leet - 'Object' OK
 
 Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' OK
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - word.split(...).reserve is not a function
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - word.split(...).reserve is not a function
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - word.split(...).reserve is not a function
+verlan - '70da m L(_)k3' KO
+	Unexpected behaviour : TypeError - word.split(...).reserve is not a function
+verlan - ' ' KO
+	Unexpected behaviour : TypeError - word.split(...).reserve is not a function
 verlan - 'null' OK
 verlan - 'Object' OK
 
