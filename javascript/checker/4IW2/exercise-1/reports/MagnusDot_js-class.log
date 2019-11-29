@@ -1,13 +1,6 @@
+Loading script...
 
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to objectLoading script...
-
-prop_access - 'path null' OK
-
-
-Fri Nov 29 2019 14:15:58 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 14:16:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
