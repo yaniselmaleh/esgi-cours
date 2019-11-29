@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 15:14:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 15:15:57 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -8,3 +8,97 @@ ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got "Toggle Case Is The Coolest"
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "Togglecase Is The Coolest"
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got "Togglecase Is The 3oolest"
+camelCase - 'ToggleCaseIsTheCoolest' OK
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "Togglecase Is The Coolest"
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got " Togglecase"
+camelCase - 'null' OK
+camelCase - 'Object' OK
+
+Checking snake_case
+snake_case - 'toggle case is the coolest' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "3v4l_4tundefined0n"
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "m0n tr4v4undefinedl"
+leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' KO
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
+yoda - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
+yoda - 'Inverser la position des mots d’une phrase' KO
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
+yoda - ' ' KO
+	Unexpected behaviour : TypeError - string.split(...).reverse(...).joing is not a function
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "n{ zkvczi r{s r{s ospny~ mwi} qi qi }i wb}|lmoqx ym~{ zi|r ya| g lw js~r n wiu{"
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+
+Checking prop_access
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'test' of null
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+
