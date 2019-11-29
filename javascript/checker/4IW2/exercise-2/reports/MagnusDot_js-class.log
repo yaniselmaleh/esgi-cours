@@ -1,11 +1,11 @@
-Loading script...
 
-Fri Nov 29 2019 14:56:23 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 14:57:02 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
-type_check_v1 - 'object' OK
+type_check_v1 - 'object' OKLoading script...
+
 type_check_v1 - 'null' OK
 type_check_v1 - 'nullNotObject' OK
 type_check_v1 - 'undefined' KO
@@ -18,6 +18,50 @@ type_check_v1 - 'arrayNotObject' KO
 	expected : false - got true
 
 Checking type_check_v2
+Fri Nov 29 2019 14:57:03 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+type_check_v2 - 'number' KO
+	expected : true - got falseChecking type_check_v1
+type_check_v2 - 'numberNotValue' OK
+type_check_v2 - 'numberNotObject' OK
+type_check_v1 - 'number' OK
+type_check_v2 - 'stringEnum' OK
+type_check_v1 - 'StringNotNumber' OK
+type_check_v2 - 'objectMatch' OK
+type_check_v1 - 'BooleanNotNumber' OK
+type_check_v2 - 'objectNotMatch' KO
+	expected : false - got true
+type_check_v1 - 'object' OK
+
+
+type_check_v1 - 'null' OKChecking type_check
+type_check_v1 - 'nullNotObject' OK
+type_check - 'number' KO
+	expected : true - got undefined
+type_check_v1 - 'undefined' KO
+	expected : true - got false
+type_check - 'numberNotValue' KO
+	expected : false - got undefined
+type_check_v1 - 'string' OK
+type_check - 'numberNotObject' KO
+	expected : false - got undefined
+type_check_v1 - 'array' OK
+type_check - 'stringEnum' KO
+	expected : false - got undefined
+type_check_v1 - 'function' KO
+	expected : true - got false
+type_check - 'objectMatch' KO
+	expected : true - got undefined
+type_check_v1 - 'arrayNotObject' KO
+	expected : false - got true
+type_check - 'objectNotMatch' KO
+	expected : false - got undefined
+
+
+type_check - 'objectSuperMatch' KO
+	expected : true - got undefinedChecking type_check_v2
+
+
 type_check_v2 - 'number' KO
 	expected : true - got false
 type_check_v2 - 'numberNotValue' OK
