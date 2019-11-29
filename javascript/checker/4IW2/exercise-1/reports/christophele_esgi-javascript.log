@@ -1,6 +1,6 @@
 Loading script...
 
-Fri Nov 29 2019 13:02:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Fri Nov 29 2019 13:02:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -20,18 +20,21 @@ capitalize - 'Object' OK
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	expected : "ToggleCaseIsTheCoolest" - got "Toggle Case Is The Coolest"
+	expected : "ToggleCaseIsTheCoolest" - got undefined
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "Togglecase Is The Coolest"
+	expected : "TogglecaseIsTheCoolest" - got undefined
 camelCase - 'ToggleCase is the 3oolest' KO
-	expected : "TogglecaseIsThe3oolest" - got "Togglecase Is The 3oolest"
-camelCase - 'ToggleCaseIsTheCoolest' OK
+	expected : "TogglecaseIsThe3oolest" - got undefined
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got undefined
 camelCase - 'ToggleCase is_the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got "Togglecase Is The Coolest"
+	expected : "TogglecaseIsTheCoolest" - got undefined
 camelCase - ' toggleCase' KO
-	expected : "Togglecase" - got " Togglecase"
-camelCase - 'null' OK
-camelCase - 'Object' OK
+	expected : "Togglecase" - got undefined
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'replace' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - string.replace is not a function
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
