@@ -1,6 +1,26 @@
-Loading script...
 
-Fri Nov 29 2019 15:50:35 GMT+0000 (Coordinated Universal Time) - Starting tests...
+vig - 'antiConstiTutioNnellement - foo' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a functionLoading script...
+
+
+Checking prop_access
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+prop_access - 'path null' OK
+
+
+Fri Nov 29 2019 15:51:13 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
