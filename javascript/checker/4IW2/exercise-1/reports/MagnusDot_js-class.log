@@ -1,25 +1,11 @@
-Loading script...
 
-Fri Nov 29 2019 15:41:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
-
-Checking capitalize
-capitalize - 'test' OK
-capitalize - ' test' OK
-capitalize - 'ipsum DOLOR' OK
-capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggle case is the coolest' OKLoading script...
+
 camelCase - 'toggleCase is the coolest' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
@@ -33,29 +19,117 @@ snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+Fri Nov 29 2019 15:42:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
 snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
+snake_case - ' toggleCase' OKChecking ucfirst
 snake_case - 'null' OK
 snake_case - 'Object' OK
 
-Checking leet
+
+ucfirst - 'test' OKChecking leet
+ucfirst - ' test' OK
 leet - 'anaconda' OK
+ucfirst - 'Test' OK
 leet - 'anacoNDa' OK
+ucfirst - 'TEST' OK
 leet - 'leet' OK
+ucfirst - 'null' OK
 leet - 'yoda' OK
+ucfirst - 'Object' OK
 leet - 'evaluation' OK
+
+Checking capitalize
 leet - 'mon travail' OK
+capitalize - 'test' OK
 leet - ' ' OK
 leet - 'null' OK
 leet - 'Object' OK
+capitalize - ' test' OK
 
-Checking verlan
+
+capitalize - 'ipsum DOLOR' OKChecking verlan
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
 verlan - 'anaconda' OK
+
+Checking camelCase
 verlan - 'kayak' OK
+camelCase - 'toggle case is the coolest' OK
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
+camelCase - 'toggleCase is the coolest' OK
+camelCase - 'ToggleCase is the 3oolest' OK
 verlan - ' ' OK
 verlan - 'null' OK
+camelCase - 'ToggleCaseIsTheCoolest' OK
+verlan - 'Object' OK
+camelCase - 'ToggleCase is_the coolest' OK
+camelCase - ' toggleCase' OK
+
+
+camelCase - 'null' OK
+camelCase - 'Object' OKChecking yoda
+
+Checking snake_case
+snake_case - 'toggle case is the coolest' OK
+yoda - 'anaconda' OK
+snake_case - 'toggleCase is the coolest' OK
+snake_case - 'ToggleCase is the 3oolest' OK
+yoda - 'yoda m Luke' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
+snake_case - 'ToggleCase is_the coolest' OK
+snake_case - ' toggleCase' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
+snake_case - 'null' OK
+yoda - ' ' OK
+snake_case - 'Object' OK
+
+
+yoda - 'null' OKChecking leet
+yoda - 'Object' OK
+leet - 'anaconda' OK
+
+
+leet - 'anacoNDa' OKChecking vig
+leet - 'leet' OK
+leet - 'yoda' OK
+vig - 'anticonstitutionnellement - foo' OK
+leet - 'evaluation' OK
+vig - 'antiConstiTutioNnellement - foo' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
+leet - 'null' OK
+vig - ' - test' OK
+leet - 'Object' OK
+
+
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of nullChecking verlan
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - str.split is not a function
+
+
+verlan - 'anaconda' OKChecking prop_access
+verlan - 'kayak' OK
+prop_access - 'path exist - value string' OK
+verlan - 'yoda m Luke' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+verlan - '70da m L(_)k3' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
+verlan - ' ' OK
+prop_access - 'path null' OK
+verlan - 'null' OK
+
+
 verlan - 'Object' OK
 
 Checking yoda
