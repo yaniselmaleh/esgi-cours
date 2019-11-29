@@ -1,40 +1,11 @@
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' OKLoading script...
+Loading script...
 
-yoda - 'Object' OK
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' OK
-vig - 'antiConstiTutioNnellement - foo' OK
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "hna zkvczi gras gras ospnyd mwic qqi qi citg wbcblqmoqx ymda zibr yab g lws jqsdr qn wiua"
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-Fri Nov 29 2019 15:17:12 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-prop_access - 'path exist - value object' OKChecking ucfirst
-prop_access - 'path exist - value array' OK
+Fri Nov 29 2019 15:17:54 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
 ucfirst - ' test' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
 ucfirst - 'Test' OK
-prop_access - 'path null' OK
 ucfirst - 'TEST' OK
-
-
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
 
