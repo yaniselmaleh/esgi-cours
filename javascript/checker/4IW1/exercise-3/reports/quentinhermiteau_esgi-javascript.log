@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 13:43:32 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 13:44:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	expected : "Test" - got ""
@@ -17,15 +17,15 @@ ucfirst - 'Object' KO
 
 Checking capitalize
 capitalize - 'test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Test" - got ""
 capitalize - ' test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : " Test" - got ""
 capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Ipsum Dolor" - got ""
 capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "Sit 8met Consectetur" - got ""
 capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	expected : "_dipiscing Elit" - got ""
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 capitalize - 'Object' KO
@@ -33,17 +33,17 @@ capitalize - 'Object' KO
 
 Checking camelCase
 camelCase - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "ToggleCaseIsTheCoolest" - got ""
 camelCase - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "TogglecaseIsTheCoolest" - got ""
 camelCase - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "TogglecaseIsThe3oolest" - got ""
 camelCase - 'ToggleCaseIsTheCoolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "Togglecaseisthecoolest" - got ""
 camelCase - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "TogglecaseIsTheCoolest" - got ""
 camelCase - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
+	expected : "Togglecase" - got ""
 camelCase - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'camelCase' of null
 camelCase - 'Object' KO
@@ -51,17 +51,17 @@ camelCase - 'Object' KO
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "toggle_case_is_the_coolest" - got ""
 snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got ""
 snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_3oolest" - got ""
 snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecaseisthecool3st" - got ""
 snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "togglecase_is_the_coolest" - got ""
 snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	expected : "_togglecase" - got ""
 snake_case - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of null
 snake_case - 'Object' KO
@@ -69,19 +69,19 @@ snake_case - 'Object' KO
 
 Checking leet
 leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "4n4c0nd4" - got ""
 leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "4n4c0ND4" - got ""
 leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "l33t" - got ""
 leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "70d4" - got ""
 leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "3v4l(_)4t10n" - got ""
 leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : "m0n tr4v41l" - got ""
 leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	expected : " " - got ""
 leet - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
 leet - 'Object' KO
@@ -89,15 +89,15 @@ leet - 'Object' KO
 
 Checking verlan
 verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adnocana" - got ""
 verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "kayak" - got ""
 verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "adoy m ekuL" - got ""
 verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : "ad07 m 3k)_(L" - got ""
 verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	expected : " " - got ""
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 verlan - 'Object' KO
@@ -105,13 +105,13 @@ verlan - 'Object' KO
 
 Checking yoda
 yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "anaconda" - got ""
 yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "Luke m yoda" - got ""
 yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : "phrase d’une mots des position la Inverser" - got ""
 yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	expected : " " - got ""
 yoda - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
 yoda - 'Object' KO
