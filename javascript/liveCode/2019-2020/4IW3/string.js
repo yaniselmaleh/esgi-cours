@@ -89,4 +89,23 @@ function yoda(str) {
 function vig(str, code) {
   if(typeof str !== "string" || !str) return '';
   
+  while(code.length < str.length) {
+    code += code;
+  }
+
+  let codeIndex = 0;
+  return str.toLowerCase().split('').map(function(char,) {
+    //`Position dans l'alphabet du car du message
+    const charCode = char.charCodeAt(0) - "a".charCodeAt(0);
+    // Verifie car is alpha
+    if (charCode < 0 || charCode > 25) return char;
+    //`Position dans l'alphabet du car du code
+    const codeCode = code[codeIndex++].charCodeAt(0) - "a".charCodeAt(0);
+    // On applique vigenere
+    const cryptedCode = (charCode + codeCode) % 26;
+    // On position du car codé dans la table ASCII
+    const cryptedChar = cryptedCode + "a".charCodeAt(0);
+    // On récupère le code
+    return String.fromCharCode(cryptedChar);
+  }).join('');
 }
