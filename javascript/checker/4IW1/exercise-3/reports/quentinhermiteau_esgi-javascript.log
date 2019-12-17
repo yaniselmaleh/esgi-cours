@@ -1,15 +1,19 @@
 Loading script...
 
-Tue Dec 17 2019 13:33:57 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 13:33:54 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' OK
-ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
+ucfirst - 'test' KO
+	expected : "Test" - got ""
+ucfirst - ' test' KO
+	expected : " test" - got ""
+ucfirst - 'Test' KO
+	expected : "Test" - got ""
+ucfirst - 'TEST' KO
+	expected : "TEST" - got ""
 ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of null
+	Unexpected behaviour : TypeError - Cannot read property 'ucfirst' of null
 ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+	Unexpected behaviour : TypeError - "ucfirst" not implemented
 
 Checking capitalize
 capitalize - 'test' KO
@@ -23,19 +27,27 @@ capitalize - 'sit 8met consectetur' KO
 capitalize - '_dipiscing elit' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'null' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 
 Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
-camelCase - 'ToggleCase is the 3oolest' OK
-camelCase - 'ToggleCaseIsTheCoolest' OK
-camelCase - 'ToggleCase is_the coolest' OK
-camelCase - ' toggleCase' OK
-camelCase - 'null' OK
-camelCase - 'Object' OK
+camelCase - 'toggle case is the coolest' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - 'toggleCase is the coolest' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - 'ToggleCase is the 3oolest' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - 'ToggleCase is_the coolest' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - ' toggleCase' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'camelCase' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - "camelCase" not implemented
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' KO
@@ -51,7 +63,7 @@ snake_case - 'ToggleCase is_the coolest' KO
 snake_case - ' toggleCase' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 snake_case - 'null' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of null
 snake_case - 'Object' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 
@@ -71,7 +83,7 @@ leet - 'mon travail' KO
 leet - ' ' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
 
@@ -87,7 +99,7 @@ verlan - '70da m L(_)k3' KO
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 
@@ -101,37 +113,37 @@ yoda - 'Inverser la position des mots d’une phrase' KO
 yoda - ' ' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
 yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got ""
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got ""
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got ""
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	expected : " " - got ""
 vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - Cannot read property 'vig' of null
 vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - "vig" not implemented
 
 Checking prop_access
 prop_access - 'path exist - value string' KO
-	expected : "dog" - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path exist - value object' KO
-	expected : {"name":"dog"} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path exist - value array' KO
-	expected : {"name":"cat"} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 prop_access - 'object null' KO
-	expected : test not exist - got null
+	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
 prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 
