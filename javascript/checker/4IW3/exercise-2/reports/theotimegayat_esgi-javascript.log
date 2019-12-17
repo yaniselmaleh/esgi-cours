@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 11:56:27 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 11:57:07 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
@@ -17,17 +17,13 @@ type_check_v1 - 'function' KO
 type_check_v1 - 'arrayNotObject' OK
 
 Checking type_check_v2
-type_check_v2 - 'number' KO
-	expected : true - got undefined
-type_check_v2 - 'numberNotValue' KO
-	expected : false - got undefined
+type_check_v2 - 'number' OK
+type_check_v2 - 'numberNotValue' OK
 type_check_v2 - 'numberNotObject' OK
-type_check_v2 - 'stringEnum' KO
-	expected : false - got undefined
+type_check_v2 - 'stringEnum' OK
 type_check_v2 - 'objectMatch' KO
-	expected : true - got undefined
-type_check_v2 - 'objectNotMatch' KO
-	expected : false - got undefined
+	expected : true - got false
+type_check_v2 - 'objectNotMatch' OK
 
 Checking type_check
 type_check - 'number' KO
