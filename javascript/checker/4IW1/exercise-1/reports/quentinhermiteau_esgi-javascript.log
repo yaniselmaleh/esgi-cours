@@ -1,7 +1,16 @@
-Loading script...
 
-Tue Dec 17 2019 16:11:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OKLoading script...
+
+verlan - ' ' OK
+verlan - 'null' OK
+Tue Dec 17 2019 16:12:21 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+verlan - 'Object' OK
+
+Checking yodaChecking ucfirst
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' OK
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
@@ -48,3 +57,13 @@ leet - 'yoda' OK
 leet - 'evaluation' OK
 leet - 'mon travail' OK
 leet - ' ' OK
+leet - 'null' OK
+leet - 'Object' OK
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' OK
+verlan - '70da m L(_)k3' OK
+verlan - ' ' OK
+verlan - 'null' OK

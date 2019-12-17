@@ -1,7 +1,6 @@
 Loading script...
 
-prop_access - 'path empty' OK
-Tue Dec 17 2019 16:11:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:12:29 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -44,3 +43,7 @@ leet - 'anaconda' OK
 leet - 'anacoNDa' OK
 leet - 'leet' OK
 leet - 'yoda' OK
+leet - 'evaluation' OK
+leet - 'mon travail' OK
+leet - ' ' OK
+leet - 'null' OK

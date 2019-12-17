@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 16:11:18 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:12:31 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	expected : "Test" - got undefined
@@ -68,3 +68,7 @@ leet - 'anaconda' KO
 	expected : "4n4c0nd4" - got undefined
 leet - 'anacoNDa' KO
 	expected : "4n4c0ND4" - got undefined
+leet - 'leet' KO
+	expected : "l33t" - got undefined
+leet - 'yoda' KO
+	expected : "70d4" - got undefined

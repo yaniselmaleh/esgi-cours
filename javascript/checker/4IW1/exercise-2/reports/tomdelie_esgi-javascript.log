@@ -1,8 +1,34 @@
-Loading script...
 
-Tue Dec 17 2019 16:11:23 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking type_check_v1
-type_check_v1 - 'number' OK
+type_check_v2 - 'numberNotObject' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implementedLoading script...
+
+type_check_v2 - 'stringEnum' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
+Tue Dec 17 2019 16:12:19 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+type_check_v2 - 'objectMatch' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implementedChecking type_check_v1
+type_check_v2 - 'objectNotMatch' KO
+	Unexpected behaviour : TypeError - "type_check_v2" not implemented
+
+
+type_check_v1 - 'number' OKChecking type_check
+type_check - 'number' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'numberNotValue' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'numberNotObject' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'stringEnum' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectNotMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectSuperMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+
+
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' OK

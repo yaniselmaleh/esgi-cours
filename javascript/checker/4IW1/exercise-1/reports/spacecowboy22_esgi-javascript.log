@@ -1,116 +1,46 @@
 Loading script...
 
-leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-Tue Dec 17 2019 16:11:26 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:12:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - 'test' OK
-
-Checking verlan
 ucfirst - ' test' OK
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'null' OK
 ucfirst - 'Object' OK
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 
 Checking capitalize
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 capitalize - 'test' OK
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-Checking yoda
 capitalize - ' test' OK
 capitalize - 'ipsum DOLOR' OK
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'sit 8met consectetur' OK
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - '_dipiscing elit' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'null' OK
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-
-Checking vig
 capitalize - 'Object' OK
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 
 Checking camelCase
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'toggle case is the coolest' OK
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'toggleCase is the coolest' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is_the coolest' OK
-
-
-camelCase - ' toggleCase' OKChecking prop_access
+camelCase - ' toggleCase' OK
 camelCase - 'null' OK
 camelCase - 'Object' OK
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 
-
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implementedChecking snake_case
+Checking snake_case
 snake_case - 'toggle case is the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 snake_case - 'toggleCase is the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 snake_case - 'ToggleCase is the 3oolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 snake_case - 'ToggleCaseIsTheCool3st' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 snake_case - 'ToggleCase is_the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 snake_case - ' toggleCase' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-
-
 snake_case - 'null' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 snake_case - 'Object' KO
@@ -147,52 +77,3 @@ verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-Checking yoda
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-Checking prop_access
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-
