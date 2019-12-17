@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 16:10:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:10:31 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	expected : "Test" - got ""
@@ -60,3 +60,17 @@ snake_case - 'ToggleCaseIsTheCool3st' KO
 	expected : "togglecaseisthecool3st" - got ""
 snake_case - 'ToggleCase is_the coolest' KO
 	expected : "togglecase_is_the_coolest" - got ""
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got ""
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of null
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - "snake_case" not implemented
+
+Checking leet
+leet - 'anaconda' KO
+	expected : "4n4c0nd4" - got ""
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got ""
+leet - 'leet' KO
+	expected : "l33t" - got ""

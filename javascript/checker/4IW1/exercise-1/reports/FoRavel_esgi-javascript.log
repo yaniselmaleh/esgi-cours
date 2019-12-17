@@ -1,39 +1,11 @@
+Loading script...
 
-
-Checking leetLoading script...
-
-leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-Tue Dec 17 2019 16:09:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implementedChecking ucfirst
-leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'null' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
+Tue Dec 17 2019 16:10:35 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' OK
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - ' test' OK
-
-Checking verlan
 ucfirst - 'Test' OK
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'TEST' OK
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'charAt' of null
 ucfirst - 'Object' KO

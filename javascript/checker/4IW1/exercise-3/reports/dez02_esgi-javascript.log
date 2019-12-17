@@ -1,7 +1,7 @@
+Loading script...
 
-Tue Dec 17 2019 16:09:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirstLoading script...
-
+Tue Dec 17 2019 16:10:36 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - this.charAt is not a function
 ucfirst - ' test' KO
@@ -15,243 +15,95 @@ ucfirst - 'null' KO
 ucfirst - 'Object' KO
 	Unexpected behaviour : TypeError - "ucfirst" not implemented
 
-
-Tue Dec 17 2019 16:09:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirstChecking capitalize
+Checking capitalize
 capitalize - 'test' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
-ucfirst - 'test' KO
-	Unexpected behaviour : TypeError - this.charAt is not a function
 capitalize - ' test' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'ipsum DOLOR' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
-ucfirst - ' test' KO
-	Unexpected behaviour : TypeError - this.charAt is not a function
 capitalize - 'sit 8met consectetur' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
-ucfirst - 'Test' KO
-	Unexpected behaviour : TypeError - this.charAt is not a function
 capitalize - '_dipiscing elit' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
-ucfirst - 'TEST' KO
-	Unexpected behaviour : TypeError - this.charAt is not a function
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
-ucfirst - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'ucfirst' of null
 
 Checking camelCase
-ucfirst - 'Object' KO
-	Unexpected behaviour : TypeError - "ucfirst" not implemented
 camelCase - 'toggle case is the coolest' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
-
-
 camelCase - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implementedChecking capitalize
+	Unexpected behaviour : TypeError - "camelCase" not implemented
 camelCase - 'ToggleCase is the 3oolest' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
-capitalize - 'test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
 camelCase - 'ToggleCase is_the coolest' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
-capitalize - ' test' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
 camelCase - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'camelCase' of null
-capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
 camelCase - 'Object' KO
 	Unexpected behaviour : TypeError - "camelCase" not implemented
 
-
-capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : TypeError - "capitalize" not implementedChecking snake_case
+Checking snake_case
 snake_case - 'toggle case is the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
 snake_case - 'toggleCase is the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-capitalize - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 snake_case - 'ToggleCase is the 3oolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 snake_case - 'ToggleCaseIsTheCool3st' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 snake_case - 'ToggleCase is_the coolest' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-capitalize - 'Object' KO
-	Unexpected behaviour : TypeError - "capitalize" not implemented
 snake_case - ' toggleCase' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
-
-
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of nullChecking camelCase
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-camelCase - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-
-
-camelCase - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implementedChecking leet
-leet - 'anaconda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-camelCase - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-leet - 'anacoNDa' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-camelCase - 'ToggleCaseIsTheCoolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-leet - 'leet' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'yoda' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-camelCase - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-leet - 'evaluation' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-leet - 'mon travail' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-camelCase - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-leet - ' ' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-camelCase - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'camelCase' of null
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
-camelCase - 'Object' KO
-	Unexpected behaviour : TypeError - "camelCase" not implemented
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-
-
-
-Checking snake_caseChecking verlan
-snake_case - 'toggle case is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-snake_case - 'toggleCase is the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-snake_case - 'ToggleCase is the 3oolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-snake_case - 'ToggleCaseIsTheCool3st' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-snake_case - 'ToggleCase is_the coolest' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-snake_case - ' toggleCase' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 snake_case - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of null
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
 snake_case - 'Object' KO
 	Unexpected behaviour : TypeError - "snake_case" not implemented
 
-
-
-Checking yodaChecking leet
-yoda - 'anaconda' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
+Checking leet
 leet - 'anaconda' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'anacoNDa' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-yoda - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 leet - 'leet' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-yoda - 'Inverser la position des mots d’une phrase' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 leet - 'yoda' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-yoda - ' ' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 leet - 'evaluation' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
 leet - 'mon travail' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 leet - ' ' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
 leet - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
-
-Checking vig
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - "leet" not implemented
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 
-
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'vig' of nullChecking verlan
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-
+Checking verlan
 verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implementedChecking prop_access
+	Unexpected behaviour : TypeError - "verlan" not implemented
 verlan - 'kayak' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'yoda m Luke' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - '70da m L(_)k3' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - ' ' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
 
-
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implementedChecking yoda
-
-
+Checking yoda
 yoda - 'anaconda' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 yoda - 'yoda m Luke' KO
