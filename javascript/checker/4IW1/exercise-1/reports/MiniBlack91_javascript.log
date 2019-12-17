@@ -1,48 +1,121 @@
-Loading script...
 
-Tue Dec 17 2019 13:50:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+
+Checking leet
+leet - 'anaconda' OKLoading script...
+
+leet - 'anacoNDa' OK
+leet - 'leet' OK
+leet - 'yoda' OK
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "3v4l_4t10n"
+Tue Dec 17 2019 16:08:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+leet - 'mon travail' OK
+leet - ' ' OKChecking ucfirst
+leet - 'null' OK
 ucfirst - 'test' OK
+leet - 'Object' OK
 ucfirst - ' test' OK
-ucfirst - 'Test' OK
-ucfirst - 'TEST' OK
-ucfirst - 'null' OK
-ucfirst - 'Object' OK
 
-Checking capitalize
+
+ucfirst - 'Test' OKChecking verlan
+ucfirst - 'TEST' OK
+verlan - 'anaconda' KO
+	expected : "adnocana" - got undefined
+ucfirst - 'null' OK
+verlan - 'kayak' KO
+	expected : "kayak" - got undefined
+ucfirst - 'Object' OK
+verlan - 'yoda m Luke' KO
+	expected : "adoy m ekuL" - got undefined
+verlan - '70da m L(_)k3' KO
+	expected : "ad07 m 3k)_(L" - got undefined
+
+
+verlan - ' ' KO
+	expected : " " - got undefinedChecking capitalize
+verlan - 'null' OK
 capitalize - 'test' KO
 	expected : "Test" - got undefined
+verlan - 'Object' OK
 capitalize - ' test' KO
 	expected : " Test" - got undefined
+
+
 capitalize - 'ipsum DOLOR' KO
-	expected : "Ipsum Dolor" - got undefined
+	expected : "Ipsum Dolor" - got undefinedChecking yoda
+yoda - 'anaconda' KO
+	expected : "anaconda" - got undefined
 capitalize - 'sit 8met consectetur' KO
 	expected : "Sit 8met Consectetur" - got undefined
+yoda - 'yoda m Luke' KO
+	expected : "Luke m yoda" - got undefined
 capitalize - '_dipiscing elit' KO
 	expected : "_dipiscing Elit" - got undefined
+yoda - 'Inverser la position des mots d’une phrase' KO
+	expected : "phrase d’une mots des position la Inverser" - got undefined
+yoda - ' ' KO
+	expected : " " - got undefined
 capitalize - 'null' OK
+yoda - 'null' OK
 capitalize - 'Object' OK
+yoda - 'Object' OK
 
-Checking camelCase
+
+
+Checking camelCaseChecking vig
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'toggle case is the coolest' KO
 	expected : "ToggleCaseIsTheCoolest" - got undefined
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'toggleCase is the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got undefined
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is the 3oolest' KO
 	expected : "TogglecaseIsThe3oolest" - got undefined
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got undefined
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got undefined
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - ' toggleCase' KO
 	expected : "Togglecase" - got undefined
-camelCase - 'null' OK
-camelCase - 'Object' OK
 
-Checking snake_case
+Checking prop_access
+camelCase - 'null' OK
+prop_access - 'path exist - value string' KO
+	expected : "dog" - got undefined
+camelCase - 'Object' OK
+prop_access - 'path exist - value object' KO
+	expected : {"name":"dog"} - got undefined
+
+
+prop_access - 'path exist - value array' KO
+	expected : {"name":"cat"} - got undefinedChecking snake_case
+prop_access - 'path not exist' KO
+	expected : animal.gender not exist - got null
 snake_case - 'toggle case is the coolest' OK
+prop_access - 'path empty' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
 snake_case - 'toggleCase is the coolest' OK
+prop_access - 'object null' KO
+	expected : test not exist - got null
 snake_case - 'ToggleCase is the 3oolest' OK
+prop_access - 'path null' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got undefined
+
+
 snake_case - 'ToggleCaseIsTheCool3st' OK
 snake_case - 'ToggleCase is_the coolest' OK
 snake_case - ' toggleCase' OK

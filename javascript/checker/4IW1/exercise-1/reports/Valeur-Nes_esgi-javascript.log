@@ -10,4 +10,4 @@ TypeError: Cannot read property 'length' of undefined
     at Function.Module._load (internal/modules/cjs/loader.js:531:3)
     at Module.require (internal/modules/cjs/loader.js:637:17)
     at require (internal/modules/cjs/helpers.js:22:18)
-    at startTest (/executor.js:41:21)
+    at startTest (/executor.js:42:21)
