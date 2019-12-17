@@ -2,3 +2,130 @@ Loading script...
 
 Tue Dec 17 2019 16:15:06 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
+ucfirst - 'test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - ' test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'Test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'TEST' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' KO
+	expected : "Test" - got ""
+capitalize - ' test' KO
+	expected : " Test" - got ""
+capitalize - 'ipsum DOLOR' KO
+	expected : "Ipsum Dolor" - got ""
+capitalize - 'sit 8met consectetur' KO
+	expected : "Sit 8met Consectetur" - got ""
+capitalize - '_dipiscing elit' KO
+	expected : "_dipiscing Elit" - got ""
+capitalize - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+capitalize - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got ""
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got ""
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got ""
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got ""
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got ""
+camelCase - ' toggleCase' KO
+	expected : "Togglecase" - got ""
+camelCase - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+camelCase - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
+
+Checking snake_case
+snake_case - 'toggle case is the coolest' KO
+	expected : "toggle_case_is_the_coolest" - got ""
+snake_case - 'toggleCase is the coolest' KO
+	expected : "togglecase_is_the_coolest" - got ""
+snake_case - 'ToggleCase is the 3oolest' KO
+	expected : "togglecase_is_the_3oolest" - got ""
+snake_case - 'ToggleCaseIsTheCool3st' KO
+	expected : "togglecaseisthecool3st" - got ""
+snake_case - 'ToggleCase is_the coolest' KO
+	expected : "togglecase_is_the_coolest" - got ""
+snake_case - ' toggleCase' KO
+	expected : "_togglecase" - got ""
+snake_case - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'search' of null
+snake_case - 'Object' KO
+	Unexpected behaviour : TypeError - string.search is not a function
+
+Checking leet
+leet - 'anaconda' KO
+	expected : "4n4c0nd4" - got "ANACONDA"
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got "ANACONDA"
+leet - 'leet' KO
+	expected : "l33t" - got "LEET"
+leet - 'yoda' KO
+	expected : "70d4" - got "YODA"
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got "EVALUATION"
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got "MON TRAVAIL"
+leet - ' ' OK
+leet - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
+
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' KO
+	expected : "adoy m ekuL" - got "ekuL m adoy"
+verlan - '70da m L(_)k3' KO
+	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' KO
+	expected : "Luke m yoda" - got "Lukemyoda"
+yoda - 'Inverser la position des mots d’une phrase' KO
+	expected : "phrase d’une mots des position la Inverser" - got "phrased’unemotsdespositionlaInverser"
+yoda - ' ' KO
+	expected : " " - got ""
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "anticonstitutionnellement"
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "antiConstiTutioNnellement"
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test"
+vig - ' - test' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'length' of null
+vig - 'Object - test' KO
+	expected : "" - got {"foo":"data"}
+
+Checking prop_access
+prop_access - 'path exist - value string' OK
+prop_access - 'path exist - value object' OK
+prop_access - 'path exist - value array' OK
+prop_access - 'path not exist' OK
+prop_access - 'path empty' OK
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'test' of null
+prop_access - 'path null' OK
+
