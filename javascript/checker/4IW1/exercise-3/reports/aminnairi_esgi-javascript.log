@@ -1,43 +1,99 @@
-Loading script...
 
-Tue Dec 17 2019 16:08:20 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+Checking leet
+leet - 'anaconda' KO
+	expected : "4n4c0nd4" - got ""Loading script...
+
+leet - 'anacoNDa' KO
+	expected : "4n4c0ND4" - got ""
+leet - 'leet' KO
+	expected : "l33t" - got ""
+leet - 'yoda' KO
+	expected : "70d4" - got ""
+Tue Dec 17 2019 16:09:25 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
+leet - 'evaluation' KO
+	expected : "3v4l(_)4t10n" - got ""
+leet - 'mon travail' KO
+	expected : "m0n tr4v41l" - got ""
 ucfirst - 'test' KO
 	expected : "Test" - got ""
+leet - ' ' KO
+	expected : " " - got ""
 ucfirst - ' test' KO
 	expected : " test" - got ""
+leet - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - 'Test' KO
 	expected : "Test" - got ""
+
+Checking verlan
 ucfirst - 'TEST' KO
 	expected : "TEST" - got ""
+verlan - 'anaconda' KO
+	expected : "adnocana" - got ""
 ucfirst - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'ucfirst' of null
+verlan - 'kayak' KO
+	expected : "kayak" - got ""
+verlan - 'yoda m Luke' KO
+	expected : "adoy m ekuL" - got ""
 ucfirst - 'Object' KO
 	Unexpected behaviour : TypeError - "ucfirst" not implemented
+verlan - '70da m L(_)k3' KO
+	expected : "ad07 m 3k)_(L" - got ""
 
 Checking capitalize
+verlan - ' ' KO
+	expected : " " - got ""
+verlan - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 capitalize - 'test' KO
 	expected : "Test" - got ""
+verlan - 'Object' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+
+Checking yoda
 capitalize - ' test' KO
 	expected : " Test" - got ""
+yoda - 'anaconda' KO
+	expected : "anaconda" - got ""
+yoda - 'yoda m Luke' KO
+	expected : "Luke m yoda" - got ""
 capitalize - 'ipsum DOLOR' KO
 	expected : "Ipsum Dolor" - got ""
+yoda - 'Inverser la position des mots d’une phrase' KO
+	expected : "phrase d’une mots des position la Inverser" - got ""
+yoda - ' ' KO
+	expected : " " - got ""
 capitalize - 'sit 8met consectetur' KO
 	expected : "Sit 8met Consectetur" - got ""
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
 capitalize - '_dipiscing elit' KO
 	expected : "_dipiscing Elit" - got ""
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 
 Checking camelCase
+
+
 camelCase - 'toggle case is the coolest' KO
 	expected : "ToggleCaseIsTheCoolest" - got ""
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ""
+	expected : "TogglecaseIsTheCoolest" - got ""Checking vig
 camelCase - 'ToggleCase is the 3oolest' KO
 	expected : "TogglecaseIsThe3oolest" - got ""
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got ""
 camelCase - 'ToggleCase is_the coolest' KO
@@ -102,48 +158,3 @@ verlan - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
-
-Checking yoda
-yoda - 'anaconda' KO
-	expected : "anaconda" - got ""
-yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got ""
-yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got ""
-yoda - ' ' KO
-	expected : " " - got ""
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'vig' of null
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-Checking prop_access
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-

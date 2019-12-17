@@ -1,34 +1,52 @@
-Loading script...
+Checking ucfirstLoading script...
 
-Tue Dec 17 2019 16:08:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' KO
 	expected : "TEST" - got "Test"
 ucfirst - 'null' OK
+Tue Dec 17 2019 16:09:12 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
 ucfirst - 'Object' OK
 
 Checking capitalize
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
 capitalize - 'test' OK
+ucfirst - 'TEST' KO
+	expected : "TEST" - got "Test"
 capitalize - ' test' OK
+ucfirst - 'null' OK
 capitalize - 'ipsum DOLOR' OK
+ucfirst - 'Object' OK
 capitalize - 'sit 8met consectetur' OK
+
+Checking capitalize
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+capitalize - 'test' OK
 capitalize - 'Object' OK
 
 Checking camelCase
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' OK
 camelCase - 'toggle case is the coolest' OK
+capitalize - 'sit 8met consectetur' OK
 camelCase - 'toggleCase is the coolest' OK
+capitalize - '_dipiscing elit' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' KO
 	expected : "TogglecaseIsTheCoolest" - got "TogglecaseIstheCoolest"
 camelCase - ' toggleCase' OK
 camelCase - 'null' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
 camelCase - 'Object' OK
+
+
 
 Checking snake_case
 snake_case - 'toggle case is the coolest' OK
@@ -46,28 +64,3 @@ leet - 'anaconda' KO
 	expected : "4n4c0nd4" - got "anaconda"
 leet - 'anacoNDa' KO
 	expected : "4n4c0ND4" - got "anacoNDa"
-leet - 'leet' KO
-	expected : "l33t" - got "leet"
-leet - 'yoda' KO
-	expected : "70d4" - got "yoda"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "evaluation"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "mon travail"
-leet - ' ' OK
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented

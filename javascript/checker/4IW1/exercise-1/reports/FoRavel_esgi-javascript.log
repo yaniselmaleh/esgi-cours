@@ -1,33 +1,39 @@
 
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 
-Checking prop_access
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path not exist' KO
-	Unexpected behaviour : TypeError - "prop_access" not implementedLoading script...
+Checking leetLoading script...
 
-prop_access - 'path empty' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path null' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
+leet - 'anaconda' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'anacoNDa' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'leet' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'yoda' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+Tue Dec 17 2019 16:09:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-
-Tue Dec 17 2019 16:08:25 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+leet - 'evaluation' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'mon travail' KO
+	Unexpected behaviour : TypeError - "leet" not implementedChecking ucfirst
+leet - ' ' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
+leet - 'null' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - 'test' OK
+leet - 'Object' KO
+	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - ' test' OK
+
+Checking verlan
 ucfirst - 'Test' OK
+verlan - 'anaconda' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'TEST' OK
+verlan - 'kayak' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
+verlan - 'yoda m Luke' KO
+	Unexpected behaviour : TypeError - "verlan" not implemented
 ucfirst - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'charAt' of null
 ucfirst - 'Object' KO
@@ -136,3 +142,16 @@ vig - 'Object - test' KO
 Checking prop_access
 prop_access - 'path exist - value string' KO
 	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path not exist' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path empty' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+

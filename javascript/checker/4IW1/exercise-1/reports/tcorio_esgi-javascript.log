@@ -1,60 +1,117 @@
-Loading script...
 
-Tue Dec 17 2019 16:08:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
-Checking ucfirst
+snake_case - 'ToggleCase is_the coolest' OKLoading script...
+
+snake_case - ' toggleCase' OK
+snake_case - 'null' OK
+snake_case - 'Object' OK
+Tue Dec 17 2019 16:09:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
+
+
+Checking ucfirstChecking leet
+leet - 'anaconda' OK
 ucfirst - 'test' OK
+leet - 'anacoNDa' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
+leet - 'leet' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
+leet - 'yoda' OK
 capitalize - 'test' OK
+leet - 'evaluation' OK
 capitalize - ' test' KO
 	expected : " Test" - got "Test"
+leet - 'mon travail' OK
 capitalize - 'ipsum DOLOR' OK
+leet - ' ' KO
+	expected : " " - got ""
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
+leet - 'null' OK
 capitalize - 'Object' OK
 
 Checking camelCase
+leet - 'Object' OK
+
+Checking verlan
 camelCase - 'toggle case is the coolest' OK
 camelCase - 'toggleCase is the coolest' OK
+verlan - 'anaconda' OK
 camelCase - 'ToggleCase is the 3oolest' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
 camelCase - 'ToggleCase is_the coolest' OK
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+verlan - 'kayak' OK
 camelCase - 'null' OK
+verlan - 'yoda m Luke' OK
 camelCase - 'Object' OK
 
 Checking snake_case
+verlan - '70da m L(_)k3' OK
 snake_case - 'toggle case is the coolest' OK
 snake_case - 'toggleCase is the coolest' OK
+verlan - ' ' KO
+	expected : " " - got ""
+verlan - 'null' OK
 snake_case - 'ToggleCase is the 3oolest' OK
 snake_case - 'ToggleCaseIsTheCool3st' OK
+verlan - 'Object' OK
 snake_case - 'ToggleCase is_the coolest' OK
-snake_case - ' toggleCase' OK
+
+
+snake_case - ' toggleCase' OKChecking yoda
 snake_case - 'null' OK
+yoda - 'anaconda' OK
 snake_case - 'Object' OK
+yoda - 'yoda m Luke' OK
+yoda - 'Inverser la position des mots d’une phrase' OK
 
 Checking leet
+yoda - ' ' KO
+	expected : " " - got ""
 leet - 'anaconda' OK
+yoda - 'null' OK
 leet - 'anacoNDa' OK
+yoda - 'Object' OK
 leet - 'leet' OK
+
+
 leet - 'yoda' OK
-leet - 'evaluation' OK
+leet - 'evaluation' OKChecking vig
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 leet - 'mon travail' OK
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 leet - ' ' KO
 	expected : " " - got ""
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 leet - 'null' OK
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
 leet - 'Object' OK
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+Checking prop_access
 
 Checking verlan
+prop_access - 'path exist - value string' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'anaconda' OK
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'kayak' OK
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
 verlan - 'yoda m Luke' OK
 verlan - '70da m L(_)k3' OK
 verlan - ' ' KO
@@ -72,23 +129,3 @@ yoda - 'null' OK
 yoda - 'Object' OK
 
 Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-Checking prop_access
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
