@@ -1,32 +1,8 @@
+Loading script...
 
-type_check_v1 - 'function' KO
-	expected : true - got false
-type_check_v1 - 'arrayNotObject' OK
-
-Checking type_check_v2
-type_check_v2 - 'number' OK
-type_check_v2 - 'numberNotValue' OK
-type_check_v2 - 'numberNotObject' OKLoading script...
-
-type_check_v2 - 'stringEnum' OK
-type_check_v2 - 'objectMatch' OK
-type_check_v2 - 'objectNotMatch' OK
-
-Checking type_check
-type_check - 'number' KO
-	expected : true - got false
-type_check - 'numberNotValue' OK
-type_check - 'numberNotObject' OK
-type_check - 'stringEnum' OK
-type_check - 'objectMatch' KO
-	expected : true - got false
-Tue Dec 17 2019 16:12:22 GMT+0000 (Coordinated Universal Time) - Starting tests...
-
-type_check - 'objectNotMatch' OK
-type_check - 'objectSuperMatch' OKChecking type_check_v1
+Tue Dec 17 2019 16:13:26 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking type_check_v1
 type_check_v1 - 'number' OK
-
-
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' OK
