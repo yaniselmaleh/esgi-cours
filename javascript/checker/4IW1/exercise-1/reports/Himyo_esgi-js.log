@@ -1,0 +1,42 @@
+Loading script...
+
+Tue Dec 17 2019 16:14:19 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking ucfirst
+ucfirst - 'test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - ' test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'Test' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'TEST' KO
+	Unexpected behaviour : TypeError - string.splice is not a function
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
+
+Checking capitalize
+capitalize - 'test' KO
+	expected : "Test" - got ""
+capitalize - ' test' KO
+	expected : " Test" - got ""
+capitalize - 'ipsum DOLOR' KO
+	expected : "Ipsum Dolor" - got ""
+capitalize - 'sit 8met consectetur' KO
+	expected : "Sit 8met Consectetur" - got ""
+capitalize - '_dipiscing elit' KO
+	expected : "_dipiscing Elit" - got ""
+capitalize - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'split' of null
+capitalize - 'Object' KO
+	Unexpected behaviour : TypeError - string.split is not a function
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' KO
+	expected : "ToggleCaseIsTheCoolest" - got ""
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got ""
+camelCase - 'ToggleCase is the 3oolest' KO
+	expected : "TogglecaseIsThe3oolest" - got ""
+camelCase - 'ToggleCaseIsTheCoolest' KO
+	expected : "Togglecaseisthecoolest" - got ""
+camelCase - 'ToggleCase is_the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got ""
