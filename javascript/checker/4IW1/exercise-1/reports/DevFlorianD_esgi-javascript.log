@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 16:15:05 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:15:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -89,11 +89,3 @@ vig - 'Object - test' KO
 	Unexpected behaviour : TypeError - str.split is not a function
 
 Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' OK
-prop_access - 'path null' OK
-
