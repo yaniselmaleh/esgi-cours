@@ -1,8 +1,8 @@
 Loading script...
 Invalid script: SyntaxError: Unexpected number
 /4IW3/exercise-2/scripts/Isagna_esgi-javascript.js:1
-(function (exports, require, module, __filename, __dirname) { function type_check_v1(1, "number") {
-                                                                                     ^
+(function (exports, require, module, __filename, __dirname) { function type_check_v1 (1, "strong" )
+                                                                                      ^
 
 SyntaxError: Unexpected number
     at new Script (vm.js:80:7)
