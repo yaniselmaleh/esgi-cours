@@ -1,0 +1,13 @@
+Loading script...
+Invalid script: ReferenceError: string is not defined
+ReferenceError: string is not defined
+    at type_check_v1 (/4IW3/exercise-2/scripts/iti98_esgi-js.js:3:30)
+    at Object.<anonymous> (/4IW3/exercise-2/scripts/iti98_esgi-js.js:14:13)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at startTest (/executor.js:41:21)
