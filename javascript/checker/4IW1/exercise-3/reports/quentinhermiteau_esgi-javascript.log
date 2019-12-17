@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 16:11:33 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:11:52 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	expected : "Test" - got ""
@@ -104,3 +104,46 @@ verlan - 'Object' KO
 	Unexpected behaviour : TypeError - "verlan" not implemented
 
 Checking yoda
+yoda - 'anaconda' KO
+	expected : "anaconda" - got ""
+yoda - 'yoda m Luke' KO
+	expected : "Luke m yoda" - got ""
+yoda - 'Inverser la position des mots d’une phrase' KO
+	expected : "phrase d’une mots des position la Inverser" - got ""
+yoda - ' ' KO
+	expected : " " - got ""
+yoda - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
+yoda - 'Object' KO
+	Unexpected behaviour : TypeError - "yoda" not implemented
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got ""
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got ""
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got ""
+vig - ' - test' KO
+	expected : " " - got ""
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'vig' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+Checking prop_access
+prop_access - 'path exist - value string' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path not exist' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path empty' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+
