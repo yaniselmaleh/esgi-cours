@@ -1,99 +1,43 @@
+Loading script...
 
-
-Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got ""Loading script...
-
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got ""
-leet - 'leet' KO
-	expected : "l33t" - got ""
-leet - 'yoda' KO
-	expected : "70d4" - got ""
-Tue Dec 17 2019 16:09:25 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 16:10:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got ""
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got ""
 ucfirst - 'test' KO
 	expected : "Test" - got ""
-leet - ' ' KO
-	expected : " " - got ""
 ucfirst - ' test' KO
 	expected : " test" - got ""
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
 ucfirst - 'Test' KO
 	expected : "Test" - got ""
-
-Checking verlan
 ucfirst - 'TEST' KO
 	expected : "TEST" - got ""
-verlan - 'anaconda' KO
-	expected : "adnocana" - got ""
 ucfirst - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'ucfirst' of null
-verlan - 'kayak' KO
-	expected : "kayak" - got ""
-verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got ""
 ucfirst - 'Object' KO
 	Unexpected behaviour : TypeError - "ucfirst" not implemented
-verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got ""
 
 Checking capitalize
-verlan - ' ' KO
-	expected : " " - got ""
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
 capitalize - 'test' KO
 	expected : "Test" - got ""
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-
-Checking yoda
 capitalize - ' test' KO
 	expected : " Test" - got ""
-yoda - 'anaconda' KO
-	expected : "anaconda" - got ""
-yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got ""
 capitalize - 'ipsum DOLOR' KO
 	expected : "Ipsum Dolor" - got ""
-yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got ""
-yoda - ' ' KO
-	expected : " " - got ""
 capitalize - 'sit 8met consectetur' KO
 	expected : "Sit 8met Consectetur" - got ""
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'yoda' of null
 capitalize - '_dipiscing elit' KO
 	expected : "_dipiscing Elit" - got ""
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - "yoda" not implemented
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 capitalize - 'Object' KO
 	Unexpected behaviour : TypeError - "capitalize" not implemented
 
 Checking camelCase
-
-
 camelCase - 'toggle case is the coolest' KO
 	expected : "ToggleCaseIsTheCoolest" - got ""
 camelCase - 'toggleCase is the coolest' KO
-	expected : "TogglecaseIsTheCoolest" - got ""Checking vig
+	expected : "TogglecaseIsTheCoolest" - got ""
 camelCase - 'ToggleCase is the 3oolest' KO
 	expected : "TogglecaseIsThe3oolest" - got ""
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
 camelCase - 'ToggleCaseIsTheCoolest' KO
 	expected : "Togglecaseisthecoolest" - got ""
 camelCase - 'ToggleCase is_the coolest' KO
@@ -116,45 +60,3 @@ snake_case - 'ToggleCaseIsTheCool3st' KO
 	expected : "togglecaseisthecool3st" - got ""
 snake_case - 'ToggleCase is_the coolest' KO
 	expected : "togglecase_is_the_coolest" - got ""
-snake_case - ' toggleCase' KO
-	expected : "_togglecase" - got ""
-snake_case - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'snake_case' of null
-snake_case - 'Object' KO
-	Unexpected behaviour : TypeError - "snake_case" not implemented
-
-Checking leet
-leet - 'anaconda' KO
-	expected : "4n4c0nd4" - got ""
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got ""
-leet - 'leet' KO
-	expected : "l33t" - got ""
-leet - 'yoda' KO
-	expected : "70d4" - got ""
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got ""
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got ""
-leet - ' ' KO
-	expected : " " - got ""
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'leet' of null
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - "leet" not implemented
-
-Checking verlan
-verlan - 'anaconda' KO
-	expected : "adnocana" - got ""
-verlan - 'kayak' KO
-	expected : "kayak" - got ""
-verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got ""
-verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got ""
-verlan - ' ' KO
-	expected : " " - got ""
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'verlan' of null
-verlan - 'Object' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented

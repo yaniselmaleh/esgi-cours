@@ -1,131 +1,52 @@
 
-snake_case - 'ToggleCase is_the coolest' OKLoading script...
+camelCase - 'Object' OK
 
-snake_case - ' toggleCase' OK
-snake_case - 'null' OK
-snake_case - 'Object' OK
-Tue Dec 17 2019 16:09:09 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Checking snake_caseLoading script...
 
+snake_case - 'toggle case is the coolest' OK
+Tue Dec 17 2019 16:10:13 GMT+0000 (Coordinated Universal Time) - Starting tests...
 
-Checking ucfirstChecking leet
-leet - 'anaconda' OK
+snake_case - 'toggleCase is the coolest' OKChecking ucfirst
+snake_case - 'ToggleCase is the 3oolest' OK
 ucfirst - 'test' OK
-leet - 'anacoNDa' OK
+snake_case - 'ToggleCaseIsTheCool3st' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
 ucfirst - 'null' OK
-leet - 'leet' OK
 ucfirst - 'Object' OK
 
 Checking capitalize
-leet - 'yoda' OK
+snake_case - 'ToggleCase is_the coolest' OK
 capitalize - 'test' OK
-leet - 'evaluation' OK
+snake_case - ' toggleCase' OK
 capitalize - ' test' KO
 	expected : " Test" - got "Test"
-leet - 'mon travail' OK
+snake_case - 'null' OK
 capitalize - 'ipsum DOLOR' OK
-leet - ' ' KO
-	expected : " " - got ""
 capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
-leet - 'null' OK
 capitalize - 'Object' OK
 
-Checking camelCase
-leet - 'Object' OK
 
-Checking verlan
+snake_case - 'Object' OKChecking camelCase
+
+Checking leet
 camelCase - 'toggle case is the coolest' OK
+leet - 'anaconda' OK
 camelCase - 'toggleCase is the coolest' OK
-verlan - 'anaconda' OK
 camelCase - 'ToggleCase is the 3oolest' OK
+leet - 'anacoNDa' OK
+leet - 'leet' OK
 camelCase - 'ToggleCaseIsTheCoolest' OK
+leet - 'yoda' OK
 camelCase - 'ToggleCase is_the coolest' OK
+leet - 'evaluation' OK
 camelCase - ' toggleCase' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
-verlan - 'kayak' OK
+leet - 'mon travail' OK
 camelCase - 'null' OK
-verlan - 'yoda m Luke' OK
 camelCase - 'Object' OK
 
 Checking snake_case
-verlan - '70da m L(_)k3' OK
-snake_case - 'toggle case is the coolest' OK
-snake_case - 'toggleCase is the coolest' OK
-verlan - ' ' KO
-	expected : " " - got ""
-verlan - 'null' OK
-snake_case - 'ToggleCase is the 3oolest' OK
-snake_case - 'ToggleCaseIsTheCool3st' OK
-verlan - 'Object' OK
-snake_case - 'ToggleCase is_the coolest' OK
-
-
-snake_case - ' toggleCase' OKChecking yoda
-snake_case - 'null' OK
-yoda - 'anaconda' OK
-snake_case - 'Object' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-
-Checking leet
-yoda - ' ' KO
-	expected : " " - got ""
-leet - 'anaconda' OK
-yoda - 'null' OK
-leet - 'anacoNDa' OK
-yoda - 'Object' OK
-leet - 'leet' OK
-
-
-leet - 'yoda' OK
-leet - 'evaluation' OKChecking vig
-vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'mon travail' OK
-vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - ' ' KO
-	expected : " " - got ""
-vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'null' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-leet - 'Object' OK
-vig - 'Object - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
-
-Checking prop_access
-
-Checking verlan
-prop_access - 'path exist - value string' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-verlan - 'anaconda' OK
-prop_access - 'path exist - value object' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-verlan - 'kayak' OK
-prop_access - 'path exist - value array' KO
-	Unexpected behaviour : TypeError - "prop_access" not implemented
-verlan - 'yoda m Luke' OK
-verlan - '70da m L(_)k3' OK
-verlan - ' ' KO
-	expected : " " - got ""
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' KO
-	expected : " " - got ""
-yoda - 'null' OK
-yoda - 'Object' OK
-
-Checking vig
