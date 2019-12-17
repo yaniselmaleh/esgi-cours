@@ -1,12 +1,12 @@
 Loading script...
 
-Tue Dec 17 2019 10:44:14 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 10:44:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
 type_check_v1 - 'BooleanNotNumber' OK
 type_check_v1 - 'object' KO
-	expected : true - got false
+	Unexpected behaviour : ReferenceError - isArray is not defined
 type_check_v1 - 'null' KO
 	expected : true - got false
 type_check_v1 - 'nullNotObject' KO
@@ -14,12 +14,13 @@ type_check_v1 - 'nullNotObject' KO
 type_check_v1 - 'undefined' KO
 	expected : true - got false
 type_check_v1 - 'string' KO
-	expected : true - got false
+	Unexpected behaviour : ReferenceError - isArray is not defined
 type_check_v1 - 'array' KO
 	expected : true - got false
 type_check_v1 - 'function' KO
 	expected : true - got false
-type_check_v1 - 'arrayNotObject' OK
+type_check_v1 - 'arrayNotObject' KO
+	Unexpected behaviour : ReferenceError - isArray is not defined
 
 Checking type_check_v2
 type_check_v2 - 'number' KO
