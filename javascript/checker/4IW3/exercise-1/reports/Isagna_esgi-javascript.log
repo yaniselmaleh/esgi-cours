@@ -1,6 +1,6 @@
 Loading script...
 
-Tue Dec 17 2019 09:41:47 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Tue Dec 17 2019 09:42:21 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -81,7 +81,7 @@ vig - 'anticonstitutionnellement - foo' KO
 vig - 'antiConstiTutioNnellement - foo' KO
 	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "n{ zkvczi r{s r{s ospny~ mwi} qi qi }i wb}|lmoqx ym~{ zi|r ya| g lw js~r n wiu{"
+	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "n{ prueul xrs ro lnqxi ohm ~u no et kewqsyrn rsrn zi|h gcy g ~t u}e n ~hwv"
 vig - ' - test' OK
 vig - 'null - test' OK
 vig - 'Object - test' OK
