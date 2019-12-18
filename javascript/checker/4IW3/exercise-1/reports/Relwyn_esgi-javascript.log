@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 17:00:49 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 17:02:55 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -109,6 +109,3 @@ prop_access - 'path empty' KO
 	expected : {"animal":{"type":{"name":"dog"}}} - got ""
 prop_access - 'object null' KO
 	expected : test not exist - got null
-prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-
