@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:49:58 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:50:54 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -18,9 +18,3 @@ capitalize - 'sit 8met consectetur' OK
 capitalize - '_dipiscing elit' OK
 capitalize - 'null' KO
 	expected : "" - got "Please check the data sent thx"
-capitalize - 'Object' KO
-	expected : "" - got "Please check the data sent thx"
-
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
