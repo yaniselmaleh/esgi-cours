@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 09:02:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 09:02:42 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -70,33 +70,3 @@ verlan - 'Object' KO
 Checking yoda
 yoda - 'anaconda' OK
 yoda - 'yoda m Luke' OK
-yoda - 'Inverser la position des mots d’une phrase' OK
-yoda - ' ' OK
-yoda - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-yoda - 'Object' KO
-	Unexpected behaviour : TypeError - str.split is not a function
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-vig - ' - test' KO
-	expected : " " - got [null]
-vig - 'null - test' OK
-vig - 'Object - test' OK
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' KO
-	expected : animal.gender not exist - got null
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	expected : test not exist - got null
-prop_access - 'path null' OK
-
