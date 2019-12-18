@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 09:03:30 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 09:03:50 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - string.splice is not a function
@@ -74,58 +74,3 @@ leet - 'leet' KO
 	expected : "l33t" - got "LEET"
 leet - 'yoda' KO
 	expected : "70d4" - got "YODA"
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got "EVALUATION"
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got "MON TRAVAIL"
-leet - ' ' OK
-leet - 'null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'split' of null
-leet - 'Object' KO
-	Unexpected behaviour : TypeError - string.split is not a function
-
-Checking verlan
-verlan - 'anaconda' OK
-verlan - 'kayak' OK
-verlan - 'yoda m Luke' KO
-	expected : "adoy m ekuL" - got "ekuL m adoy"
-verlan - '70da m L(_)k3' KO
-	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
-verlan - ' ' OK
-verlan - 'null' OK
-verlan - 'Object' OK
-
-Checking yoda
-yoda - 'anaconda' OK
-yoda - 'yoda m Luke' KO
-	expected : "Luke m yoda" - got "Lukemyoda"
-yoda - 'Inverser la position des mots d’une phrase' KO
-	expected : "phrase d’une mots des position la Inverser" - got "phrased’unemotsdespositionlaInverser"
-yoda - ' ' KO
-	expected : " " - got ""
-yoda - 'null' OK
-yoda - 'Object' OK
-
-Checking vig
-vig - 'anticonstitutionnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "anticonstitutionnellement"
-vig - 'antiConstiTutioNnellement - foo' KO
-	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "antiConstiTutioNnellement"
-vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	expected : "hna prueul xqrs prof lknqxi ohmr due no ieqt kewqsylrnp rsrn zibh gcy g dft fucge qn dhwv" - got "une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test"
-vig - ' - test' OK
-vig - 'null - test' KO
-	Unexpected behaviour : TypeError - Cannot read property 'length' of null
-vig - 'Object - test' KO
-	expected : "" - got {"foo":"data"}
-
-Checking prop_access
-prop_access - 'path exist - value string' OK
-prop_access - 'path exist - value object' OK
-prop_access - 'path exist - value array' OK
-prop_access - 'path not exist' OK
-prop_access - 'path empty' OK
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'test' of null
-prop_access - 'path null' OK
-
