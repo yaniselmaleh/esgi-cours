@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:35:00 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:34:57 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
@@ -17,15 +17,15 @@ ucfirst - 'Object' KO
 
 Checking capitalize
 capitalize - 'test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - ' test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - "capitalize" not implemented
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'capitalize' of null
 capitalize - 'Object' KO
@@ -119,13 +119,13 @@ yoda - 'Object' KO
 
 Checking vig
 vig - 'anticonstitutionnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
 vig - 'antiConstiTutioNnellement - foo' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
 vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
 vig - ' - test' KO
-	Unexpected behaviour : TypeError - "vig" not implemented
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
 vig - 'null - test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'vig' of null
 vig - 'Object - test' KO
