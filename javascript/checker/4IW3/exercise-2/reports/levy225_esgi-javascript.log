@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:47:39 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:48:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
@@ -33,3 +33,16 @@ type_check_v2 - 'objectNotMatch' KO
 Checking type_check
 type_check - 'number' KO
 	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'numberNotValue' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'numberNotObject' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'stringEnum' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectNotMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+type_check - 'objectSuperMatch' KO
+	Unexpected behaviour : TypeError - "type_check" not implemented
+
