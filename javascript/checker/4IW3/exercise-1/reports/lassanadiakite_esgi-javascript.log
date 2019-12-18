@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 17:19:17 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 17:20:11 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -43,31 +43,3 @@ snake_case - 'Object' OK
 Checking leet
 leet - 'anaconda' KO
 	expected : "4n4c0nd4" - got ""
-leet - 'anacoNDa' KO
-	expected : "4n4c0ND4" - got ""
-leet - 'leet' KO
-	expected : "l33t" - got ""
-leet - 'yoda' KO
-	expected : "70d4" - got ""
-leet - 'evaluation' KO
-	expected : "3v4l(_)4t10n" - got ""
-leet - 'mon travail' KO
-	expected : "m0n tr4v41l" - got ""
-leet - ' ' KO
-	expected : " " - got ""
-leet - 'null' OK
-leet - 'Object' OK
-
-Checking verlan
-verlan - 'anaconda' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'kayak' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'yoda m Luke' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - '70da m L(_)k3' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - ' ' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
-verlan - 'null' KO
-	Unexpected behaviour : TypeError - "verlan" not implemented
