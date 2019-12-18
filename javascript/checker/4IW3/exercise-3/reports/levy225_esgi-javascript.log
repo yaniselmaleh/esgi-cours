@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:43:10 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:43:38 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
@@ -118,3 +118,32 @@ yoda - 'Object' KO
 	Unexpected behaviour : TypeError - "yoda" not implemented
 
 Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
+vig - 'antiConstiTutioNnellement - foo' KO
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
+vig - 'une phrase tres tres longue mais qui ne veut absolument rien dire car c est juste un test - nawakdecheznawak' KO
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
+vig - ' - test' KO
+	Unexpected behaviour : TypeError - this.toLowerCase is not a function
+vig - 'null - test' KO
+	Unexpected behaviour : TypeError - Cannot read property 'vig' of null
+vig - 'Object - test' KO
+	Unexpected behaviour : TypeError - "vig" not implemented
+
+Checking prop_access
+prop_access - 'path exist - value string' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value object' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path exist - value array' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path not exist' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'path empty' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+prop_access - 'object null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
+prop_access - 'path null' KO
+	Unexpected behaviour : TypeError - "prop_access" not implemented
+
