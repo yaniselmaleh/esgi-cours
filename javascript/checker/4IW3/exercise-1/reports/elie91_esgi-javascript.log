@@ -1,31 +1,23 @@
 Loading script...
 
-Wed Dec 18 2019 17:17:31 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 17:18:24 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
-ucfirst - 'test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
-ucfirst - ' test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
-ucfirst - 'Test' KO
-	Unexpected behaviour : ReferenceError - str is not defined
-ucfirst - 'TEST' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+ucfirst - 'test' OK
+ucfirst - ' test' OK
+ucfirst - 'Test' OK
+ucfirst - 'TEST' OK
 ucfirst - 'null' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - Cannot read property '0' of null
 ucfirst - 'Object' KO
-	Unexpected behaviour : ReferenceError - str is not defined
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
 
 Checking capitalize
-capitalize - 'test' KO
-	Unexpected behaviour : TypeError - array[i].ucfirst is not a function
+capitalize - 'test' OK
 capitalize - ' test' KO
-	Unexpected behaviour : TypeError - array[i].ucfirst is not a function
-capitalize - 'ipsum DOLOR' KO
-	Unexpected behaviour : TypeError - array[i].ucfirst is not a function
-capitalize - 'sit 8met consectetur' KO
-	Unexpected behaviour : TypeError - array[i].ucfirst is not a function
-capitalize - '_dipiscing elit' KO
-	Unexpected behaviour : TypeError - array[i].ucfirst is not a function
+	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
+capitalize - 'ipsum DOLOR' OK
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
 capitalize - 'null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toLowerCase' of null
 capitalize - 'Object' KO
