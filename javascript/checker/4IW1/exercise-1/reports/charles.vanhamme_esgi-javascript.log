@@ -6,3 +6,24 @@ ucfirst - 'test' OK
 ucfirst - ' test' KO
 	expected : " test" - got "Test"
 ucfirst - 'Test' OK
+ucfirst - 'TEST' KO
+	expected : "TEST" - got "Test"
+ucfirst - 'null' KO
+	Unexpected behaviour : TypeError - Cannot read property 'trim' of null
+ucfirst - 'Object' KO
+	Unexpected behaviour : TypeError - str.trim is not a function
+
+Checking capitalize
+capitalize - 'test' OK
+capitalize - ' test' OK
+capitalize - 'ipsum DOLOR' KO
+	expected : "Ipsum Dolor" - got "Ipsum DOLOR"
+capitalize - 'sit 8met consectetur' OK
+capitalize - '_dipiscing elit' OK
+capitalize - 'null' OK
+capitalize - 'Object' OK
+
+Checking camelCase
+camelCase - 'toggle case is the coolest' OK
+camelCase - 'toggleCase is the coolest' KO
+	expected : "TogglecaseIsTheCoolest" - got "ToggleCaseIsTheCoolest"

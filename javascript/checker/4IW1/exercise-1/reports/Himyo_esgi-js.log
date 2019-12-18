@@ -84,3 +84,30 @@ leet - 'null' KO
 leet - 'Object' KO
 	Unexpected behaviour : TypeError - string.split is not a function
 
+Checking verlan
+verlan - 'anaconda' OK
+verlan - 'kayak' OK
+verlan - 'yoda m Luke' KO
+	expected : "adoy m ekuL" - got "ekuL m adoy"
+verlan - '70da m L(_)k3' KO
+	expected : "ad07 m 3k)_(L" - got "3k)_(L m ad07"
+verlan - ' ' OK
+verlan - 'null' OK
+verlan - 'Object' OK
+
+Checking yoda
+yoda - 'anaconda' OK
+yoda - 'yoda m Luke' KO
+	expected : "Luke m yoda" - got "Lukemyoda"
+yoda - 'Inverser la position des mots d’une phrase' KO
+	expected : "phrase d’une mots des position la Inverser" - got "phrased’unemotsdespositionlaInverser"
+yoda - ' ' KO
+	expected : " " - got ""
+yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "anticonstitutionnellement"
+vig - 'antiConstiTutioNnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "antiConstiTutioNnellement"
