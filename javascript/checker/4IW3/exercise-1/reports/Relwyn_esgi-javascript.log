@@ -1,15 +1,13 @@
 Loading script...
 
-Wed Dec 18 2019 18:24:45 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:25:31 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
 ucfirst - 'Test' OK
 ucfirst - 'TEST' OK
-ucfirst - 'null' KO
-	expected : "" - got "Please check the data sent thx"
-ucfirst - 'Object' KO
-	expected : "" - got "Please check the data sent thx"
+ucfirst - 'null' OK
+ucfirst - 'Object' OK
 
 Checking capitalize
 capitalize - 'test' OK
@@ -105,10 +103,8 @@ prop_access - 'path exist - value object' OK
 prop_access - 'path exist - value array' OK
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
-prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+prop_access - 'path empty' OK
 prop_access - 'object null' KO
 	expected : test not exist - got test
-prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+prop_access - 'path null' OK
 
