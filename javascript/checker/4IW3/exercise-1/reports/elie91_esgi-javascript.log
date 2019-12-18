@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 16:49:39 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 16:50:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -85,3 +85,6 @@ prop_access - 'path not exist' KO
 prop_access - 'path empty' OK
 prop_access - 'object null' KO
 	Unexpected behaviour : TypeError - Cannot read property 'test' of null
+prop_access - 'path null' KO
+	expected : {"animal":{"type":{"name":"dog"}}} - got ""
+
