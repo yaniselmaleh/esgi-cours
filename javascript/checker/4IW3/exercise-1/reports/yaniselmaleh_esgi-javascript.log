@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:46:29 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:48:05 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -18,6 +18,3 @@ capitalize - '_dipiscing elit' OK
 capitalize - 'null' OK
 capitalize - 'Object' OK
 
-Checking camelCase
-camelCase - 'toggle case is the coolest' OK
-camelCase - 'toggleCase is the coolest' OK
