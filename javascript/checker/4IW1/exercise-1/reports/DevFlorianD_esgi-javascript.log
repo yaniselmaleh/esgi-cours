@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 09:01:45 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 09:02:13 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' OK
 ucfirst - ' test' OK
@@ -73,3 +73,8 @@ yoda - 'yoda m Luke' OK
 yoda - 'Inverser la position des mots d’une phrase' OK
 yoda - ' ' OK
 yoda - 'null' OK
+yoda - 'Object' OK
+
+Checking vig
+vig - 'anticonstitutionnellement - foo' KO
+	expected : "fbhnqcsghnhiywcsbsqzsrsby" - got "f|nq}snyw}s|sqzsrs|y"

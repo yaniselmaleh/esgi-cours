@@ -1,47 +1,7 @@
 Loading script...
 
-Wed Dec 18 2019 09:01:43 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 09:02:15 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' KO
 	expected : true - got false
 type_check_v1 - 'StringNotNumber' OK
-type_check_v1 - 'BooleanNotNumber' OK
-type_check_v1 - 'object' KO
-	expected : true - got undefined
-type_check_v1 - 'null' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-type_check_v1 - 'nullNotObject' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-type_check_v1 - 'undefined' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-type_check_v1 - 'string' OK
-type_check_v1 - 'array' OK
-type_check_v1 - 'function' KO
-	Unexpected behaviour : TypeError - Cannot convert undefined or null to object
-type_check_v1 - 'arrayNotObject' OK
-
-Checking type_check_v2
-type_check_v2 - 'number' OK
-type_check_v2 - 'numberNotValue' OK
-type_check_v2 - 'numberNotObject' OK
-type_check_v2 - 'stringEnum' OK
-type_check_v2 - 'objectMatch' KO
-	expected : true - got false
-type_check_v2 - 'objectNotMatch' OK
-
-Checking type_check
-type_check - 'number' KO
-	expected : true - got undefined
-type_check - 'numberNotValue' KO
-	expected : false - got undefined
-type_check - 'numberNotObject' KO
-	expected : false - got undefined
-type_check - 'stringEnum' KO
-	expected : false - got undefined
-type_check - 'objectMatch' KO
-	expected : true - got undefined
-type_check - 'objectNotMatch' KO
-	expected : false - got undefined
-type_check - 'objectSuperMatch' KO
-	expected : true - got undefined
-
