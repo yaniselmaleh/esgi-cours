@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:51:27 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:53:07 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking ucfirst
 ucfirst - 'test' KO
 	Unexpected behaviour : TypeError - Cannot read property 'toUpperCase' of undefined
@@ -140,10 +140,3 @@ prop_access - 'path exist - value array' KO
 	expected : {"name":"cat"} - got ""
 prop_access - 'path not exist' KO
 	expected : animal.gender not exist - got null
-prop_access - 'path empty' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-prop_access - 'object null' KO
-	Unexpected behaviour : TypeError - Cannot read property 'prop_access' of null
-prop_access - 'path null' KO
-	expected : {"animal":{"type":{"name":"dog"}}} - got ""
-

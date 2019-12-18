@@ -1,6 +1,6 @@
 Loading script...
 
-Wed Dec 18 2019 18:52:22 GMT+0000 (Coordinated Universal Time) - Starting tests...
+Wed Dec 18 2019 18:52:59 GMT+0000 (Coordinated Universal Time) - Starting tests...
 Checking type_check_v1
 type_check_v1 - 'number' OK
 type_check_v1 - 'StringNotNumber' OK
@@ -21,27 +21,3 @@ type_check_v1 - 'arrayNotObject' KO
 	expected : false - got true
 
 Checking type_check_v2
-type_check_v2 - 'number' OK
-type_check_v2 - 'numberNotValue' OK
-type_check_v2 - 'numberNotObject' OK
-type_check_v2 - 'stringEnum' KO
-	expected : false - got true
-type_check_v2 - 'objectMatch' KO
-	expected : true - got false
-type_check_v2 - 'objectNotMatch' OK
-
-Checking type_check
-type_check - 'number' OK
-type_check - 'numberNotValue' KO
-	expected : false - got true
-type_check - 'numberNotObject' KO
-	expected : false - got true
-type_check - 'stringEnum' KO
-	Unexpected behaviour : TypeError - Cannot read property '0' of undefined
-type_check - 'objectMatch' KO
-	Unexpected behaviour : TypeError - Cannot read property 'bar' of undefined
-type_check - 'objectNotMatch' KO
-	Unexpected behaviour : TypeError - Cannot read property 'bar' of undefined
-type_check - 'objectSuperMatch' KO
-	expected : true - got false
-
